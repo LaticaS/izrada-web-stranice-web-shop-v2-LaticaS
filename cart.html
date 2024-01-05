@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Košarica</title>
+    <link rel="stylesheet" href="./js/javascript.js">
+    <link rel="stylesheet" href="./css/style.css">
+   
+    <style>
+        /*--
+        .pojedini-proizvod {width: 50%; height: fit-content; display: flex; justify-content: center;
+            text-align: center; padding: 1vh 1vw; margin: 1vh 1vw; border: 1px solid dimgrey; box-shadow: 2px 2px 2xp dimgrey;
+            transition-property: border-color; transition-duration: 2s; transition-timing-function: ease;}        
+                    
+        .gornja-slika {width: 40%; padding: 1px; z-index: 2; }            
+        #slika {border-top-left-radius: 30%; border-bottom-right-radius: 30%;
+            transition-property: border-radius; transition-duration: 2s; transition-timing-function: ease;} 
+            #slika:hover {border-radius: 0% 30% 0% 30%;} 
+
+        .donji-podaci {width: 58%; display: flex; flex-direction: column; align-items: center; flex-wrap: wrap; padding: 1px;}          
+        .marka-proizvoda {padding: 0.5vh 0vw; margin: 0.5vh 0vw; font-weight: bolder;}
+        .naziv-proizvoda {padding: 0.5vh 0vw; margin: 0.5vh 0vw;}
+        .cijena-proizvoda {padding: 0.5vh 0vw; margin: 0.5vh 0vw; font-weight: bold;}
+        .boja-veličina-proizvoda {display: flex; flex-direction: row; 
+            padding: 0.5vh 0vw; margin: 0.5vh 0vw; font-size: smaller;} 
+        .boja-proizvoda, .veličina-proizvoda {padding: 4px;}
+        .div-buttona-proizvoda {margin: 0.5vh 0vw; padding: 0.5vh 0vw;}
+        .button-proizvoda {width: 100%; text-align: center;} 
+        .button-proizvoda:hover {background-color: crimson; color: white;} 
+        --*/
+
+        main {display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
+        section {display: flex; flex-wrap: wrap; justify-content:right; align-items: flex-start;
+            padding-left: 3vw; padding-top: 5vh; padding-bottom: 5vh; margin-top: 2vh;}
+        .lijevi-div {width: 68%; display: flex; flex-wrap: wrap;}
+        .desni-div {width: 30%; padding-left: 1vw; display: flex; flex-wrap: wrap;} 
+        fieldset {width: 100%; border-color: lightgrey;}
+        legend {color: dimgrey;}
+
+        .redni-broj {padding: 1px 4px; border: 1px solid dimgrey;}         
+        input {width: 50px; height: 20px; border-color: lightgrey; box-shadow: 1px 2px 1px lightgrey;}
+        .link-natrag {text-decoration: none;}
+        .link-natrag:visited {color: crimson;}
+        .link-natrag:hover {text-decoration: underline; color: crimson;}    
+        
+        table {width: 100%;}        
+        td {border: solid 1px white; padding: 1rem;}
+        .redak-sveukupno {background-color: lightgray;}
+        tr {height: 6vh;}       
+        p {font-size: small; color: dimgrey;}
+
+        .div-naruci {width: 100%;}        
+        button {width:100%; padding: 10px 25px; background-color: goldenrod; color: white; font-size: large;}
+        button:hover {border: 1px solid grey; background-color: crimson;}
+        
+        
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <iframe src="./partials/header.html" width="100%" class="auto-height-iframe"></iframe>
+    </header>
+
+    <header class="podheader"><div id="pod-div">KOŠARICA</div></header>
+
+
+    <main>
+        <section>
+            <div class="lijevi-div">
+                
+                <fieldset class="fieldset1">
+                    <legend>PROIZVODI U VAŠOJ KOŠARICI</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="redni-broj">1.</div>
+                            </td>
+                            <td>
+                                <h3>ŽENSKA TRENERKA PAMUK SIVA ELEGANS</h3>
+                                <a href=""><img src="https://fastly.picsum.photos/id/411/200/200.jpg?hmac=OVYhfXZUSeIPuy2vvqvn56l4Y8YZjUzJ57HIaxnjdTQ" width="30%" height="30%" alt="" align="left" style="padding-right: 0.5vw;"></a>
+                                <p>Veličina: XL</p>
+                                <p>Boja: tamno siva</p>                                        
+                            </td>
+                            <td>
+                                <p>Cijena:</p>
+                                <p>20,99€</p>
+                            </td>                    
+                            <td>
+                                <p>Količina:</p>
+                                <p>
+                                <form action="">
+                                    <input type="number" name="količina" min="1" max="50">
+                                </form>
+                               </p>
+                            </td>                            
+                        </tr>                   
+                    </table>  
+                </fieldset>  
+                <div>                    
+                    <p>
+                    <a href="products.html" target="_parent" class="link-natrag"><< Natrag na Proizvode</a>
+                    </p>                    
+                </div>              
+            </div>
+
+            <div class="desni-div">
+                <fieldset class="fieldset2">
+                    <legend>IZNOS</legend>
+                <table>
+                    <tr>
+                        <td>
+                            Proizvod:                                                       
+                        </td>
+                        <td>20,99€</td>
+                    </tr>
+                    <tr>
+                        <td>Cijena dostave:</td>
+                        <td>3,99€</td>
+                    </tr>                                                         
+                    <tr class="redak-sveukupno">
+                        <td>Sveukupno:</td>
+                        <td>23,99€</td>
+                    </tr>
+                </table>                                
+                </fieldset>
+                <div class="div-naruci">
+                    <form action="checkout.html">
+                        <p>
+                        <button>NARUČI >> </button>
+                        </p>
+                    </form>
+                </div>  
+            </div> 
+             
+        </section>
+
+    </main>
+
+    <footer>
+        <iframe src="./partials/footer.html"width="100%" class="auto-height-iframe"></iframe>
+    </footer>
+    
+</body>
+</html>

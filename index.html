@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELegans WebShop</title>    
+    <link rel="stylesheet" href="./js/javascript.js">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+        main {display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}      
+        section {height: 90vh; display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap; text-align: center;}
+        .sect1 {background-image:url(images/banner.jpg); background-size: cover; background-repeat: no-repeat; background-position:top;
+            color: white; justify-content: center; align-items: center;
+            border-top-right-radius: 10%; border-bottom-left-radius: 10%;
+            transition-property: padding-bottom padding-left color font-weight; transition-duration: 1.5s; transition-timing-function:ease;}
+            .sect1:hover {padding-bottom: 3vh; padding-left: 3vh; color: gold; font-weight: bolder;}
+
+        #text-banner {width: 50%; font-size: 3rem; text-align: center;}            
+
+        .sect2 {background-color: white; margin-top: 1vh; margin-bottom: 0.5vh;}
+        .sect2 > div {height: 80%; background-color: coral; 
+            flex-wrap: wrap; justify-content: space-between; flex: 1 1 auto; margin: 0.5vh;}
+
+        .sect3 {background-color: lightgrey; margin-top: 0.5vh; margin-bottom: 0.5vh; }
+        .sect3 > div:first-of-type {width: 100%; height: 10%; }
+        .sect3 > div {height: 80%; background-color: yellowgreen; 
+            flex-wrap: wrap; justify-content: space-between; flex: 1 1 auto; margin: 0.5vh;} 
+            
+        .sect4 {margin-top: 0.5vh; margin-bottom: 1vh; flex-direction: row; align-items: center; text-align: center; flex: 1 1 auto; }
+        .sect4 > div:first-of-type {width: 100%; height: 10%; }
+        .sect4 > div {height: 80%; background-color: orangered; 
+            flex-wrap: wrap; justify-content: space-between; flex: 1 1 auto; margin: 0.5vh;}
+            .blog-aktualno {background-image: url(./images/fashion-designer-template-new-arrival-header-img.jpg); background-size: cover; background-position: center;
+            color: crimson;}
+            .blog, .aktualno {width:47%; text-align:left; padding-left: 1vw;} 
+            .blog {background-image: url(./images/spring.png); background-size: cover;}
+        
+
+        .sect5 {background-color: crimson; height: 40vh; margin-top: 0.5vh; margin-bottom: 0.5vh; }
+        table {width: 100%; height: 70%; padding: 1rem; color: white;
+            display: flex; flex-wrap: wrap; text-align: center; text-align: center;}
+            tr, tr {flex-wrap: wrap;}
+        button {padding: 1rem 2.5rem; border: none;}
+        button:hover {background-color: lightgrey;} 
+        #news-email {width: 14vw; padding: 1rem; border: none;}
+        #privacy-link {text-decoration: underline; color: white;}
+        
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <iframe src="./partials/header.html" width="100%" class="auto-height-iframe"></iframe>
+    </header>
+    <header class="podheader"><div id="pod-div">Moda ELegans / WebShop</div></header>
+
+    <main>
+        <section class="sect1">            
+            <div id="text-banner">
+            BLAGDANSKI POPUST 50%
+            </div>            
+        </section>
+
+        <section class="sect2">                       
+            <div>žene</div>
+            <div>muškarci</div>
+            <div>djeca</div>
+            <div>modni dodaci</div>
+        </section>
+
+        <section class="sect3">
+            <div>POPULARNO</div>           
+            <div>haljine</div>
+            <div>duksice</div>
+            <div>kaputi</div>
+            <div>hlače</div>
+        </section>
+
+        <section class="sect4">
+            <div class="blog-aktualno">
+                BLOG & AKTUALNO
+            </div>
+            <div class="blog">                 
+                    <h1>Top 5 dodataka za proljeće 2024.</h1>
+                    <time>01/01/2024</time>                                         
+                    <p>
+                    Evo 5 nekonvencionalnih proljetnih dodataka koje smo pronašli gledajući najnovije trendove s modnih pista ali i ponudu vrhunskih modnih marki...
+                    </p>
+                    <button>Saznajte više</button>                
+            </div>
+            <div class="aktualno">
+               <h1>nešto drugo</h1>
+               <time>01/01/2024</time>               
+               <p>o aktualnostima recimo</p>
+            </div>
+        </section>
+
+        <section class="sect5">
+            <table>
+                <tr id="table-left">
+                    <td><strong>NEWSLETTER</strong></td>
+                    <td>
+                        <form action="action/page">
+                            <input type="email" name="email" id="news-email" placeholder="Upište Vaš e-mail">
+                            <button type="submit">Prijava</button>
+                        </form>
+                    </td>
+                </tr>
+                <tr id="table-right">
+                    <td>Prijavite se na naš newsletter i ostvarite 15% popusta na svoju prvu kupovinu i primajte obavijesti o našim promocijama i proizvodima.</td>
+                    <td>
+                        <form action="action/page">
+                            <input type="checkbox">
+                            Pročitao sam i slažem se sa sadržajem <a href="privacy.html" target="_blank" title="ELegans/Politika privatnosti" id="privacy-link"> politika privatnosti</a> (privolu je moguće opozvati u bilo kojem trenutku). <br><br>
+                            <input type="checkbox">
+                            Prijavi se na newsletter.
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <iframe src="./partials/footer.html"width="100%" class="auto-height-iframe"></iframe>
+    </footer>
+    
+    
+</body>
+</html>

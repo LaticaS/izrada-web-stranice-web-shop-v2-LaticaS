@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog detail - trenutno probno polje</title>
+    <link rel="stylesheet" href="./js/javascript.js">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>        
+        main {display:inline-block;}
+        aside {float: left; position: sticky; top: 0%; left: 0%;}             
+        section {width: 76%; float: right; display: flex; flex-wrap: wrap; background-color: peru; padding: 1vh 0vw; margin: 1vh 0vw;}
+        .pojedini-proizvod {height: fit-content; flex-direction: column; flex-wrap: wrap; flex: 1 1 auto;
+            text-align: center; background-color: green; padding: 2px; border: 1px solid white;} 
+        .gornja-slika {background-color: teal; padding: 1px;}
+        #slika {border-top-left-radius: 30%; border-bottom-right-radius: 30%;}
+        .donji-podaci {flex-direction: column; align-content: space-between; flex-wrap: wrap; background-color: blueviolet; padding: 1px;}
+        .marka-proizvoda {padding: 0.5vh 0vw; margin: 0.5vh 0vw;}
+        .naziv-proizvoda {padding: 0.5vh 0vw; margin: 0.5vh 0vw;}
+        .cijena-proizvoda {padding: 0.5vh 0vw; margin: 0.5vh 0vw;}
+        .boja-veličina-proizvoda {display: flex; flex-direction: row; justify-content: space-around; background-color: yellowgreen; padding: 0.5vh 0vw; margin: 0.5vh 0vw;} 
+        .button-proizvoda {width: 100%; font-size: small; margin: 0.5vh 0vw} 
+
+
+
+    </style>
+    
+</head>
+<body>
+    <header>
+        <iframe src="./partials/header.html" width="100%" class="auto-height-iframe"></iframe>
+    </header>
+
+    <header class="podheader"><div id="pod-div">Blog detail</div></header>
+
+    <main> 
+        <aside>
+          <form action="action/page">
+              <div>
+                  <h3>VELIČINA</h3>
+                  <hr>
+                  <p>
+                  <ul>
+                      <li><input type="radio" name="size" value="XXS"><label for="sizeXXS"> XXS</label></li>
+                      <li><input type="radio" name="size" value="XS"><label for="sizeXS"> XS</label></li>
+                      <li><input type="radio" name="size" value="XS/S"><label for="sizeXS/S"> XS/S</label></li>
+                      <li><input type="radio" name="size" value="S"><label for="sizeS"> S</label></li>
+                      <li><input type="radio" name="size" value="S/M"><label for="sizeS/M"> S/M</label></li>
+                      <li><input type="radio" name="size" value="M"><label for="sizeM"> M</label></li>
+                      <li><input type="radio" name="size" value="M/L"><label for="sizeM/L"> M/L</label></li>
+                      <li><input type="radio" name="size" value="L"><label for="sizeL"> L</label></li>
+                      <li><input type="radio" name="size" value="L/XL"><label for="sizeL/XL"> L/XL</label></li>
+                      <li><input type="radio" name="size" value="XL"><label for="sizeXL"> XL</label></li>
+                      <li><input type="radio" name="size" value="XXL"><label for="sizeXXL"> XXL</label></li>                       
+                  </ul>
+                  </p>
+              </div>
+              <div>
+                  <h3>BOJA</h3>
+                  <hr>
+                  <p>
+                  <ul>
+                      <li><input type="checkbox" name="boja" value="bež"><label for="boja-bež"> bež</label></li>
+                      <li><input type="checkbox" name="boja" value="bijela"><label for="boja-bijela"> bijela</label></li>
+                      <li><input type="checkbox" name="boja" value="crna"><label for="boja-crna"> crna</label></li>
+                      <li><input type="checkbox" name="boja" value="crvena"><label for="boja-crvena"> crvena</label></li>
+                      <li><input type="checkbox" name="boja" value="plava"><label for="boja-plava"> plava</label></li>
+                      <li><input type="checkbox" name="boja" value="siva"><label for="boja-siva"> siva</label></li>
+                      <li><input type="checkbox" name="boja" value="roza"><label for="boja-roza"> roza</label></li>                        
+                      <li><input type="checkbox" name="boja" value="zlatna"><label for="boja-zlatna"> zlatna</label></li>
+                      <li><input type="checkbox" name="boja" value="žuta"><label for="boja-žuta"> žuta</label></li>
+                      <li><input type="checkbox" name="boja" value="zelena"><label for="boja-zelena"> zelena</label></li>
+                      <li><input type="checkbox" name="boja" value="narančasta"><label for="boja-naranča"> naranča</label></li>
+                      <li><input type="checkbox" name="boja" value="smeđa"><label for="boja-smeđa"> smeđa</label></li>
+                      <li><input type="checkbox" name="boja" value="srebrna"><label for="boja-srebrna"> srebrna</label></li>                        
+                      <li><input type="checkbox" name="boja" value="ostalo"><label for="boja-ostalo"> ostalo</label></li>
+                  </ul>
+                  </p>
+                  <p>
+                      <button type="submit" name="submit" value="Pošalji">Pošalji</button>
+                  </p>
+              </div>
+          </form> 
+      </aside>
+
+        <section>                               
+            <div class="pojedini-proizvod">
+
+                    <div class="gornja-slika">
+                      <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
+                    </div>
+
+                    <div class="donji-podaci">
+                      <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
+                      <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
+                      <div class="cijena-proizvoda">$65</div>                      
+                      <div class="boja-veličina-proizvoda">
+                        <div class="boja-proizvoda">
+                            boja
+                        </div>
+                        <div class="veličina-proizvoda">
+                            veličina
+                        </div>            
+                      </div>
+                      <div class="button-proizvoda">
+                      <button>DODATI U KOŠARICU</button>
+                      </div>
+                    </div>
+            </div>
+
+            <div class="pojedini-proizvod">
+
+                <div class="gornja-slika">
+                  <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
+                </div>
+
+                <div class="donji-podaci">
+                  <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
+                  <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
+                  <div class="cijena-proizvoda">$65</div>                      
+                  <div class="boja-veličina-proizvoda">
+                    <div class="boja-proizvoda">
+                        boja
+                    </div>
+                    <div class="veličina-proizvoda">
+                        veličina
+                    </div>            
+                  </div>
+                  <div class="button-proizvoda">
+                  <button>DODATI U KOŠARICU</button>
+                  </div>
+                </div>
+        </div>
+
+        <div class="pojedini-proizvod">
+
+            <div class="gornja-slika">
+              <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
+            </div>
+
+            <div class="donji-podaci">
+              <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
+              <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
+              <div class="cijena-proizvoda">$65</div>                      
+              <div class="boja-veličina-proizvoda">
+                <div class="boja-proizvoda">
+                    boja
+                </div>
+                <div class="veličina-proizvoda">
+                    veličina
+                </div>            
+              </div>
+              <div class="button-proizvoda">
+              <button>DODATI U KOŠARICU</button>
+              </div>
+            </div>
+    </div>
+
+    <div class="pojedini-proizvod">
+
+        <div class="gornja-slika">
+          <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
+        </div>
+
+        <div class="donji-podaci">
+          <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
+          <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
+          <div class="cijena-proizvoda">$65</div>                      
+          <div class="boja-veličina-proizvoda">
+            <div class="boja-proizvoda">
+                boja
+            </div>
+            <div class="veličina-proizvoda">
+                veličina
+            </div>            
+          </div>
+          <div class="button-proizvoda">
+          <button>DODATI U KOŠARICU</button>
+          </div>
+        </div>
+</div>
+
+<div class="pojedini-proizvod">
+
+    <div class="gornja-slika">
+      <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
+    </div>
+
+    <div class="donji-podaci">
+      <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
+      <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
+      <div class="cijena-proizvoda">$65</div>                      
+      <div class="boja-veličina-proizvoda">
+        <div class="boja-proizvoda">
+            boja
+        </div>
+        <div class="veličina-proizvoda">
+            veličina
+        </div>            
+      </div>
+      <div class="button-proizvoda">
+      <button>DODATI U KOŠARICU</button>
+      </div>
+    </div>
+</div>
+
+<div class="pojedini-proizvod">
+
+    <div class="gornja-slika">
+      <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
+    </div>
+
+    <div class="donji-podaci">
+      <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
+      <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
+      <div class="cijena-proizvoda">$65</div>                      
+      <div class="boja-veličina-proizvoda">
+        <div class="boja-proizvoda">
+            boja
+        </div>
+        <div class="veličina-proizvoda">
+            veličina
+        </div>            
+      </div>
+      <div class="button-proizvoda">
+      <button>DODATI U KOŠARICU</button>
+      </div>
+    </div>
+</div>
+
+<div class="pojedini-proizvod">
+
+    <div class="gornja-slika">
+      <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
+    </div>
+
+    <div class="donji-podaci">
+      <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
+      <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
+      <div class="cijena-proizvoda">$65</div>                      
+      <div class="boja-veličina-proizvoda">
+        <div class="boja-proizvoda">
+            boja
+        </div>
+        <div class="veličina-proizvoda">
+            veličina
+        </div>            
+      </div>
+      <div class="button-proizvoda">
+      <button>DODATI U KOŠARICU</button>
+      </div>
+    </div>
+</div>
+
+<div class="pojedini-proizvod">
+
+    <div class="gornja-slika">
+      <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
+    </div>
+
+    <div class="donji-podaci">
+      <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
+      <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
+      <div class="cijena-proizvoda">$65</div>                      
+      <div class="boja-veličina-proizvoda">
+        <div class="boja-proizvoda">
+            boja
+        </div>
+        <div class="veličina-proizvoda">
+            veličina
+        </div>            
+      </div>
+      <div class="button-proizvoda">
+      <button>DODATI U KOŠARICU</button>
+      </div>
+    </div>
+</div>
+</section>
+
+
+<section>
+<div class="pojedini-proizvod">
+
+    <div class="gornja-slika">
+      <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
+    </div>
+
+    <div class="donji-podaci">
+      <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
+      <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
+      <div class="cijena-proizvoda">$65</div>                      
+      <div class="boja-veličina-proizvoda">
+        <div class="boja-proizvoda">
+            boja
+        </div>
+        <div class="veličina-proizvoda">
+            veličina
+        </div>            
+      </div>
+      <div class="button-proizvoda">
+      <button>DODATI U KOŠARICU</button>
+      </div>
+    </div>
+</div>
+
+<div class="pojedini-proizvod">
+
+    <div class="gornja-slika">
+      <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
+    </div>
+
+    <div class="donji-podaci">
+      <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
+      <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
+      <div class="cijena-proizvoda">$65</div>                      
+      <div class="boja-veličina-proizvoda">
+        <div class="boja-proizvoda">
+            boja
+        </div>
+        <div class="veličina-proizvoda">
+            veličina
+        </div>            
+      </div>
+      <div class="button-proizvoda">
+      <button>DODATI U KOŠARICU</button>
+      </div>
+    </div>
+</div>
+
+<div class="pojedini-proizvod">
+
+    <div class="gornja-slika">
+      <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
+    </div>
+
+    <div class="donji-podaci">
+      <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
+      <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
+      <div class="cijena-proizvoda">$65</div>                      
+      <div class="boja-veličina-proizvoda">
+        <div class="boja-proizvoda">
+            boja
+        </div>
+        <div class="veličina-proizvoda">
+            veličina
+        </div>            
+      </div>
+      <div class="button-proizvoda">
+      <button>DODATI U KOŠARICU</button>
+      </div>
+    </div>
+</div>
+
+<div class="pojedini-proizvod">
+
+    <div class="gornja-slika">
+      <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
+    </div>
+
+    <div class="donji-podaci">
+      <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
+      <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
+      <div class="cijena-proizvoda">$65</div>                      
+      <div class="boja-veličina-proizvoda">
+        <div class="boja-proizvoda">
+            boja
+        </div>
+        <div class="veličina-proizvoda">
+            veličina
+        </div>            
+      </div>
+      <div class="button-proizvoda">
+      <button>DODATI U KOŠARICU</button>
+      </div>
+    </div>
+</div>
+
+<div class="pojedini-proizvod">
+
+    <div class="gornja-slika">
+      <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
+    </div>
+
+    <div class="donji-podaci">
+      <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
+      <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
+      <div class="cijena-proizvoda">$65</div>                      
+      <div class="boja-veličina-proizvoda">
+        <div class="boja-proizvoda">
+            boja
+        </div>
+        <div class="veličina-proizvoda">
+            veličina
+        </div>            
+      </div>
+      <div class="button-proizvoda">
+      <button>DODATI U KOŠARICU</button>
+      </div>
+    </div>
+</div>
+
+<div class="pojedini-proizvod">
+
+    <div class="gornja-slika">
+      <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
+    </div>
+
+    <div class="donji-podaci">
+      <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
+      <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
+      <div class="cijena-proizvoda">$65</div>                      
+      <div class="boja-veličina-proizvoda">
+        <div class="boja-proizvoda">
+            boja
+        </div>
+        <div class="veličina-proizvoda">
+            veličina
+        </div>            
+      </div>
+      <div class="button-proizvoda">
+      <button>DODATI U KOŠARICU</button>
+      </div>
+    </div>
+</div>
+
+<div class="pojedini-proizvod">
+
+    <div class="gornja-slika">
+      <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
+    </div>
+
+    <div class="donji-podaci">
+      <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
+      <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
+      <div class="cijena-proizvoda">$65</div>                      
+      <div class="boja-veličina-proizvoda">
+        <div class="boja-proizvoda">
+            boja
+        </div>
+        <div class="veličina-proizvoda">
+            veličina
+        </div>            
+      </div>
+      <div class="button-proizvoda">
+      <button>DODATI U KOŠARICU</button>
+      </div>
+    </div>
+</div>
+
+<div class="pojedini-proizvod">
+
+    <div class="gornja-slika">
+      <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
+    </div>
+
+    <div class="donji-podaci">
+      <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
+      <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
+      <div class="cijena-proizvoda">$65</div>                      
+      <div class="boja-veličina-proizvoda">
+        <div class="boja-proizvoda">
+            boja
+        </div>
+        <div class="veličina-proizvoda">
+            veličina
+        </div>            
+      </div>
+      <div class="button-proizvoda">
+      <button>DODATI U KOŠARICU</button>
+      </div>
+    </div>
+</div>
+        </section>      
+     
+</main>
+
+<footer>
+    <iframe src="./partials/footer.html"width="100%" class="auto-height-iframe"></iframe>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktirajte nas / ELegans</title>
+    <link rel="stylesheet" href="./js/javascript.js">
+    <link rel="stylesheet" href="./css/style.css">
+   
+    <style>
+        main {display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
+        section {display: flex; flex-wrap: wrap; justify-content:space-around;}
+        div {flex-wrap: wrap; justify-content: center; align-items: center; padding: 1px;}
+        .con-lijevi {width: 65%;}
+        .con-desni {background-color: lightgrey; padding: 1rem; width: 30%;}
+        span {color: crimson;}        
+        button {padding: 1rem 2.5rem; border: 1px solid dimgrey;} 
+        button:hover {background-color: crimson; color: white;}
+        a {color: black;}
+        a:hover {color: crimson;}
+        nav {width: 100%; text-align: center;}
+        #Face:hover {opacity: 50%;} 
+        #Insta:hover {opacity: 50%;}        
+        #Twitt:hover {opacity: 50%;}        
+        
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <iframe src="./partials/header.html" width="100%" class="auto-height-iframe"></iframe>
+    </header>
+
+    <header class="podheader"><div id="pod-div">KONTAKTIRAJTE NAS</div></header>
+
+    <main>
+        <section>
+            <div class="con-lijevi">
+                <h1>Pišite nam</h1>
+                    <form action="action/page">
+                        <p>                        
+                        <label for="ime-prezime"> Ime i prezime<span>*</span> </label><br>
+                        <input type="text" id="ime" name="ime" placeholder="Upišite ime i prezime" class="ime-prezime">
+                        </p>
+
+                        <p> 
+                        <label for="mail"> E-mail<span>*</span> </label><br>
+                        <input type="email" id="mail" name="email" placeholder=" Upišite email" class="email">
+                        </p> 
+                        
+                        <p>
+                        <label for="phone"> Telefon </label><br>
+                        <input type="phone" id="phone" name="phone" placeholder=" Upišite broj telefona" class="phone">
+                        </p>
+
+                        <p>                        
+                        <label for="Poruka"> Vaša poruka<span>*</span> </label><br>
+                        <textarea name="poruka" id="poruka" cols="50" rows="10" placeholder=" Upišite poruku" style="margin-left: 1rem;" class="textarea"></textarea>
+                        </p>                        
+                        
+                        <p>
+                        <small><span>*</span>Polja označena zvjezdicom su obavezna.</small>
+                        <br><br>
+                        <input type="checkbox">
+                        Pročitao sam i slažem se sa sadržajem <a href="privacy.html" target="_blank" title="ELegans/Politika privatnosti" id="privacy-link"> politika privatnosti</a> (privolu je moguće opozvati u bilo kojem trenutku).
+                        <br><br>
+                        <button>Pošalji</button>
+                        </p>                                        
+                        
+                    </form>
+            </div>
+
+            <div class="con-desni">
+                
+                <h1>ELegans Web Info</h1>
+                <p>Telefon: 022 / 123 456 
+                    <br>
+                    <small><span>*</span>Infolinija je otvorena 09:00-17:00 radnim danima.</small>
+                </p>
+                <p>E-mail: info@elegans.hr</p>                               
+                <p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1589.7798913897095!2d15.918575200563454!3d43.70511174747695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1335251a14dd3e07%3A0x1bb86dab00ef522!2sTommy!5e0!3m2!1shr!2shr!4v1703889267101!5m2!1shr!2shr" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </p>                 
+                <p>Adresa: Narodnog preporoda 1, 22000 Šibenik</p>
+                <p>OIB: 12345678901</p>
+                <p>
+                <nav>
+                   <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-outline-svgrepo-com.svg" width="30px" height="30px" alt="Facebook" title="Facebook" id="Face"></a>
+                   <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-svgrepo-com.svg" width="30px" height="30px" alt="Instagram" title="Instagram" id="Insta"></a>
+                   <a href="https://twitter.com/" target="_blank"><img src="images/twitter-svgrepo-com.svg" width="30px" height="30px" alt="Twitter/X" title="Twitter/X" id="Twitt"></a>
+                </nav>
+                </p>            
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <iframe src="./partials/footer.html"width="100%" class="auto-height-iframe"></iframe>
+    </footer>
+    
+</body>
+</html>

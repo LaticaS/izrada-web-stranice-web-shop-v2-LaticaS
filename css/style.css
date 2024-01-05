@@ -1,0 +1,13 @@
+body {background-color:whitesmoke; position: relative;}
+main {background-color: white; width: 95%; height: fit-content; font-family: Arial; text-align: justify; padding: 2vh 2vw;}
+section {width: 80%;}
+.auto-height-iframe {border: none; width: 100%; margin: 0;}
+
+.podheader {width: 100%; height: 10vh; background-color: crimson; color: lightgrey;
+    font-family: "Arial Narrow"; font-size:large; 
+    display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center;
+    border-bottom: 1vh solid white; border-top: 1vh solid white;
+    border-top-right-radius: 30%; border-bottom-left-radius: 30%;}
+    #pod-div {padding-right: 2vw; padding-left: 2vw;}
+    h1, h2, h3 {color: dimgrey;}
+   
