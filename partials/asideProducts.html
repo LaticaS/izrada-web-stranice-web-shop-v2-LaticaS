@@ -9,12 +9,21 @@
 
     <style>
         aside {width: 100%; float: left; background-color: white; font-family: Verdana; font-size:small;
-            text-align: left; padding: 1px;}
-            div {padding-bottom: 1vh;}
-            h3 {color: dimgrey;}
-        ul {list-style-type: none; color: crimson;}        
+            text-align: left;}            
+            h3 {color: dimgrey; padding-left: 2vw;}
+            h3:hover {font-size: larger;}       
+        
+        .ul-aside {list-style-type: none;}
+        a {color: crimson; text-decoration: none;}
+        a:link {color: crimson;}
+        a:visited {color: crimson;}
+        a:hover {color: crimson; text-decoration: underline;}
+        a:active {color:dimgrey;}  
+        
+        .ul-aside-filteri {list-style-type: none; color: crimson;}
+        li:hover {font-size: larger; font-weight: bolder;}
                 
-        .button-aside {width:100%; padding: 10px 25px; background-color: lightgrey; font-size: large;}
+        .button-aside {width:100%; padding: 10px 25px; margin-bottom: 1vh; background-color: lightgrey; font-size: large;}
         .button-aside:hover {border: 1px solid grey; background-color: crimson; color: white;}
 
     </style>
@@ -23,50 +32,91 @@
 <body>
     <object data="" type="">
         <aside>
-            <form action="">
-                <div>
-                    <h3>VELIČINA</h3>
-                    <hr>
-                    <p>
-                    <ul>
+            <div class="div-aside">
+                <h3>FILTERI</h3>                
+                    <ul class="ul-aside">
+                        <li><a href="../women-products.html" target="_parent">ŽENE</a></li>
+                        <li><a href="../men-products.html" target="_parent">MUŠKARCI</a></li>                                            
+                    </ul> 
+                </div>
+    
+                <h3>ODJEĆA</h3>
+                <ul class="ul-aside">
+                    <li><a href="">Haljine</a></li>
+                    <li><a href="">Suknje</a></li>                    
+                    <li><a href="">Bluze & Košulje</a></li>
+                    <li><a href="">Majice & Topići</a></li>
+                    <li><a href="">Kombinezoni</a></li>
+                    <li><a href="">Majice sa kapuljačom</a></li>                    
+                    <li><a href="">Trenirke</a></li>
+                    <li><a href="">Hlače & Traperice</a></li>                    
+                    <li><a href="">Sakoi & Odijela</a></li>
+                    <li><a href="">Jakne & Kaputi</a></li>
+                    <li><a href="">Puloveri & Blejzeri</a></li>
+                    <li><a href="">Pidžame & Spavaćice</a></li>
+                </ul> 
+            </div>
+    
+            <div class="div-aside">
+                <h3>MODNI DODACI</h3>
+                <ul class="ul-aside">
+                    <li><a href="">Šalovi & Marame</a></li>
+                    <li><a href="">Šeširi & Rukavice</a></li>
+                    <li><a href="">Remeni & Kravate</a></li>
+                    <li><a href="">Torbice & Novčanici</a></li>                
+                </ul>
+            </div>
+
+            <form action="">                
+                <div class="div-aside">
+                    <h3>VELIČINA</h3>                  
+
+                    <ul class="ul-aside-filteri">
+                        <div class="ul-column">
                         <li><input type="radio" name="size" value="XXS"><label for="sizeXXS"> XXS</label></li>
                         <li><input type="radio" name="size" value="XS"><label for="sizeXS"> XS</label></li>
                         <li><input type="radio" name="size" value="XS/S"><label for="sizeXS/S"> XS/S</label></li>
                         <li><input type="radio" name="size" value="S"><label for="sizeS"> S</label></li>
                         <li><input type="radio" name="size" value="S/M"><label for="sizeS/M"> S/M</label></li>
                         <li><input type="radio" name="size" value="M"><label for="sizeM"> M</label></li>
+                        </div>
+                        <div>
+                        <div class="ul-column"> 
                         <li><input type="radio" name="size" value="M/L"><label for="sizeM/L"> M/L</label></li>
                         <li><input type="radio" name="size" value="L"><label for="sizeL"> L</label></li>
                         <li><input type="radio" name="size" value="L/XL"><label for="sizeL/XL"> L/XL</label></li>
                         <li><input type="radio" name="size" value="XL"><label for="sizeXL"> XL</label></li>
-                        <li><input type="radio" name="size" value="XXL"><label for="sizeXXL"> XXL</label></li>                       
+                        <li><input type="radio" name="size" value="XXL"><label for="sizeXXL"> XXL</label></li>
+                        </div>                      
                     </ul>
-                    </p>
+                    
                 </div>
-                <div>
+                <div class="div-aside">
                     <h3>BOJA</h3>
-                    <hr>
-                    <p>
-                    <ul>
+                    
+                    <ul class="ul-aside-filteri">
+                        <div class="ul-column"> 
                         <li><input type="checkbox" name="boja" value="bež"><label for="boja-bež"> bež</label></li>
                         <li><input type="checkbox" name="boja" value="bijela"><label for="boja-bijela"> bijela</label></li>
                         <li><input type="checkbox" name="boja" value="crna"><label for="boja-crna"> crna</label></li>
                         <li><input type="checkbox" name="boja" value="crvena"><label for="boja-crvena"> crvena</label></li>
                         <li><input type="checkbox" name="boja" value="plava"><label for="boja-plava"> plava</label></li>
                         <li><input type="checkbox" name="boja" value="siva"><label for="boja-siva"> siva</label></li>
-                        <li><input type="checkbox" name="boja" value="roza"><label for="boja-roza"> roza</label></li>                        
+                        <li><input type="checkbox" name="boja" value="roza"><label for="boja-roza"> roza</label></li>
+                        <div>
+                        <div class="ul-column">
                         <li><input type="checkbox" name="boja" value="zlatna"><label for="boja-zlatna"> zlatna</label></li>
                         <li><input type="checkbox" name="boja" value="žuta"><label for="boja-žuta"> žuta</label></li>
-                        <li><input type="checkbox" name="boja" value="zelena"><label for="boja-zelena"> zelena</label></li>
-                        <li><input type="checkbox" name="boja" value="narančasta"><label for="boja-naranča"> naranča</label></li>
+                        <li><input type="checkbox" name="boja" value="zelena"><label for="boja-zelena"> zelena</label></li>                        
                         <li><input type="checkbox" name="boja" value="smeđa"><label for="boja-smeđa"> smeđa</label></li>
                         <li><input type="checkbox" name="boja" value="srebrna"><label for="boja-srebrna"> srebrna</label></li>                        
                         <li><input type="checkbox" name="boja" value="ostalo"><label for="boja-ostalo"> ostalo</label></li>
-                    </ul>
-                    </p>
-                    <p>
-                        <button type="submit" name="submit" value="Pošalji" class="button-aside">Pošalji</button>
-                    </p>
+                        </div>
+                    </ul>                    
+                    
+                    <button type="submit" name="submit" value="Pošalji" class="button-aside">Pošalji</button>
+                    
+                    
                 </div> 
 
             </form>

@@ -6,22 +6,25 @@
     <title>Kontaktirajte nas / ELegans</title>
     <link rel="stylesheet" href="./js/javascript.js">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-newsletter.css">
    
     <style>
-        main {display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
-        section {display: flex; flex-wrap: wrap; justify-content:space-around;}
+        main {}
+        section {position: relative; top: 0%; left: 10%; display: flex; flex-wrap: wrap; justify-content:space-around;}
         div {flex-wrap: wrap; justify-content: center; align-items: center; padding: 1px;}
-        .con-lijevi {width: 65%;}
+        .con-lijevi {width: 65%; text-align: left}
         .con-desni {background-color: lightgrey; padding: 1rem; width: 30%;}
         span {color: crimson;}        
-        button {padding: 1rem 2.5rem; border: 1px solid dimgrey;} 
-        button:hover {background-color: crimson; color: white;}
+        .button-contact {padding: 1rem 2.5rem; border: 1px solid dimgrey;} 
+        .button-contact:hover {background-color: crimson; color: white;}
         a {color: black;}
         a:hover {color: crimson;}
         nav {width: 100%; text-align: center;}
         #Face:hover {opacity: 50%;} 
         #Insta:hover {opacity: 50%;}        
-        #Twitt:hover {opacity: 50%;}        
+        #Twitt:hover {opacity: 50%;}         
+        
+        .button-newsletter:hover {background-color: lightgrey;}
         
     </style>
 
@@ -61,13 +64,16 @@
                         
                         <p>
                         <small><span>*</span>Polja označena zvjezdicom su obavezna.</small>
-                        <br><br>
+                        </p>
                         <input type="checkbox">
-                        Pročitao sam i slažem se sa sadržajem <a href="privacy.html" target="_blank" title="ELegans/Politika privatnosti" id="privacy-link"> politika privatnosti</a> (privolu je moguće opozvati u bilo kojem trenutku).
-                        <br><br>
-                        <button>Pošalji</button>
-                        </p>                                        
-                        
+                        Pročitao sam i slažem se sa sadržajem <a href="privacy.html" target="_blank" title="ELegans/Politika privatnosti" id="privacy-link"> politika privatnosti.</a>
+                        <p>
+                            (privolu je moguće opozvati u bilo kojem trenutku).
+                        </p> 
+                        <p>
+                            <button class="button-contact">Pošalji</button>
+                        </p>                       
+                       
                     </form>
             </div>
 
@@ -92,11 +98,36 @@
                 </nav>
                 </p>            
                 </div>
-        </section>
+        </section>       
+
     </main>
 
+    <table class="newsletter">
+        <tr id="table-left">
+            <td><strong>NEWSLETTER</strong></td>
+            <td>
+                <form action="action/page">
+                    <input type="email" name="email" id="news-email" placeholder="Upište Vaš e-mail">
+                    <button type="submit" class="button-newsletter">Prijava</button>
+                </form>
+            </td>
+        </tr>
+        <tr id="table-right">
+            <td>Prijavite se na naš newsletter i ostvarite 15% popusta na svoju prvu kupovinu i primajte obavijesti o našim promocijama i proizvodima.</td>
+            <td>
+                <form action="action/page">
+                    <input type="checkbox">
+                    Pročitao sam i slažem se sa sadržajem <a href="privacy.html" target="_blank" title="ELegans/Politika privatnosti" id="privacy-link"> politika privatnosti</a> (privolu je moguće opozvati u bilo kojem trenutku). <br><br>
+                    <input type="checkbox">
+                    Prijavi se na newsletter.
+                </form>
+            </td>
+        </tr>
+    </table>
+
+
     <footer>
-        <iframe src="./partials/footer.html"width="100%" class="auto-height-iframe"></iframe>
+        <iframe src="./partials/footer.html"width="100%" class="auto-height-iframe" border="0" height="200vh"></iframe>
     </footer>
     
 </body>

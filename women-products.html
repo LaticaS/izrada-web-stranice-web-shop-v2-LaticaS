@@ -7,7 +7,22 @@
     <link rel="stylesheet" href="./js/javascript.js">
     <link rel="stylesheet" href="./css/style.css">
    
-    <style>
+    <style>        
+        .aside-kategorije {float: left; position: sticky; top: 0%; left: 0%; background-color: white;} 
+        .section-proizvodi {float: right; width: 75%; background-color: brown; border: 3px solid ivory;
+            display: flex; flex-wrap: wrap; justify-content: center; align-items: center; flex: 1 1 auto;}
+
+        section > div {width: 200px; height: 100px; margin: 10px; padding: 5px; background-color: chartreuse; display: flex;}
+        
+        #blogCard {transition-property: padding-left; transition-duration: 4s; transition-timing-function: ease;}
+        #blogCard:hover {padding-left: 48%;}
+        a {color: aqua;}  
+
+        .moj-pokus {float: right; width: 75%; height: 8vh; background-color: black; color: aliceblue;
+            border: 1px solid red; margin: 1px; 
+            display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; flex: 1 1 auto;} 
+        .moj-pokus:hover {height: 30vh;}
+        span {width: 49%; text-align: center;}
         
     </style>
 
@@ -18,20 +33,51 @@
         <iframe src="./partials/header.html" width="100%" class="auto-height-iframe"></iframe>
     </header>
 
-    <header class="podheader"><div id="pod-div">UVJETI KORIŠTENJA</div></header>
+    <header class="podheader"><div id="pod-div">Women / ELegans</div></header>
 
     <main>
-        <aside>
-            <iframe src="./partials/asideProducts.html" class="auto-height-iframe"></iframe>
-          </aside> 
+        <aside class="aside-kategorije">
+            <iframe src="./partials/asideProducts.html" class="auto-height-iframe" border="0" height="380vh"></iframe>
+        </aside>
+        
+        <section class="moj-pokus">
+            <span>
+                <h4>Ž MODA</h4>
+                <ul>
+                    <li>haljine</li>
+                    <li>suknje</li>
+                </ul>
+            </span>
+            <span>
+                <h4>M MODA</h4>
+                <ul>
+                    <li>hlače</li>
+                    <li>kaputi</li>
+                </ul>
+            </span> 
+        </section>
 
+        <section class="section-proizvodi">
         <div>
             primjeri
-        </div>
+        </div> 
+        <div>primjeri</div>
+        <div>primjeri</div>
+        </section>       
+
+        <section class="section-proizvodi">            
+            <div>primjeri</div>
+            <div>primjeri</div>
+            <div>primjeri</div>
+        </section>      
+        
+        
+       
+
     </main>
 
     <footer>
-        <iframe src="./partials/footer.html"width="100%" class="auto-height-iframe"></iframe>
+        <iframe src="./partials/footer.html"width="100%" class="auto-height-iframe" border="0" height="200vh"></iframe>
     </footer>
     
 </body>

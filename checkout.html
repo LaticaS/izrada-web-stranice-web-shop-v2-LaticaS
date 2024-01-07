@@ -6,10 +6,11 @@
     <title>Plaćanje / ELegans</title>
     <link rel="stylesheet" href="./js/javascript.js">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-newsletter.css">
    
-    <style>
-        main {display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
-        section {display: flex; flex-wrap: wrap; justify-content:right; align-items: flex-start;
+    <style>            
+        section {position: relative; top: 0%; left: 10%;
+            display: flex; flex-wrap: wrap; justify-content:right; align-items: flex-start;
             padding-top: 5vh; padding-bottom: 5vh; margin-top: 2vh;}
         .lijevi-div {width: 63%;}
         .desni-div {width: 34%; padding-left: 2vw; display: flex; flex-direction: column; flex-wrap: wrap;} 
@@ -27,14 +28,16 @@
         .link-natrag:visited {color: crimson;}
         .link-natrag:hover {text-decoration: underline; color: crimson;}
 
-        td {border: solid 1px white; padding: 1rem;}
+        .ćelija-blagajna {border: solid 1px white; padding: 1rem;}
         .redak-sveukupno {background-color: lightgray;}
-        tr {height: 6vh;}       
+        .redak-blagajna {height: 6vh;}       
         p {font-size: small; color: dimgrey;}
         
 
-        button {width:100%; padding: 10px 25px; background-color: goldenrod; color: white; font-size: large;}
-        button:hover {border: 1px solid grey; background-color: crimson;}
+        .button-narudžba {width:100%; padding: 10px 25px; background-color: goldenrod; color: white; font-size: large;}
+        .button-narudžba:hover {border: 1px solid grey; background-color: crimson;}
+        
+        .button-newsletter:hover {background-color: lightgrey;}
         
 
 
@@ -88,28 +91,28 @@
             <div class="desni-div">
                 <fieldset class="fieldset2">
                     <legend>VAŠ IZBOR</legend>
-                <table>
-                    <tr>
-                        <td>
+                <table class="table-blagajna">
+                    <tr class="redak-blagajna">
+                        <td class="ćelija-blagajna">
                             <h3>ŽENSKA TRENERKA PAMUK SIVA ELEGANS</h3>
                             <a href=""><img src="https://fastly.picsum.photos/id/411/200/200.jpg?hmac=OVYhfXZUSeIPuy2vvqvn56l4Y8YZjUzJ57HIaxnjdTQ" width="30%" height="30%" alt="" align="left" style="padding-right: 0.5vw;"></a>
                             <p>Veličina: XL</p>
                             <p>Boja: tamno siva</p>
                             <p>Količina: 1</p>                            
                         </td>
-                        <td>20,99€</td>
+                        <td class="ćelija-blagajna">20,99€</td>
                     </tr>
-                    <tr>
-                        <td>Cijena dostave:</td>
-                        <td>3,99€</td>
+                    <tr class="redak-blagajna">
+                        <td class="ćelija-blagajna">Cijena dostave:</td>
+                        <td class="ćelija-blagajna">3,99€</td>
                     </tr>
-                    <tr>
-                        <td>PDV (uključeno u cijenu)</td>
-                        <td>25%</td>                        
+                    <tr class="redak-blagajna">
+                        <td class="ćelija-blagajna">PDV (uključeno u cijenu)</td>
+                        <td class="ćelija-blagajna">25%</td>                        
                     </tr>                                       
                     <tr class="redak-sveukupno">
-                        <td>Sveukupno:</td>
-                        <td>23,99€</td>
+                        <td class="ćelija-blagajna">Sveukupno:</td>
+                        <td class="ćelija-blagajna">23,99€</td>
                     </tr>
                 </table>
                 </fieldset>
@@ -123,18 +126,41 @@
                         <br>
                     </p>
                     <p>
-                        <button>ZAVRŠI NARUDŽBU</button>                        
+                        <button class="button-narudžba">ZAVRŠI NARUDŽBU</button>                        
                     </p>                    
                 </form>
                 </div>                
             </div>
-        </section>
+        </section>       
 
         
     </main>
 
+    <table class="newsletter">
+        <tr id="table-left">
+            <td><strong>NEWSLETTER</strong></td>
+            <td>
+                <form action="action/page">
+                    <input type="email" name="email" id="news-email" placeholder="Upište Vaš e-mail">
+                    <button type="submit" class="button-newsletter">Prijava</button>
+                </form>
+            </td>
+        </tr>
+        <tr id="table-right">
+            <td>Prijavite se na naš newsletter i ostvarite 15% popusta na svoju prvu kupovinu i primajte obavijesti o našim promocijama i proizvodima.</td>
+            <td>
+                <form action="action/page">
+                    <input type="checkbox">
+                    Pročitao sam i slažem se sa sadržajem <a href="privacy.html" target="_blank" title="ELegans/Politika privatnosti" id="privacy-link"> politika privatnosti</a> (privolu je moguće opozvati u bilo kojem trenutku). <br><br>
+                    <input type="checkbox">
+                    Prijavi se na newsletter.
+                </form>
+            </td>
+        </tr>
+    </table>
+
     <footer>
-        <iframe src="./partials/footer.html"width="100%" class="auto-height-iframe"></iframe>
+        <iframe src="./partials/footer.html"width="100%" class="auto-height-iframe" border="0" height="200vh"></iframe>
     </footer>
     
 </body>
