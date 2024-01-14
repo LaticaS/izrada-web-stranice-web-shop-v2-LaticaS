@@ -7,16 +7,31 @@
     <link rel="stylesheet" href="./js/javascript.js">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style-newsletter.css">
+    <link rel="stylesheet" href="./css/style-usluge-dno.css">
    
     <style>
-        main {}
-        section {position: relative; top: 0%; left: 10%; display: flex; flex-wrap: wrap; justify-content:space-around;}
-        div {flex-wrap: wrap; justify-content: center; align-items: center; padding: 1px;}
+
+        .podheader {width: 100%; height: 10vh; background-color: crimson; color: lightgrey;
+            font-family: "Arial Narrow"; font-size:large; display: flex; align-items: center;
+            border-top-right-radius: 30%; border-bottom-left-radius: 30%;}             
+            #podheader-div {width: 95%; padding-right: 2vw; padding-left: 2vw; text-align: right;}  
+
+        section {position: relative; top: 0%; left: 10%; display: flex; flex-wrap: wrap; justify-content:space-around;
+            align-items: stretch; padding-top: 5vh; padding-bottom: 5vh; margin-top: 2vh; background-color: white;}
+        fieldset {border-color: lightgrey; box-shadow: 1px 3px 3px 2px lightgrey;}
+        legend {color: dimgrey;}
+        div {flex-wrap: wrap; justify-content: center; padding: 1px;}
         .con-lijevi {width: 65%; text-align: left}
         .con-desni {background-color: lightgrey; padding: 1rem; width: 30%;}
+        .ime-prezime, .email, .phone {width: 45%; height: 5vh; border-color: lightgrey; box-shadow: 1px 2px 1px lightgrey;}
+        .textarea {border-color: lightgrey; box-shadow: 1px 2px 1px 2px lightgrey;} 
+        input:hover {border-style: outset;}
+        .textarea:hover {border-style: outset;}
+        
         span {color: crimson;}        
         .button-contact {padding: 1rem 2.5rem; border: 1px solid dimgrey;} 
         .button-contact:hover {background-color: crimson; color: white;}
+
         a {color: black;}
         a:hover {color: crimson;}
         nav {width: 100%; text-align: center;}
@@ -32,15 +47,16 @@
 
 <body>
     <header>
-        <iframe src="./partials/header.html" width="100%" class="auto-height-iframe"></iframe>
+        <iframe src="./partials/header.html" width="100%" class="auto-height-iframe" border="0" height="160vh"></iframe>
     </header>
 
-    <header class="podheader"><div id="pod-div">KONTAKTIRAJTE NAS</div></header>
+    <header class="podheader"><div id="podheader-div">KONTAKTIRAJTE NAS</div></header>
 
     <main>
         <section>
             <div class="con-lijevi">
-                <h1>Pišite nam</h1>
+                <fieldset class="fieldset1">                    
+                    <legend>PIŠITE NAM</legend>                
                     <form action="action/page">
                         <p>                        
                         <label for="ime-prezime"> Ime i prezime<span>*</span> </label><br>
@@ -59,27 +75,27 @@
 
                         <p>                        
                         <label for="Poruka"> Vaša poruka<span>*</span> </label><br>
-                        <textarea name="poruka" id="poruka" cols="50" rows="10" placeholder=" Upišite poruku" style="margin-left: 1rem;" class="textarea"></textarea>
+                        <textarea name="poruka" cols="70" rows="10" placeholder=" Upišite poruku" style="margin-left: 1rem;" class="textarea"></textarea>
                         </p>                        
                         
                         <p>
                         <small><span>*</span>Polja označena zvjezdicom su obavezna.</small>
                         </p>
                         <input type="checkbox">
-                        Pročitao sam i slažem se sa sadržajem <a href="privacy.html" target="_blank" title="ELegans/Politika privatnosti" id="privacy-link"> politika privatnosti.</a>
-                        <p>
-                            (privolu je moguće opozvati u bilo kojem trenutku).
-                        </p> 
+                        Pročitao sam i slažem se sa sadržajem <a href="privacy.html" target="_blank" title="ELegans/Politika privatnosti" id="privacy-link"> politika privatnosti.</a> 
+                        <br>
+                        (privolu je moguće opozvati u bilo kojem trenutku).                        
                         <p>
                             <button class="button-contact">Pošalji</button>
-                        </p>                       
+                        </p>                     
                        
                     </form>
+                </fieldset>
             </div>
 
             <div class="con-desni">
-                
-                <h1>ELegans Web Info</h1>
+                <fieldset class="fieldset2">                    
+                    <legend>ELEGANS WEB SHOP INFO</legend>                
                 <p>Telefon: 022 / 123 456 
                     <br>
                     <small><span>*</span>Infolinija je otvorena 09:00-17:00 radnim danima.</small>
@@ -98,9 +114,33 @@
                 </nav>
                 </p>            
                 </div>
+                </fieldset>
         </section>       
 
     </main>
+
+    <div class="usluge-u-slici">
+        <div>
+            <h5>Besplatna dostava za narudžbe od 50 EUR i više</h5>
+            <figure>
+                <img src="./images/Brendovi-Logo/truck-speed-svgrepo-com.svg" width="40px" style="opacity: 50%;" alt="Ikonica dostavni kamiončić">
+            </figure>
+            <p>Na području Hrvatske, 3-5 dana.</p>            
+        </div>
+        <div>
+            <h5>Sigurno plaćanje</h5>
+            <figure>
+                <img src="./images/Brendovi-Logo/lock-keyhole-minimalistic-unlocked-svgrepo-com.svg" width="30px" style="opacity: 70%;"  alt="Ikonica lokot">
+            </figure>
+            <p>Vaši podaci zaštićeni su sigurnosnim protokolom.</p>            
+        </div>
+        <div>
+            <h5>Siguran i jednostavan povrat</h5>
+                <img src="./images/Brendovi-Logo/package-svgrepo-com.svg" width="30px" style="opacity: 60%;" alt="Ikonica paket">
+            </figure>
+            <p>Narudžbu moguće vratiti u roku 14 dana od primitka.</p>            
+        </div>
+    </div> 
 
     <table class="newsletter">
         <tr id="table-left">

@@ -7,14 +7,20 @@
     <link rel="stylesheet" href="./js/javascript.js">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style-newsletter.css">
+    <link rel="stylesheet" href="./css/style-usluge-dno.css">
    
-    <style>            
+    <style>
+        .podheader {width: 100%; height: 10vh; background-color: crimson; color: lightgrey;
+            font-family: "Arial Narrow"; font-size:large; display: flex; align-items: center;
+            border-top-right-radius: 30%; border-bottom-left-radius: 30%;}             
+            #podheader-div {width: 95%; padding-right: 2vw; padding-left: 2vw; text-align: right;}      
+    
         section {position: relative; top: 0%; left: 10%;
             display: flex; flex-wrap: wrap; justify-content:right; align-items: flex-start;
             padding-top: 5vh; padding-bottom: 5vh; margin-top: 2vh;}
         .lijevi-div {width: 63%;}
         .desni-div {width: 34%; padding-left: 2vw; display: flex; flex-direction: column; flex-wrap: wrap;} 
-        fieldset {border-color: lightgrey;}
+        fieldset {border-color: lightgrey; box-shadow: 1px 3px 3px 2px lightgrey;}
         legend {color: dimgrey;}
          
         #input-field1 {width: 45%; height: 5vh; border-color: lightgrey; box-shadow: 1px 2px 1px lightgrey;}              
@@ -32,10 +38,14 @@
         .redak-sveukupno {background-color: lightgray;}
         .redak-blagajna {height: 6vh;}       
         p {font-size: small; color: dimgrey;}
-        
+        h3 {text-align: left;}
+        #slika-trenirka:hover {width: 35%;} 
 
         .button-narudžba {width:100%; padding: 10px 25px; background-color: goldenrod; color: white; font-size: large;}
         .button-narudžba:hover {border: 1px solid grey; background-color: crimson;}
+
+        .div-logo-platne-kartice {display: flex; flex-wrap: wrap; width: 100%; justify-content: center; }        
+        #slika-platne-kartice {width: 60px;}
         
         .button-newsletter:hover {background-color: lightgrey;}
         
@@ -47,9 +57,9 @@
 
 <body>
     <header>
-        <iframe src="./partials/header.html" width="100%" class="auto-height-iframe"></iframe>
+        <iframe src="./partials/header.html" width="100%" class="auto-height-iframe" border="0" height="160vh" ></iframe>
     </header>
-    <header class="podheader"><div id="pod-div">PROCES PLAĆANJA / NARUDŽBA / CHECKOUT</div></header>
+    <header class="podheader"><div id="podheader-div">NARUDŽBA / CHECKOUT</div></header>
 
     <main>
         <section>
@@ -94,8 +104,10 @@
                 <table class="table-blagajna">
                     <tr class="redak-blagajna">
                         <td class="ćelija-blagajna">
-                            <h3>ŽENSKA TRENERKA PAMUK SIVA ELEGANS</h3>
-                            <a href=""><img src="https://fastly.picsum.photos/id/411/200/200.jpg?hmac=OVYhfXZUSeIPuy2vvqvn56l4Y8YZjUzJ57HIaxnjdTQ" width="30%" height="30%" alt="" align="left" style="padding-right: 0.5vw;"></a>
+                            <h3>ŽENSKA TRENIRKA SIVA PAMUK, REEBOK, ELEGANS</h3>                            
+
+                            <a href="./images/proizvodi-odjeća/ELegans ženska siva trenirka Reebok.jpg" target="_parent"><img src="./images/proizvodi-odjeća/ELegans ženska siva trenirka Reebok.jpg" width="30%" height="30%" alt="Ženska siva trenirka Reebok, ELegans" title="Kliknite za veći prikaz" align="left" style="padding-right: 0.5vw;" id="slika-trenirka"></a>
+                          
                             <p>Veličina: XL</p>
                             <p>Boja: tamno siva</p>
                             <p>Količina: 1</p>                            
@@ -115,7 +127,8 @@
                         <td class="ćelija-blagajna">23,99€</td>
                     </tr>
                 </table>
-                </fieldset>
+                </fieldset>                
+                       
 
                 <div class="div-plati">
                 <form action="page/action">
@@ -129,12 +142,53 @@
                         <button class="button-narudžba">ZAVRŠI NARUDŽBU</button>                        
                     </p>                    
                 </form>
-                </div>                
+                </div>                               
             </div>
-        </section>       
-
+            
+        </section>  
         
     </main>
+
+    <div class="div-logo-platne-kartice">
+        <div>
+        <figure>
+            <img src="./images/Brendovi-Logo/mastercard-full-svgrepo-com.svg" alt="Logo MasterCard" id="slika-platne-kartice">
+        </figure>
+        </div>
+        <div>
+        <figure>
+            <img src="./images/Brendovi-Logo/apple-pay-svgrepo-com.svg" alt="Logo ApplePay" id="slika-platne-kartice">
+        </figure>
+        </div>
+        <div>
+        <figure>
+            <img src="./images/Brendovi-Logo/visa-logo-svgrepo-com.svg" alt="Logo Visa" id="slika-platne-kartice">
+        </figure>
+        </div>
+    </div>     
+    
+    <div class="usluge-u-slici">
+        <div>
+            <h5>Besplatna dostava za narudžbe od 50 EUR i više</h5>
+            <figure>
+                <img src="./images/Brendovi-Logo/truck-speed-svgrepo-com.svg" width="40px" style="opacity: 50%;" alt="Ikonica dostavni kamiončić">
+            </figure>
+            <p>Na području Hrvatske, 3-5 dana.</p>            
+        </div>
+        <div>
+            <h5>Sigurno plaćanje</h5>
+            <figure>
+                <img src="./images/Brendovi-Logo/lock-keyhole-minimalistic-unlocked-svgrepo-com.svg" width="30px" style="opacity: 70%;"  alt="Ikonica lokot">
+            </figure>
+            <p>Vaši podaci zaštićeni su sigurnosnim protokolom.</p>            
+        </div>
+        <div>
+            <h5>Siguran i jednostavan povrat</h5>
+                <img src="./images/Brendovi-Logo/package-svgrepo-com.svg" width="30px" style="opacity: 60%;" alt="Ikonica paket">
+            </figure>
+            <p>Narudžbu moguće vratiti u roku 14 dana od primitka.</p>            
+        </div>
+    </div> 
 
     <table class="newsletter">
         <tr id="table-left">
@@ -157,7 +211,7 @@
                 </form>
             </td>
         </tr>
-    </table>
+    </table>   
 
     <footer>
         <iframe src="./partials/footer.html"width="100%" class="auto-height-iframe" border="0" height="200vh"></iframe>

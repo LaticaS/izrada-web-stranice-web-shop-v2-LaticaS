@@ -7,23 +7,224 @@
     <link rel="stylesheet" href="./js/javascript.js">
     <link rel="stylesheet" href="./css/style.css">
    
-    <style>
+    <style>       
+             
+        .lijeva-strana {float: left; width: 60%; background-color: white;
+            display: flex; flex-wrap: wrap; justify-content: center; margin-top: 2vh;}
+        .div-kolumna-male-fotke {width: 15%; flex-direction: column; padding-top: 2.6vh; flex: 1 1 auto;}
+        #foto {width: 100%; }                     
+
+        .div-velika-fotka {width: 80%; 
+            padding-right:2vw; border-top: 1px solid grey; border-right: 1px solid grey;}               
+            
+
+
+        .desna-strana {float: right; width: 35%; background-color: white; 
+            display: flex; flex-direction: column; padding-left: 4vw; align-items: flex-start;}
+        .div-details {width: 98%; background-color: white;}
+        .div-details:first-of-type {display: flex; flex-wrap: wrap; justify-content: space-between; align-items:stretch; }
+        .div-brend-logo {width: 30%;}
+
+        .div-details:nth-of-type(3) {height: 45vh; border-top: 1px solid grey;}          
+        .div-details:nth-of-type(4) {height: 8vh; border-top: 1px solid grey;} 
+        .div-details:nth-of-type(4):hover {height: 36vh;}
+        .div-details:nth-of-type(5) {height: 8vh; background-color: white;
+            border-top: 1px solid grey; border-bottom: 1px solid grey;} 
+        .div-details:nth-of-type(5):hover {height: 23vh;}        
+        .div-details:last-of-type {color: dimgrey; height: 50vh; background-color: white;}
+
+        #button-boja {width: 20px; height: 20px; background-color: black; border-radius: 50%;} 
+        #select-size {width: 95%; height: 7vh; border-color: lightgrey; box-shadow: 1px 2px 1px lightgrey;}
+        #select-size:hover {border-style: outset;}
+        #button-košarica {width: 95%; height: 7vh; padding: 10px 25px; background-color: goldenrod; color: white; font-size: large;}
+        #button-košarica:hover {border: 1px solid grey; background-color: crimson;}
+        
+        p {font-size: small;}
+        #p-cijena {font-size: large; color: crimson;}
+         
+        ul {list-style-type: none; font-size: small;} 
+        a {text-decoration: none;}
+        a:link {color: crimson;}
+        a:visited {color: crimson;}
+        a:hover {text-decoration: underline; color: crimson;}
+        a:active {color:crimson;} 
+        
+        .usluge-u-slici {width: 100%; display: flex; flex-wrap: wrap; justify-content: space-around; background-color: white;}
+        .usluge-u-slici>div{width: 20%; border: 1px solid lightgrey; 
+            text-align: center; font-family: Arial, Helvetica, sans-serif; color: gray; font-size: small; padding: 1vh; margin-bottom: 4vh; margin-top: 10vh;}
+
+        
         
     </style>
 
 </head>
 
 <body>
+
     <header>
-        <iframe src="./partials/header.html" width="100%" class="auto-height-iframe"></iframe>
+        <iframe src="./partials/header.html" width="100%" class="auto-height-iframe" border="0" height="160vh" ></iframe>
     </header>
 
-    <header class="podheader"><div id="pod-div">UVJETI KORIŠTENJA</div></header>
+    <header class="podheader"><div id="podheader-div">PRODUCT DETAIL / ELEGANS</div></header>
 
-    <main>
+    <main>        
+        <div class="lijeva-strana">
+
+            <div class="div-kolumna-male-fotke">        
+            <div class="male-fotke">
+                <a href="./images/proizvodi-odjeća/ELegans haljina Amarena-2.jpg" target="_blank"> 
+                <img src="./images/proizvodi-odjeća/ELegans haljina Amarena-2.jpg"  alt="Haljina Amarena" title="Kliknite za veći prikaz" id="foto">
+                </a>   
+            </div>
+            
+            <div class="male-fotke">
+                <a href="./images/proizvodi-odjeća/ELegans haljina Amarena-3.jpg" target="_blank">
+                <img src="./images/proizvodi-odjeća/ELegans haljina Amarena-3.jpg"  alt="Haljina Amarena" title="Kliknite za veći prikaz" id="foto">
+            </a>
+            </div>
+            <div class="male-fotke">
+                <a href="./images/proizvodi-odjeća/ELegans haljina Amarena-4.jpg" target="_blank">
+                <img src="./images/proizvodi-odjeća/ELegans haljina Amarena-4.jpg"  alt="Haljina Amarena" title="Kliknite za veći prikaz" id="foto">
+                </a>
+            </div>
+            <div class="male-fotke">
+                <a href="./images/proizvodi-odjeća/ELegans haljina Amarena-5.jpg" target="_blank">
+                <img src="./images/proizvodi-odjeća/ELegans haljina Amarena-5.jpg"  alt="Haljina Amarena" title="Kliknite za veći prikaz" id="foto">
+                </a>
+            </div>
+            </div>       
+
+            <div class="div-velika-fotka">
+
+                <figure>
+                    <a href="./images/proizvodi-odjeća/ELegans haljina Amarena-1.jpg" target="_blank" title="Kliknite za veći prikaz">              
+                <img src="./images/proizvodi-odjeća/ELegans haljina Amarena-1.jpg" width="100%" alt="">
+                    </a>
+                </figure>
+                
+            </div>
+        </div>
+                        
+        
+
+        <div class="desna-strana">           
+           <div class="div-details">
+            <div id="podaci">
+            <h3><strong>Haljina Amarena</strong></h3>                
+            <h4><strong>Dior</strong></h4> 
+            <p>Kratki opis: crna, midi, uska</p>           
+            <p id="p-cijena">209.90 €</p>
+            <p>Boja: <button id="button-boja"></button></p>            
+            </div>             
+            <div class="div-brend-logo">
+                <img src="./images/Brendovi-Logo/dior-logo-svgrepo-com.svg" width="100vw" alt="Logo Dior">
+            </div>
+           </div>
+
+           <div class="div-details">                           
+                <p>  
+                <select name="veličina" id="select-size">
+                    <option value="none">Dostupne veličine</option>                    
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>                                     
+                </select>
+                </p>
+                <p>
+                    <form action="">
+                    <button id="button-košarica">DODATI U KOŠARICU</button>
+                    </form>
+                </p>
+                
+                <p>
+                    Besplatna dostava od 50€
+                </p> 
+                <p>
+                    Dostava u roku 2-3 dana (1 eco pack)
+                </p>
+                <p>
+                    Štedite s ELegansom i kupujte do 50% povoljnije
+                </p>          
+            </div>
+
+           <div class="div-details">
+            <h4><strong>Opis proizvoda</strong></h4>
+            <p>
+                Haljina iz kolekcije Amarena izrađena od pletiva bez uzorka. Model izrađen od izuzetno ugodnog materijala s visokim udjelom viskoze.
+            </p>
+            <p>
+                Dostupne veličine preračunate su iz talijanske veličine u standardnu europsku veličinu.  
+            </p>
+            <ul>
+                <li>/ strukirani kroj koji naglašava figuru</li>
+                <li>/ klasični, okrugli izrez</li>
+                <li>/ izrez na leđima</li>
+                <li>/ elastično pletivo</li>
+            </ul>
+            <p>Sastav: 62% Viskoza, 38% Poliester</p>
+            <p>ID Proizvoda: 9BYX-SUD1LZ_99X; Kod proizvođača: 2333260136200</p> 
+                      
+           </div>           
+           
+           <div class="div-details">
+            <h4><strong>Dostava</strong></h4>
+            <p>ELegans omogućuje dostavu putem dvije dostavljačke službe:</p>
+            <p>Overseas Express - besplatna dostava za narudžbe od 50 EUR i više, a u slučaju da vrijednost narudžbe manja od 50 EUR, dodat će se cijena troškova dostave od 3,90 EUR.</p>
+            <p>GLS - dostava za narudžbe u vrijdnosti od 50 EUR i više je besplatna, a u slučaju da vrijednost narudžbe manja od 50 EUR, dodat će se cijena troškova dostave od 4,90 EUR.</p>
+            <p>Prilikom plaćanja pouzećem naplaćuje se naknada u iznosu 0,50 EUR.</p>
+            
+           </div>
+
+           <div class="div-details">
+            <h4><strong>Reklamacija i povrat</strong></h4>
+            <p>
+                Želite li vratiti proizvod? To je vrlo jednostavno! Imate 30 dana za povrat proizvoda. Ako je vrijednost Vaše narudžbe 50 EUR ili više, možete iskoristiti besplatan povrat.
+            <br>
+                Reklamacija? Svi proizvodi kupljeni u našoj trgovini podliježu mogućnosti reklamacije s ugovorom od 2 godine nakon dana kupnje. 
+            </p>
+            
+           </div>
+           
+           <div class="div-details">
+            <h4><strong>Kako pravilno odabrati veličinu</strong></h4>
+            <p>
+                Kako bi se izbjegla isporuka odjeće netočne veličine potrebno je prije naručivanja odrediti što točniji konfekcijski broj mjerenjem obima prsa, struka i bokova i to ne bilo gdje već tamo gdje je tijelo najšire odnosno najtanje.
+                Također nije potrebno ništa dodavati niti oduzimati jer se kod izrade odjeće uzimaju u obzir ergonomski standardi EU vrijednosti.
+                Na konfekcijski broj može utjecati i visina osobe. kao i manje ili više razvijena mišićna masa tijela, što može povećati ili smanjiti za jedan broj ustanovljenu veličinu iz tablice.
+                Ukoliko se ipak dogodi da konfekcijski broj ne odgovara, odjeća se može zamijeniti drugom, odgovarajućom veličinom ukoliko na njoj nisu ustanovljena oštećenja.
+            </p>
+            <p>
+            <a href="https://www.mana.hr/tablica-velicina/" target="_blank"><strong>> TABLICA VELIČINA "MANA"</strong></a>
+            </p>                   
+            
+           </div>            
+        </div>        
         
     </main>
-
+    <div class="usluge-u-slici">
+        <div>
+            <h5>Besplatna dostava za narudžbe od 50 EUR i više</h5>
+            <figure>
+                <img src="./images/Brendovi-Logo/truck-speed-svgrepo-com.svg" width="40px" style="opacity: 50%;" alt="Ikonica dostavni kamiončić">
+            </figure>
+            <p>Na području Hrvatske, 3-5 dana.</p>            
+        </div>
+        <div>
+            <h5>Sigurno plaćanje</h5>
+            <figure>
+                <img src="./images/Brendovi-Logo/lock-keyhole-minimalistic-unlocked-svgrepo-com.svg" width="30px" style="opacity: 70%;"  alt="Ikonica lokot">
+            </figure>
+            <p>Vaši podaci zaštićeni su sigurnosnim protokolom.</p>            
+        </div>
+        <div>
+            <h5>Siguran i jednostavan povrat</h5>
+                <img src="./images/Brendovi-Logo/package-svgrepo-com.svg" width="30px" style="opacity: 60%;" alt="Ikonica paket">
+            </figure>
+            <p>Narudžbu moguće vratiti u roku od 14 dana primitka.</p>            
+        </div>
+    </div> 
+    
     <footer>
         <iframe src="./partials/footer.html"width="100%" class="auto-height-iframe" border="0" height="200vh"></iframe>
     </footer>

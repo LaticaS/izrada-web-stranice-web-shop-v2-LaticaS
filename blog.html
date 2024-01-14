@@ -7,17 +7,21 @@
     <link rel="stylesheet" href="./js/javascript.js">
     <link rel="stylesheet" href="./css/style.css">
     <style>
-        main {display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
+            
         .podheader {height: 30vh; background-image: url(./images/fashion-designer-template-new-arrival-header-img.jpg);
             background-size: cover; background-repeat: no-repeat; background-position:center;
             transition-property: padding-bottom padding-left font-weight; transition-duration: 2s; transition-timing-function: ease;}
-            .podheader:hover {padding-bottom: 3vh; padding-left: 3vh; font-weight: bold;}            
+            .podheader:hover {padding-bottom: 3vh; padding-left: 3vh; font-weight: bold;} 
+            #podheader-div {width: 95%; padding-right: 2vw; padding-left: 2vw; text-align: right;}        
                 
-        section {display: flex; justify-content: center; padding: 4vh 1vw; margin: 2px;} 
+        section {position: relative; top: 0%; left: 10%; display: flex; justify-content: center; padding: 4vh 1vw; margin: 2px;} 
         .drugi-section, .cetvrti-section {background-color: lightsalmon; border-top-right-radius: 8%; border-bottom-left-radius: 8%;}       
         .div-container-lijevo, .div-container-desno {display:flex; flex-direction: row; flex-wrap: wrap; flex: 1 1 auto; }
-        .div-container-desno {padding-left: 2vw;} 
-        .first-img {border-top-right-radius: 10%; border-bottom-left-radius: 10%;}
+        .div-container-desno {padding-left: 2vw;}
+        .div-container-desno:hover {width: 140%;} 
+        .first-img {border-top-right-radius: 20%; border-bottom-left-radius: 20%;
+            transition-property: all; transition-duration: 2s; transition-timing-function: ease;}
+        .first-img:hover {border-radius: 20% 0% 20% 0%;}
                     
 
         p {font-style: italic; color: darkslategrey;}
@@ -41,9 +45,9 @@
 
 <body>
     <header>
-        <iframe src="./partials/header.html" width="100%" class="auto-height-iframe"></iframe>
+        <iframe src="./partials/header.html" width="100%" class="auto-height-iframe" border="0" height="160vh" ></iframe>
     </header>
-    <header class="podheader"><div id="pod-div">MODNI BLOG / FASHION & TRENDS</div></header>
+    <header class="podheader"><div id="podheader-div">MODNI BLOG / FASHION & TRENDS</div></header>
 
     <main>
         <section class="prvi-section">
@@ -54,13 +58,17 @@
                     <p>
                     Evo 5 nekonvencionalnih proljetnih dodataka koje smo pronašli gledajući najnovije trendove s modnih pista ali i ponudu vrhunskih modnih marki...
                     </p>
+                    <a href="blog-detail-jedan.html" target="_parent">
                     <button>Saznajte više</button>
+                    </a>
                 </article>
             </div> 
             
             <div class="div-container-desno"> 
                 <figure>
+                    <a href="blog-detail-jedan.html" target="_parent">
                     <img src="./images/spring.png" width="80%" alt="Proljetni dodaci - zelena torbica" title="Proljetni dodaci - zelena torbica" class="first-img">
+                    </a>
                 </figure>  
             </div>         
             

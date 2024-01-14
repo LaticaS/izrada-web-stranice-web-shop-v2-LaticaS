@@ -7,28 +7,31 @@
     <link rel="stylesheet" href="./js/javascript.js">
     <link rel="stylesheet" href="./css/style.css">
    
-    <style>   
-       
-       .pojedini-proizvod {width: 15%; position: relative; top: 0%; left: 0%; display: flex;
+    <style>    
+      
+      .pojedini-proizvod {width: 15%; position: absolute; top: 10%; left: 40%; display: flex;
         flex-direction: column; flex-wrap: wrap; text-align: center; padding: 2px;
-        border: 1px solid dimgrey; box-shadow: 2px 1px 2px 1px dimgrey; font-family: Verdana;}            
+        border: 1px solid dimgrey; border-radius: 5%; box-shadow: 2px 2px 2px 2px dimgrey; font-family: Verdana; 
+        background-color: lightsalmon;}            
             
-        .gornja-slika {padding: 1px; z-index: 2; justify-content: center;}            
-        #slika {width: 100%;} 
+        .gornja-slika {padding: 3px; z-index: 2; justify-content: center; }            
+        #slika {width: 100%; border-top-left-radius: 30%; border-bottom-right-radius: 30%;} 
         
         .div-srce {position: absolute; top: 2%; right: 4%; z-index: 5; width: 30px; height: 30px;
-            border: 1px solid dimgrey; background-color: white; color: dimgrey; border-radius: 50%;}                     
+            border: 1px solid dimgrey; background-color: white; color: dimgrey; border-radius: 50%;} 
+            .div-srce:hover {color: crimson; width: 32px; height: 32px;}                   
 
-        .donji-podaci {display: flex; flex-direction: column; justify-content: center; align-items: center; flex-wrap: wrap; padding: 1px;}          
-        .marka-proizvoda {padding: 0.5vh 0vw; margin: 0.5vh 0vw; font-weight: bolder;}
+        .donji-podaci {display: flex; flex-direction: column; justify-content: center; align-items: center; flex-wrap: wrap; padding: 1px;
+        background-color: whitesmoke; opacity: 80%; border-radius: 5%;}          
+        .marka-proizvoda {padding: 0.5vh 0vw; margin: 0.5vh 0vw; font-weight: bolder; color: crimson;}
         .naziv-proizvoda {padding: 0.5vh 0vw; margin: 0.5vh 0vw;}
-        .cijena-proizvoda {padding: 0.5vh 0vw; margin: 0.5vh 0vw; font-weight: bold;}
+        .cijena-proizvoda {padding: 0.5vh 0vw; margin: 0.5vh 0vw; font-weight: bold; color: crimson;}
         .boja-veličina-proizvoda {display: flex; flex-direction: row; 
             padding: 0.5vh 0vw; margin: 0.5vh 0vw; font-size: small;} 
-        .boja-proizvoda, .veličina-proizvoda {padding: 4px;}
-        .div-buttona-proizvoda {margin: 0.5vh 0vw; padding: 0.5vh 0vw;}
-        .button-proizvoda {width: 100%; text-align: center;} 
-        .button-proizvoda:hover {background-color: crimson; color: white;}  
+        .boja-proizvoda, .veličina-proizvoda {padding: 4px;}        
+        .button-proizvoda {width: 100%; height: 8vh; text-align: center; background-color: crimson; color: white; 
+        font-weight: bolder; margin-bottom: 2px; border-radius:15%;} 
+        .button-proizvoda:hover {width: 95%; font-size: medium;}  
 
         
     </style>
@@ -48,19 +51,19 @@
 
             <div class="donji-podaci">
               <div class="marka-proizvoda">DIOR</div>
-              <div class="naziv-proizvoda">Ženska večernja haljina - Coco</div>
+              <div class="naziv-proizvoda">Ženska večernja haljina "Coco"</div>
               <div class="cijena-proizvoda">1000 €</div>                      
               <div class="boja-veličina-proizvoda">
                 <div class="boja-proizvoda">
                     Srebrna
                 </div>
                 <div class="veličina-proizvoda">
-                    S
+                    M
                 </div>            
               </div>
-              <div class="div-buttona-proizvoda">
+              
               <button class="button-proizvoda">DODATI U KOŠARICU</button>
-              </div>
+              
             </div>
     </div>   
 

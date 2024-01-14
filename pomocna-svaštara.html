@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomoćna svaštara</title>
+    <link rel="stylesheet" href="./js/javascript.js">
+    <link rel="stylesheet" href="./css/style.css">
+   
+    <style>
+        section {position: relative; top: 0%; left: 10%;} 
+
+        #blogCard {transition-property: padding-left; transition-duration: 4s; transition-timing-function: ease;}
+        #blogCard:hover {padding-left: 76%;}
+        
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <iframe src="./partials/header.html" width="100%" class="auto-height-iframe"></iframe>
+    </header>
+
+    <header class="podheader"><div id="pod-div">POMOĆNA SVAŠTARA</div></header>
+    <iframe src="./partials/blogCard.html" width="100%" class="auto-height-iframe" border="0" height="250vh" id="blogCard"></iframe>        
+
+    <main>
+        <section>
+            <fieldset>
+                <ol>
+                    <li>
+                        <table>
+                            <tr>
+                                <td id="ćelija-iframe"><iframe src="./partials/productCard.html" frameborder="0" border="0" height="450vh"></iframe></td>
+                                <td class="ćelija-table-proizvod">
+                                    <p>Cijena:</p>
+                                    <p>20,99€</p>
+                                </td>  
+                                <td>
+                                    <p>Količina:</p>
+                                <p>
+                                <form action="">
+                                    <input type="number" name="količina" min="1" max="50" id="input-količina-proizvod">
+                                </form>
+                               </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </li> 
+                    <hr>                    
+                    <li>
+                        <table>
+                            <tr>
+                                <td id="ćelija-iframe"><iframe src="./partials/productCard.html" frameborder="0" border="0" height="450vh"></iframe></td>
+                                <td class="ćelija-table-proizvod">
+                                    <p>Cijena:</p>
+                                    <p>20,99€</p>
+                                </td>  
+                                <td>
+                                    <p>Količina:</p>
+                                <p>
+                                <form action="">
+                                    <input type="number" name="količina" min="1" max="50" id="input-količina-proizvod">
+                                </form>
+                               </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>  
+                </ol>
+            </fieldset>
+        </section>
+    </main>
+
+    <footer>
+        <iframe src="./partials/footer.html"width="100%" class="auto-height-iframe" border="0" height="200vh"></iframe>
+    </footer>
+    
+</body>
+</html>
+        

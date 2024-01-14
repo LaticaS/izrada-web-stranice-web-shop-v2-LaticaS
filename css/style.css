@@ -1,14 +1,15 @@
-body {background-color:whitesmoke; position: relative;}
+body {background-color:white; position: relative;}
 main {background-color: white; width: 95%;        
     height: fit-content; font-family: Arial; text-align: justify; padding: 2vh 2vw;}
 section {width: 80%;}
 .auto-height-iframe {border: none; width: 100%; margin: 0;}
 
 .podheader {width: 100%; height: 10vh; background-color: crimson; color: lightgrey;
-    font-family: "Arial Narrow"; font-size:large; 
-    display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center;
-    border-bottom: 1vh solid white; border-top: 1vh solid white;
-    border-top-right-radius: 30%; border-bottom-left-radius: 30%;}
-    #pod-div {padding-right: 2vw; padding-left: 2vw;}
-    h1, h2, h3 {color: dimgrey;}
+    font-family: "Arial Narrow"; font-size:large; display: flex; align-items: center;      
+    border-top-right-radius: 30%; border-bottom-left-radius: 30%;
+    background: rgb(156,14,65);
+background: linear-gradient(298deg, rgba(156,14,65,1) 13%, rgba(147,8,55,1) 29%, rgba(174,25,28,1) 40%, rgba(175,26,27,1) 49%, rgba(189,180,166,1) 99%);
+    }    
+#podheader-div {width: 95%; padding-right: 2vw; padding-left: 2vw; text-align: right;}
+h1 {color: dimgrey;}
    

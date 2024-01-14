@@ -7,41 +7,143 @@
     <link rel="stylesheet" href="./js/javascript.js">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style-newsletter.css">
+    <link rel="stylesheet" href="./css/style-usluge-dno.css">
 
-    <style>            
-        section {position: relative; top: 0%; left: 10%;
-            height: 90vh; display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap; text-align: center;}
+    <style>
+    
+    section {position: relative; top: 0%; left: 1%; width: 99%;
+            height: 90vh; display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;
+            text-align: center; align-items: center;}
 
         .div-banner {width: 100%; height: 90vh; position: relative; top: 0%; left: 0%;
             background-image:url(images/banner.jpg); background-size: cover; background-repeat: no-repeat; background-position: top;
             color: white; justify-content: center; align-items: center;
-            border-top-right-radius: 40%; border-bottom-left-radius: 40%;
+            border-top-right-radius: 40%; border-bottom-left-radius: 40%; 
             transition-property: all; transition-duration: 1.5s; transition-timing-function:ease;}  
-            .div-banner:hover {width: 103%; color: gold; font-weight: bolder; }          
+            .div-banner:hover {color: gold; font-weight: bolder; border-radius: 40% 0% 40% 0%; width: 101%;}                       
 
         .div-text-banner {position: absolute; top: 45%; left: 25%; width: 50%; font-family: Arial; font-size: 3rem; text-align: center;}                   
 
         .sect2 {background-color: white; margin-top: 1vh; margin-bottom: 0.5vh;}
-        .sect2 > div:first-of-type {width: 100%; height: 10%; }
-        .sect2 > div {height: 80%; background-color: coral; 
-            flex-wrap: wrap; justify-content: space-between; flex: 1 1 auto; margin: 0.5vh;}
+        .sect2 > div:first-of-type {width: 100%; height: 10%; color: white; border-radius: 0% 30% 0% 30%;
+            transition-property: all; transition-duration: 1.5s; transition-timing-function:ease; 
+            background: rgb(156,14,65);
+            background: linear-gradient(298deg, rgba(156,14,65,1) 13%, rgba(147,8,55,1) 29%, rgba(174,25,28,1) 40%, rgba(175,26,27,1) 49%, rgba(189,180,166,1) 99%);
+        }
+        .sect2 > div:first-of-type:hover {width: 100%; border-radius: 0% 30% 0% 30%;
+            height: 13%; font-weight: bolder;
+            background: rgb(156,14,65);
+            background: linear-gradient(298deg, rgba(156,14,65,1) 13%, rgba(147,8,55,1) 29%, rgba(174,25,28,1) 40%, rgba(175,26,27,1) 49%, rgba(189,180,166,1) 99%);
+            }
+        .sect2 > div {height: 80%; position: relative; color: white; box-shadow: 2px 2px 2px 2px grey; border-radius: 5%;
+            flex-wrap: wrap; justify-content: space-between; flex: 1 1 auto; margin: 0.5vh;
+            transition-property: all; transition-duration: 1.5s; transition-timing-function:ease;}
+            #div-kategorija-žene {background-image: url(./images/naslovna/ELegans-moda-pulover\ za\ žene\ SH.webp); background-size: cover;}
+            #div-kategorija-modni-dodaci {background-image: url(./images/naslovna/ELegans-modni-dodaci\ razno.jpg); background-size: cover;}
+            #div-kategorija-muškarci {background-image: url(./images/naslovna/ELegans-moda-pamučna\ majica\ za\ muškarce\ Hugo.webp); background-size: cover;}            
+            #div-kategorija-žene:hover {margin-right: 10px; border-style: outset; font-weight: bolder; border-radius: 30% 0% 30% 0%; }
+            #div-kategorija-modni-dodaci:hover {margin-left: 10px; border-style: outset; font-weight: bolder; border-radius: 30% 30% 30% 30%;}
+            #div-kategorija-muškarci:hover {margin-left: 10px; border-style: outset; font-weight: bolder; border-radius: 0% 30% 0% 30%;}
 
-        #blogCard {transition-property: padding-left; transition-duration: 4s; transition-timing-function: ease;}
-        #blogCard:hover {padding-left: 76%;}
+            #ime-kategorije {width: 50%; position: absolute; top: 60%; left: 30%;
+                background-color:white; color: crimson;
+                padding: 1px; border-radius:10%; opacity: 85%;}
+                #ime-kategorije:hover {padding: 1.5px; font-size: larger; opacity: 90%;}
 
-        .sect3 {background-color: lightgrey; margin-top: 0.5vh; margin-bottom: 0.5vh; }
-        .sect3 > div:first-of-type {width: 100%; height: 10%; }
-        .sect3 > div {height: 80%; background-color: yellowgreen; 
-            flex-wrap: wrap; justify-content: space-between; flex: 1 1 auto; margin: 0.5vh;} 
+            #link-u-naslovu {text-decoration: none;}
+            #link-u-naslovu:link {color: white;}
+            #link-u-naslovu:visited {color: white;}
+            #link-u-naslovu:hover {color: white;}
+            #link-u-naslovu:active {color:white;}   
+       
+
+        .sect3 {background-color: white; margin-top: 0.5vh; margin-bottom: 0.5vh; }
+        .sect3 > div:first-of-type {width: 100%; height: 10%; color: white;  border-radius: 0% 30% 0% 30%;
+            transition-property: all; transition-duration: 1.5s; transition-timing-function: ease;
+            background: rgb(156,14,65);
+            background: linear-gradient(298deg, rgba(156,14,65,1) 13%, rgba(147,8,55,1) 29%, rgba(174,25,28,1) 40%, rgba(175,26,27,1) 49%, rgba(189,180,166,1) 99%);
+                
+        }
+        .sect3 > div:first-of-type:hover {height: 13%; width: 100%; border-radius: 0% 30% 0% 30%; font-weight: bolder;}
+        .sect3 > div {height: 80%; position: relative; width: 23%; border-radius: 5%;
+            box-shadow: 2px 2px 2px 2px grey; 
+            flex-wrap: wrap; justify-content: space-between; flex: 1 1 auto; margin: 0.5vh;
+            transition-property: all; transition-duration: 1.5s; transition-timing-function: ease;}
+        .sect3 > div:hover {margin-right: 10px; border-style: outset; font-weight: bolder; border-radius: 30% 0% 30% 0%; }
+        #div-haljine {background-image:url(./images/naslovna/ELegans\ haljine.jpg) ; background-size: cover; background-position: center;}
+        #div-bluze {background-image:url(./images/naslovna/ELegans-bluze.jpg) ; background-size: cover; background-position: center;}
+        #div-kaputi {background-image:url(./images/naslovna/KaputiEl.jpg) ; background-size: cover; background-position: center;}
+        #div-trenerke {background-image:url(./images/naslovna/TrenerkeEl.jpg) ; background-size: cover; background-position: center;}
+        
+
+        .sect4 {height: 70vh; display: flex; flex-wrap: wrap; margin-top: 1vh; margin-bottom: 5vh; }
+        .sect4 > div {height: 98%; position: relative; width: 23%; border-radius: 5%; box-shadow: 2px 2px 2px 2px grey; 
+            flex-wrap: wrap; justify-content: space-between; flex: 1 1 auto; margin: 0.5vh;
+            transition-property: all; transition-duration: 1.5s; transition-timing-function: ease;}
+        .sect4 > div:hover {margin-right: 10px; border-style: outset; font-weight: bolder; border-radius: 30% 0% 30% 0%; }
+        #div-suknje {background-image:url(./images/naslovna/SuknjeEl.jpg) ; background-size: cover; background-position: center;}
+        #div-majice {background-image:url(./images/naslovna/ELmajice-sa-kapuljačom.jpg) ; background-size: cover; background-position: center;}
+        #div-jakne {background-image:url(./images/naslovna/ELjakne.jpg) ; background-size: cover; background-position: center;}
+        #div-puloveri {background-image:url(./images/naslovna/ELpuloveri2.jpg) ; background-size: cover; background-position: center;}
+           
+        .sect5 {height: 150vh; display: flex; justify-content: center; flex-wrap: wrap; align-items: flex-start;
+            text-align: center; position: relative;}
+            .sect5 > div:first-of-type {width: 100%; height: 7%; color: white; margin-bottom: 1.5vh;
+                border-radius: 0% 30% 0% 30%; box-shadow: 1px 1px 1px 2px grey;
+                transition-property: all; transition-duration: 1.5s; transition-timing-function:ease;
+                background: rgb(96,123,255);
+                background: linear-gradient(146deg, rgba(96,123,255,1) 3%, rgba(85,187,60,1) 59%, rgba(252,144,70,1) 93%);
+              }            
+            .sect5 > div:first-of-type:hover {height: 9%; font-weight: bolder;}
+            .sect5 > div {width: 44%; height: 45%; margin: 2px; box-shadow: 1px 1px 1px 1px lightgrey;}
+
+            #blog-naslovni {background-color: white;}           
+
+            #blog-drugi {background-image: url(./images/spring.png); background-size: cover;
+            border-top-right-radius: 30%; border-bottom-left-radius: 30%; margin-top: 1vh;
+            transition-property: border-radius; transition-duration: 2s; transition-timing-function: ease; 
+            position: relative;} 
+            #blog-drugi:hover {border-radius: 30% 0% 30% 0%;} 
+            #blog-article {position: absolute; width: 55%; border-radius: 10%; background-color: lightsalmon; opacity: 80%;
+            top: 5%; left: 11%; text-align: center; border: 1px solid crimson;}           
+
             
-        .sect4 {margin-top: 0.5vh; margin-bottom: 1vh; flex-direction: row; align-items: center; text-align: center; flex: 1 1 auto; }
-        .sect4 > div:first-of-type {width: 100%; height: 10%; }
-        .sect4 > div {height: 80%; background-color: orangered; 
-            flex-wrap: wrap; justify-content: space-between; flex: 1 1 auto; margin: 0.5vh;}
-            .blog-aktualno {background-image: url(./images/fashion-designer-template-new-arrival-header-img.jpg); background-size: cover; background-position: center;
-            color: crimson;}
-            .blog, .aktualno {width:47%; text-align:left; padding-left: 1vw;} 
-            .blog {background-image: url(./images/spring.png); background-size: cover;}  
+            #blog-treci {background-image:url(./images/ELegans-blog-kraljicaLetizia.jpg); background-size: cover;
+            border-top-left-radius: 30%; border-bottom-right-radius: 30%; margin-top: 1vh;
+            transition-property: border-radius; transition-duration: 2s; transition-timing-function: ease; 
+            position: relative;}
+            #blog-treci:hover {border-radius: 0% 30% 0% 30%;}
+            #kraljevski-article {position: absolute; width: 55%; border-radius: 10%; background-color:palegreen; opacity: 80%;
+            top: 5%; right: 11%; text-align: center; border: 1px solid crimson;}
+
+
+            #blog-cetvrti {background-image: url(./images/naslovna/Lionel\ Messi\ tenisice.jpg); background-size: cover;
+            border-top-left-radius: 30%; border-bottom-right-radius: 30%;
+            transition-property: border-radius; transition-duration: 2s; transition-timing-function: ease; 
+            position: relative;}
+            #blog-cetvrti:hover {border-radius: 0% 30% 0% 30%;}
+            #active-living-article {position: absolute; width: 55%; border-radius: 10%; background-color: palegreen; opacity: 80%;
+            bottom: 5%; left: 11%; text-align: center; border: 1px solid crimson;}
+
+
+            #blog-peti {background-image: url(./images/naslovna/proljece-dom.jpg); background-size: cover;
+            border-top-right-radius: 30%; border-bottom-left-radius: 30%;
+            transition-property: border-radius; transition-duration: 2s; transition-timing-function: ease; 
+            position: relative;}
+            #blog-peti:hover {border-radius: 30% 0% 30% 0%;}
+            #home-lifestyle-article {position: absolute; width: 55%; border-radius: 10%; background-color:lightsalmon; opacity: 80%;
+            bottom: 5%; right: 11%; text-align: center; border: 1px solid crimson;}
+
+            article > time {color: crimson;}            
+            #blog-span {position: absolute; top: 52%; left: 47%; background-color: white;
+                z-index: 10; border-radius: 50%; padding: 15px;}
+                #blog-span:hover {padding: 18px;}
+
+            a {text-decoration: none;}
+            a:link {color: crimson;}
+            a:visited {color: crimson;}
+            a:hover {font-weight: bold; color: crimson;}
+            a:active {color:crimson;} 
 
     </style>
 
@@ -49,60 +151,174 @@
 
 <body>
     <header>
-        <iframe src="./partials/header.html" width="100%" class="auto-height-iframe" border="0" height="159vh" ></iframe>
+        <iframe src="./partials/header.html" width="100%" class="auto-height-iframe" border="0" height="160vh" ></iframe>
     </header>
-    <header class="podheader"><div id="pod-div">Moda ELegans / WebShop</div></header>
-
-    <a href="products.html" title="AKCIJSKI POPUSTI NA XL ARTIKLE 50%">
+    <header class="podheader"><div id="podheader-div">Moda ELegans / WebShop</div></header>
+    
+    <main>
+        
+        <a href="products.html" title="AKCIJSKI POPUSTI NA XL ARTIKLE 50%">
         <div class="div-banner">            
             <div class="div-text-banner">
             AKCIJSKI POPUSTI 50%
             </div>            
         </div>
-        </a>
+        </a>   
 
-    <main>       
-
+      
         <section class="sect2">
-            <div>KATEGORIJE</div>                       
-            <div>žene</div>
-            <div>muškarci</div>
-            <div>modni dodaci</div>
-            <div>brendovi</div>
-        </section>
-
-        <iframe src="./partials/blogCard.html" width="100%" class="auto-height-iframe" border="0" height="250vh" id="blogCard"></iframe>        
+            
+            <div>
+                <a href="products.html" target="_parent" id="link-u-naslovu">                
+                <h2>ELEGANS 4 EVERYONE</h2>
+                </a>              
+            </div>                       
+            <div id="div-kategorija-žene">
+                <a href="women-products.html" target="_parent">
+                <div id="ime-kategorije"><h4>ŽENE</h4></div>
+                </a>               
+            </div>
+            <div id="div-kategorija-modni-dodaci">
+                <a href="">
+                <div id="ime-kategorije"><h4>MODNI DODACI</h4></div>
+                </a>          
+            </div>
+            <div id="div-kategorija-muškarci">
+                <a href="men-products.html" target="_parent">
+                <div id="ime-kategorije"><h4>MUŠKARCI</h4></div>
+                </a>
+            </div>           
+        </section>       
 
         <section class="sect3">
-            <div>POPULARNO</div>           
-            <div>haljine</div>
-            <div>duksice</div>
-            <div>kaputi</div>
-            <div>hlače</div>
+            <div>
+                <h2>POPULARNO</h2>
+            </div>
+            <div id="div-haljine">
+                <a href="products.html" target="_parent" id="link-u-naslovu">
+                <div id="ime-kategorije"><h4>HALJINE </h4></div>
+                </a>
+            </div>
+            <div id="div-bluze">
+                <a href="products.html" target="_parent" id="link-u-naslovu">
+                <div id="ime-kategorije"><h4>BLUZE </h4></div>
+                </a>
+            </div>
+            <div id="div-kaputi">
+                <a href="products.html" target="_parent" id="link-u-naslovu">
+                <div id="ime-kategorije"><h4>KAPUTI </h4></div>
+                </a>
+            </div>
+            <div id="div-trenerke">
+                <a href="products.html" target="_parent" id="link-u-naslovu">
+                <div id="ime-kategorije"><h4>TRENIRKE </h4></div>
+                </a>
+            </div> 
         </section>
 
         <section class="sect4">
-            <div class="blog-aktualno">
-                BLOG & AKTUALNO
+            <div id="div-suknje">
+                <a href="products.html" target="_parent" id="link-u-naslovu">
+                <div id="ime-kategorije"><h4>SUKNJE </h4></div>
+                </a>
             </div>
-            <div class="blog">                 
+            <div id="div-majice">
+                <a href="products.html" target="_parent" id="link-u-naslovu">
+                <div id="ime-kategorije"><h4>MAJICE </h4></div>
+                </a>
+            </div>
+            <div id="div-jakne">
+                <a href="products.html" target="_parent" id="link-u-naslovu">
+                <div id="ime-kategorije"><h4>JAKNE </h4></div>
+                </a>
+            </div>
+            <div id="div-puloveri">
+                <a href="products.html" target="_parent" id="link-u-naslovu">
+                <div id="ime-kategorije"><h4>PULOVERI </h4></div>
+                </a>
+            </div>
+        </section>
+
+       <section class="sect5">
+            
+            <div id="blog-naslovni">
+                <a href="blog.html" target="_parent">
+                <h2>BLOG WITH ELEGANS</h2>
+                </a>
+                </div>
+            
+
+            <div id="blog-drugi">
+                <article id="blog-article">
+                    <p><small>BLOG NEWS</small></p>               
                     <h1>Top 5 dodataka za proljeće 2024.</h1>
                     <time>01/01/2024</time>                                         
                     <p>
-                    Evo 5 nekonvencionalnih proljetnih dodataka koje smo pronašli gledajući najnovije trendove s modnih pista ali i ponudu vrhunskih modnih marki...
+                    Evo 5 nekonvencionalnih proljetnih dodataka koje smo pronašli gledajući najnovije trendove s modnih pista...
                     </p>
-                    <button>Saznajte više</button>                
+                </article>                
             </div>
-            <div class="aktualno">
-               <h1>nešto drugo</h1>
-               <time>01/01/2024</time>               
-               <p>o aktualnostima recimo</p>
-            </div>
-        </section>       
-            
-        
-    </main>
 
+            <div id="blog-treci">
+                <article id="kraljevski-article">
+                    <p><small>KRALJEVSKA MODA</small></p>               
+                    <h1>Kraljica Letizia ponovo modno briljira</h1>
+                    <time>08/01/2024</time>                                         
+                    <p>
+                        Španjolska kraljica ponovno je uspjela zadiviti svojom elegantnom modnom kombinacijom s potpisom njezine omiljene dizajnerice Caroline Herrere...
+                    </p>                    
+                </article>                               
+            </div>
+
+            <div id="blog-cetvrti">                
+                <article id="active-living-article">
+                    <p><small>ACTIVE LIVING</small></p>               
+                    <h1>Lionel Messi i Adidas udružili snage?</h1>
+                    <time>08/01/2024</time>                                         
+                    <p>
+                        U domeni sporta i mode čini se da bismo mogli dobiti Lionel Messi i Adidas Samba tenisice... 
+                    </p>
+                </article>
+            </div>
+
+            <div id="blog-peti">                
+                <article id="home-lifestyle-article">
+                    <p><small>HOME & LIFESTYLE</small></p>               
+                    <h1>Kako ukrasiti stan u proljeće?</h1>
+                    <time>08/01/2024</time>                                         
+                    <p>
+                        Proljeće je savršeno vrijeme za osvježenje doma. Dajte svojim interijerima potpuno novi duh tekstilom... 
+                    </p>
+                </article>
+            </div>
+            <a href="blog.html" target="_parent"><span id="blog-span">BLOG</span></a>
+        </section> 
+        
+    </main> 
+
+    <div class="usluge-u-slici">
+        <div>
+            <h5>Besplatna dostava za narudžbe od 50 EUR i više</h5>
+            <figure>
+                <img src="./images/Brendovi-Logo/truck-speed-svgrepo-com.svg" width="40px" style="opacity: 50%;" alt="Ikonica dostavni kamiončić">
+            </figure>
+            <p>Na području Hrvatske, 3-5 dana.</p>            
+        </div>
+        <div>
+            <h5>Sigurno plaćanje</h5>
+            <figure>
+                <img src="./images/Brendovi-Logo/lock-keyhole-minimalistic-unlocked-svgrepo-com.svg" width="30px" style="opacity: 70%;"  alt="Ikonica lokot">
+            </figure>
+            <p>Vaši podaci zaštićeni su sigurnosnim protokolom.</p>            
+        </div>
+        <div>
+            <h5>Siguran i jednostavan povrat</h5>
+                <img src="./images/Brendovi-Logo/package-svgrepo-com.svg" width="30px" style="opacity: 60%;" alt="Ikonica paket">
+            </figure>
+            <p>Narudžbu moguće vratiti u roku 14 dana od primitka.</p>            
+        </div>
+    </div> 
+    
     <table class="newsletter">
         <tr id="table-left">
             <td><strong>NEWSLETTER</strong></td>
@@ -124,7 +340,7 @@
                 </form>
             </td>
         </tr>
-    </table>
+    </table>   
 
     <footer>
         <iframe src="./partials/footer.html"width="100%" class="auto-height-iframe" border="0" height="200vh"></iframe>

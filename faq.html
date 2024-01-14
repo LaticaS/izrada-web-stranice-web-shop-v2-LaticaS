@@ -6,9 +6,20 @@
     <title>Česta pitanja / ELegans</title>
     <link rel="stylesheet" href="./js/javascript.js">
     <link rel="stylesheet" href="./css/style.css">
-    <style>
-        main {display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
+    <link rel="stylesheet" href="./css/style-usluge-dno.css">
+    <link rel="stylesheet" href="./css/style-newsletter.css">
 
+    <style>
+        .podheader {width: 100%; height: 10vh; background-color: crimson; color: lightgrey;
+            font-family: "Arial Narrow"; font-size:large; display: flex; align-items: center;
+            border-top-right-radius: 30%; border-bottom-left-radius: 30%;}             
+        #podheader-div {width: 95%; padding-right: 2vw; padding-left: 2vw; text-align: right;}
+        section {position: relative; top: 0%; left: 10%; display: flex; flex-wrap: wrap;
+            background-color: white; line-height: 1.3em;}  
+            
+        p::first-line {font-weight: bold; line-height: 2.5em;}
+        p::before {content: url(./images/Brendovi-Logo/suit-1-svgrepo-com.svg);
+            margin-right:6px; width: 10px; height: 10px;}  
 
     </style>
 
@@ -16,150 +27,200 @@
 
 <body>
     <header>
-        <iframe src="./partials/header.html" width="100%" class="auto-height-iframe"></iframe>
+        <iframe src="./partials/header.html" width="100%" class="auto-height-iframe" border="0" height="160vh" ></iframe>
     </header>
-    <header class="podheader"><div id="pod-div">ČESTA PITANJA / FAQ</div></header>
+    <header class="podheader"><div id="podheader-div">ČESTA PITANJA / FAQ</div></header>
 
     <main>
+        
         <section>
-            <h1>KUPNJA</h1>
-            <p>
-                Kako mogu napraviti narudžbu? <br>
-Naručivanje je vrlo jednostavno. Nakon što kliknete na odabrani proizvod, odaberite svoju veličinu i označite opciju .
-
-Nakon stavljanja svih proizvoda u košaricu, možete doći do svoje narudžbe klikom na stavku koja se nalazi u gornjem desnom dijelu web stranice. Nakon što kliknete na košaricu, vidjet ćete sažetak narudžbe. Zatim ćete u sljedećem koraku odabrati željeni način plaćanja i dostave.
-
-Posljednji korak u izradi narudžbe je popunjavanje adrese za naplatu i isporuku i svih ostalih podataka potrebnih za dovršavanje narudzbe . Ako želite dostaviti paket na adresu koja nije adresa za naplatu, samo kliknite . Tada ćete vidjeti opciju za popunjavanje adrese za dostavu.
-
-Ako ste već registrirani na našoj stranici, sve što morate učiniti je prijaviti se i svi će se vaši podaci automatski popuniti.
-
-Klikom na stavku kreirat će se narudžba, primit ćete e-poruku s potvrdom o njenom izvršenju i možete se veseliti svom paketu.
+            <h1>KUPNJA</h1>                
+                <p>
+                    Kako mogu napraviti narudžbu? <br>
+                    Naručivanje je vrlo jednostavno. Nakon što kliknete na odabrani proizvod, odaberite svoju veličinu i označite opciju.
+                    Nakon stavljanja svih proizvoda u košaricu, možete doći do svoje narudžbe klikom na stavku koja se nalazi u gornjem desnom dijelu web stranice. Nakon što kliknete na košaricu, vidjet ćete sažetak narudžbe. Zatim ćete u sljedećem koraku odabrati željeni način plaćanja i dostave.
+                    Posljednji korak u izradi narudžbe je popunjavanje adrese za naplatu i isporuku i svih ostalih podataka potrebnih za dovršavanje narudžbe. Ako želite dostaviti paket na adresu koja nije adresa za naplatu, samo kliknite . Tada ćete vidjeti opciju za popunjavanje adrese za dostavu.
+                    Ako ste već registrirani na našoj stranici, sve što morate učiniti je prijaviti se i svi će se vaši podaci automatski popuniti.
+                    Klikom na stavku kreirat će se narudžba, primit ćete e-poruku s potvrdom o njenom izvršenju i možete se veseliti svom paketu.
+                </p>
+                
+                <p>
+                Moram li se registrirati, ako želim naručiti? <br>                
+                Nije potrebna registracija ako želite naručiti na našoj stranici.
+                Međutim, registracija ima mnoge prednosti, poput praćenja statusa trenutne narudžbe, unaprijed ispunjenih podataka prilikom izrade nove narudžbe ili mogućnosti primanja newslettra s najnovijim informacijama.
             </p>
+            
             <p>
-                Moram li se registrirati, ako želim naručiti? <br>
-Nije potrebna registracija ako želite naručiti na našoj stranici.
-
-Međutim, registracija ima mnoge prednosti, poput praćenja statusa trenutne narudžbe, unaprijed ispunjenih podataka prilikom izrade nove narudžbe ili mogućnosti primanja newslettra s najnovijim informacijama.
+                Mogu li mijenjati narudžbu? <br>               
+                Ukoliko nije narudžba spakirana, moguće je promijeniti sljedeće podatke: adresu za dostavu, e-mail, telefonski broj. Također, u statusu prije pakiranja je moguće otkazati proizvode ili cjelokupnu narudžbu.
+                Ako ste zainteresirani za dopunu ili zamjenu robe u već kreiranoj narudžbi, obratite se našoj korisničkoj podršci putem kontakt formulara. Rado ćemo vam pružiti informacije o tome je li još uvijek moguće izmijeniti Vašu narudžbu.
+                Međutim, ako ste narudžbu platili putem GoPay-a, dopuna niti zamjena robe u Vašoj narudžbi nije moguća.
             </p>
-            <p>
-                Mogu li mijenjati narudžbu? <br>
-Ukoliko nije narudžba spakirana, moguće je promijeniti sljedeće podatke: adresu za dostavu, e-mail, telefonski broj. Također, u statusu prije pakiranja je moguće otkazati proizvode ili cjelokupnu narudžbu.
-
-Ako ste zainteresirani za dopunu ili zamjenu robe u već kreiranoj narudžbi, obratite se našoj korisničkoj podršci putem kontakt formulara. Rado ćemo vam pružiti informacije o tome je li još uvijek moguće izmijeniti Vašu narudžbu.
-
-Međutim, ako ste narudžbu platili putem GoPay-a, dopuna niti zamjena robe u Vašoj narudžbi nije moguća.
+            
+            <p> 
+                Mogu li otkazati narudžbu? <br>              
+                Otkazivanje narudžbe je moguće ako roba još nije spakirana. Zahtjev za otkazivanje nam možete poslati putem kontakt formulara.
+                Slanjem narudžbe obvezujete se da ćete je preuzeti. Ako roba nije preuzeta, od vas će se tražiti da platite troškove povezane s dostavom. Ako ste zainteresirani za ponovno slanje nepreuzete narudžbe, bit će vam naplaćena naknada za dostavu, ovisno o odabranoj opciji dostave.
             </p>
+            
             <p>
-                Mogu li otkazati narudžbu? <br>
-Otkazivanje narudžbe je moguće ako roba još nije spakirana. Zahtjev za otkazivanje nam možete poslati putem kontakt formulara.
-
-Slanjem narudžbe obvezujete se da ćete je preuzeti. Ako roba nije preuzeta, od vas će se tražiti da platite troškove povezane s dostavom. Ako ste zainteresirani za ponovno slanje nepreuzete narudžbe, bit će vam naplaćena naknada za dostavu, ovisno o odabranoj opciji dostave.
-            </p>
-            <p>
-                Kako mogu izvršiti plaćanje? <br>
-Narudžbu možete platiti na dva načina:
-
-karticom - prilikom kreiranja narudžbe, putem sustava GoPay,pouzećem - u gotovini.
+                Kako mogu izvršiti plaćanje? <br>               
+                Narudžbu možete platiti na dva načina: <br>
+                karticom - prilikom kreiranja narudžbe, putem sustava GoPay, pouzećem - u gotovini.
             </p>                     
         </section>
 
+        
         <section>
             <h1>ISPORUKA</h1>
+            
             <p>
                 Koliko traje isporuka paketa? <br>
-Vrijeme isporuke se razlikuje za različite proizvode. Nakon klika na pojedine proizvode, pod opcijom dodaj u košaricu nalazi se stavka koja sadrži podatke o vremenu isporuke proizvoda.
-
-Roba se isporučuje u različitim rokovima, što zavisi od dostavljača i mjesta isporuke. Roba koju imamo na skladištu bit će zapakirana i poslana u roku od 24 sata od narudžbe.
+                Vrijeme isporuke se razlikuje za različite proizvode. Nakon klika na pojedine proizvode, pod opcijom dodaj u košaricu nalazi se stavka koja sadrži podatke o vremenu isporuke proizvoda.
+                Roba se isporučuje u različitim rokovima, što zavisi od dostavljača i mjesta isporuke. Roba koju imamo na skladištu bit će zapakirana i poslana u roku od 24 sata od narudžbe.
             </p>
-            <p>
-                Koje su mogućnosti dostave? <br>
- 
-
-Dostavu naših proizvoda vrši odabrana kurirska služba ili pošiljku možete preuzeti na odabranom mjestu preuzimanja.
+            
+            <p> 
+                Koje su mogućnosti dostave? <br>              
+                Dostavu naših proizvoda vrši odabrana kurirska služba ili pošiljku možete preuzeti na odabranom mjestu preuzimanja.
             </p>
-            <p>
-                Mogu li platiti gotovinom nakon isporuke robe? <br>
-Naravno. Prilikom popunjavanja podataka u narudžbi možete odabrati mogućnost plaćanja pouzećem. Tada ćete robu platiti kuriru prilikom preuzimanja paketa.
-            </p>
-        </section>
-
-        <section>
-            <h1>POVRAT ROBE</h1>
-            <p>
-                Kako mogu vratiti robu? <br>
-Ukoliko Vam ne odgovara veličina, kroj ili naručeni proizvod možete izvršiti povrat robe u roku od 60 kalendarskih dana od primitka paketa.
-
-Ako ste zainteresirani za vraćanje proizvoda, popunite obrazac za povrat robe, u kojem ćete pronaći sve informacije u vezi s povratom. Nakon unosa broja narudžbe i e-mail adrese vidjet ćete detalje narudžbe, gdje trebate odabrati robu koju šaljete natrag kao i razlog povrata. Dalje je u obrascu potrebno popuniti broj računa u obliku IBAN-a, na koji želite vratiti sredstva za vraćenu robu. Ako ste narudžbu platili karticom, putem GoPay-a, sredstva ćemo Vam vratiti na račun sa kojeg je uplata zaprimljena.
-
-E-mailom ćemo Vas obavijestiti o primitku vraćene robe i ostalim informacijama vezanim uz povrat.
-            </p>
-            <p>
-                Ako želim vratiti robu, hoćete li mi poslati novac ili drugu robu? <br>
-
-
-
-Nažalost, u našoj e-trgovini nije moguća zamjena. Za vraćene proizvode vratit ćemo Vam sredstva na bankovni račun u IBAN formatu naveden u obrascu za povrat. Ako ste narudžbu platili karticom, putem GoPay-a, vratit ćemo Vam novac u istom obliku, putem GoPay-a na račun sa kojeg je uplata zaprimljena..
-            </p>
-            <p>
-                Do kada vam mogu vratiti robu? <br>
-Neodgovarajuću robu možete poslati natrag u roku od 60 kalendarskih dana od primitka paketa.
-            </p>
-            <p>
-                Koliko dugo traje povrat novca? <br>
-Sredstva za vraćenu robu vratit ćemo na bankovni račun koji ste vi odredili u roku od 7 dana, najkasnije u roku od 14 dana, od primitka robe u odjelu za povrat/reklamacije.
-            </p>
-            <p>
-                Koliko dugo traje zamjena robe? <br>
-Nažalost, zamjena robe nije moguća. Za vraćene proizvode vratit ćemo vam sredstva na vaš bankovni račun naveden u obrascu za povrat. Ako ste narudžbu platili karticom, putem GoPay-a, vratit ćemo vam novac u istom obliku putem GoPay-a. Sredstva ćemo vam poslati najkasnije 14 dana nakon primitka robe u odjel za povrat/reklamacije.
-            </p>
-            <p>
-                Hoće li kurir preuzeti robu koju želim vratiti ili je moram poslati poštom? <br>
-Za povrat robe potrebno je ispuniti obrazac koji se nalazi na našoj stranici pod Povrat robe.
-<br>
-Postupak popunjavanja obrasca: <br>
-1. Unesite 8-znamenkasti broj narudžbe i e-mail adresu navedenu u narudžbi. Kliknite na gumb POTVRDITI. <br>
-2. Pojavit će se nova stranica na kojoj možete pronaći adresu za naplatu i dostavu. <br>
-  - Označite artikl koji želite vratiti i ispod njega odaberite razlog povrata. <br>
-  - U napomenu napišite Vaše eventualne primjedbe u vezi povrata robe. <br>
-
-Pošiljku za povrat je potrebno poslati na niže navedenu adresu.
+            
+            <p> 
+                Mogu li platiti gotovinom nakon isporuke robe? <br>              
+                Naravno. Prilikom popunjavanja podataka u narudžbi možete odabrati mogućnost plaćanja pouzećem. Tada ćete robu platiti kuriru prilikom preuzimanja paketa.
             </p>
         </section>
+        
 
         <section>
-            <h1>REKLAMACIJA</h1>
+            <h1>POVRAT ROBE</h1>           
+            
+            <p> 
+                Kako mogu vratiti robu? <br>             
+                Ukoliko Vam ne odgovara veličina, kroj ili naručeni proizvod možete izvršiti povrat robe u roku od 60 kalendarskih dana od primitka paketa.
+                Ako ste zainteresirani za vraćanje proizvoda, popunite obrazac za povrat robe, u kojem ćete pronaći sve informacije u vezi s povratom. Nakon unosa broja narudžbe i e-mail adrese vidjet ćete detalje narudžbe, gdje trebate odabrati robu koju šaljete natrag kao i razlog povrata. Dalje je u obrascu potrebno popuniti broj računa u obliku IBAN-a, na koji želite vratiti sredstva za vraćenu robu. Ako ste narudžbu platili karticom, putem GoPay-a, sredstva ćemo Vam vratiti na račun sa kojeg je uplata zaprimljena.
+                E-mailom ćemo Vas obavijestiti o primitku vraćene robe i ostalim informacijama vezanim uz povrat.
+            </p>
+            
             <p>
-                Kako mogu reklamirati proizvod? <br>
-Nešto nije u redu s Vašim proizvodom? Pojavila se na robi greška koja nije nastala nepravilnom uporabom? Nema veze, za svaki proizvod vrijedi jamstveno razdoblje od 24 mjeseca, tako da nam oštećeni komad možete poslati natrag u obliku reklamacije.
-
-Prije slanja paketa, popunite obrazac za povrat, u kojem ćete pronaći sve podatke potrebne za reklamaciju. Potrebno je odabrati proizvod koji želite vratiti i navesti razlog reklamacije.
-
-O primitku vraćene robe, kao i o tijeku reklamacije, obavijestiti ćemo Vas e-mailom.
+                Ako želim vratiti robu, hoćete li mi poslati novac ili drugu robu? <br>               
+                Nažalost, u našoj e-trgovini nije moguća zamjena. Za vraćene proizvode vratit ćemo Vam sredstva na bankovni račun u IBAN formatu naveden u obrascu za povrat. Ako ste narudžbu platili karticom, putem GoPay-a, vratit ćemo Vam novac u istom obliku, putem GoPay-a na račun sa kojeg je uplata zaprimljena..
+            </p>
+            
+            <p> 
+                Do kada vam mogu vratiti robu? <br>              
+                Neodgovarajuću robu možete poslati natrag u roku od 60 kalendarskih dana od primitka paketa.
+            </p>
+            
+            <p> 
+                Koliko dugo traje povrat novca? <br>              
+                Sredstva za vraćenu robu vratit ćemo na bankovni račun koji ste vi odredili u roku od 7 dana, najkasnije u roku od 14 dana, od primitka robe u odjelu za povrat/reklamacije.
+            </p>
+            
+            <p> 
+                Koliko dugo traje zamjena robe? <br>              
+                Nažalost, zamjena robe nije moguća. Za vraćene proizvode vratit ćemo vam sredstva na vaš bankovni račun naveden u obrascu za povrat. Ako ste narudžbu platili karticom, putem GoPay-a, vratit ćemo vam novac u istom obliku putem GoPay-a. Sredstva ćemo vam poslati najkasnije 14 dana nakon primitka robe u odjel za povrat/reklamacije.
+            </p>
+            
+            <p> 
+                Hoće li kurir preuzeti robu koju želim vratiti ili je moram poslati poštom? <br>              
+                Za povrat robe potrebno je ispuniti obrazac koji se nalazi na našoj stranici pod Povrat robe.
             </p>
             <p>
-                Koliko traje riješenje reklamacije? <br>
-Svaku reklamaciju se trudimo riješiti što prije kako ne biste morali nepotrebno dugo čekati. Standardno vrijeme za rješavanje reklamacije je unutar 30 dana od dostave robe odjelu za reklamacije.
+                Postupak popunjavanja obrasca: <br>
+                1. Unesite 8-znamenkasti broj narudžbe i e-mail adresu navedenu u narudžbi. Kliknite na gumb POTVRDITI. <br>
+                2. Pojavit će se nova stranica na kojoj možete pronaći adresu za naplatu i dostavu. <br>
+                
+                - Označite artikl koji želite vratiti i ispod njega odaberite razlog povrata. 
+                <br>
+                - U napomenu napišite Vaše eventualne primjedbe u vezi povrata robe.
+                
+               <br><br>                              
+                Pošiljku za povrat je potrebno poslati na niže navedenu adresu.                
+            </p>
+        </section>
+        
+        <section>
+            <h1>REKLAMACIJA</h1>  
+            <p>  
+                Kako mogu reklamirati proizvod? <br>            
+                Nešto nije u redu s Vašim proizvodom? Pojavila se na robi greška koja nije nastala nepravilnom uporabom? Nema veze, za svaki proizvod vrijedi jamstveno razdoblje od 24 mjeseca, tako da nam oštećeni komad možete poslati natrag u obliku reklamacije.
+                Prije slanja paketa, popunite obrazac za povrat, u kojem ćete pronaći sve podatke potrebne za reklamaciju. Potrebno je odabrati proizvod koji želite vratiti i navesti razlog reklamacije.
+                O primitku vraćene robe, kao i o tijeku reklamacije, obavijestiti ćemo Vas e-mailom.
+            </p>
+            
+            <p> 
+                Koliko traje rješenje reklamacije? <br>              
+                Svaku reklamaciju se trudimo riješiti što prije kako ne biste morali nepotrebno dugo čekati. Standardno vrijeme za rješavanje reklamacije je unutar 30 dana od dostave robe odjelu za reklamacije.
             </p>            
         </section>
+
+        
         <section>
             <h1>REGISTRACIJA</h1>
+            
             <p>
-                Kako se mogu registrirati? <br>
-Registracija kod nas je vrlo jednostavna i brza. Sve što trebate je nekoliko informacija.
-
-Za registraciju, kliknite vezu u gornjem desnom dijelu stranice. Doći ćete do prijavnice, pod kojom se možete registrirati. Nakon što kliknete na link, vidjet ćete obrazac za registraciju, gdje samo trebate ispuniti svoje osnovne podatke i registracija je dovršena.
-
-Pomoću ovih podataka u bilo kojem trenutku možete pristupiti svom korisničkom računu, gdje možete pratiti status svojih narudžbi.
+                Kako se mogu registrirati? <br>             
+                Registracija kod nas je vrlo jednostavna i brza. Sve što trebate je nekoliko informacija.
+                Za registraciju, kliknite vezu u gornjem desnom dijelu stranice. Doći ćete do prijavnice, pod kojom se možete registrirati. Nakon što kliknete na link, vidjet ćete obrazac za registraciju, gdje samo trebate ispuniti svoje osnovne podatke i registracija je dovršena.
+                Pomoću ovih podataka u bilo kojem trenutku možete pristupiti svom korisničkom računu, gdje možete pratiti status svojih narudžbi.
             </p>
-            <p>
-                Moram li se registrirati, ako želim naručiti? <br>
-Nije potrebna registracija ako želite naručiti na našoj stranici.
-
-Međutim, registracija ima mnoge prednosti, poput praćenja statusa trenutne narudžbe, unaprijed popunjenih podataka prilikom izrade nove narudžbe ili mogućnosti primanja newslettra s najnovijim informacijama.
+            
+            <p> 
+                Moram li se registrirati, ako želim naručiti? <br>              
+                Nije potrebna registracija ako želite naručiti na našoj stranici.
+                Međutim, registracija ima mnoge prednosti, poput praćenja statusa trenutne narudžbe, unaprijed popunjenih podataka prilikom izrade nove narudžbe ili mogućnosti primanja newslettra s najnovijim informacijama.
             </p>
         </section>
         
     </main>
+    <div class="usluge-u-slici">
+        <div>
+            <h5>Besplatna dostava za narudžbe od 50 EUR i više</h5>
+            <figure>
+                <img src="./images/Brendovi-Logo/truck-speed-svgrepo-com.svg" width="40px" style="opacity: 50%;" alt="Ikonica dostavni kamiončić">
+            </figure>
+            <span> Na području Hrvatske, 3-5 dana.  </span>           
+        </div>
+        <div>
+            <h5>Sigurno plaćanje</h5>
+            <figure>
+                <img src="./images/Brendovi-Logo/lock-keyhole-minimalistic-unlocked-svgrepo-com.svg" width="30px" style="opacity: 70%;"  alt="Ikonica lokot">
+            </figure>
+            <span> Vaši podaci zaštićeni su sigurnosnim protokolom.  </span>           
+        </div>
+        <div>
+            <h5>Siguran i jednostavan povrat</h5>
+            <figure>
+                <img src="./images/Brendovi-Logo/package-svgrepo-com.svg" width="30px" style="opacity: 60%;" alt="Ikonica paket">
+            </figure>            
+            <span>Narudžbu moguće vratiti u roku 14 dana od primitka.</span>            
+        </div>
+    </div> 
+    
+    <table class="newsletter">
+        <tr id="table-left">
+            <td><strong>NEWSLETTER</strong></td>
+            <td>
+                <form action="action/page">
+                    <input type="email" name="email" id="news-email" placeholder="Upište Vaš e-mail">
+                    <button type="submit">Prijava</button>
+                </form>
+            </td>
+        </tr>
+        <tr id="table-right">
+            <td>Prijavite se na naš newsletter i ostvarite 15% popusta na svoju prvu kupovinu i primajte obavijesti o našim promocijama i proizvodima.</td>
+            <td>
+                <form action="action/page">
+                    <input type="checkbox">
+                    Pročitao sam i slažem se sa sadržajem <a href="privacy.html" target="_blank" title="ELegans/Politika privatnosti" id="privacy-link"> politika privatnosti</a> (privolu je moguće opozvati u bilo kojem trenutku). <br><br>
+                    <input type="checkbox">
+                    Prijavi se na newsletter.
+                </form>
+            </td>
+        </tr>
+    </table>   
+
 
     <footer>
         <iframe src="./partials/footer.html"width="100%" class="auto-height-iframe" border="0" height="200vh" ></iframe>

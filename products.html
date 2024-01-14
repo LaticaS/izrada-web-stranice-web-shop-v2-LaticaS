@@ -5,17 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proizvodi / ELegans</title>
     <link rel="stylesheet" href="./js/javascript.js">
-    <link rel="stylesheet" href="./css/style.css">    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-usluge-dno.css">    
    
     <style> 
-        main {display: inline-block;} 
+         
         aside {float: left; position: sticky; top: 0%; left: 0%; background-color: white;}             
         section {float: right; width: 75%; display: flex; flex-wrap: wrap; padding: 1vh 0vw; margin: 1vh 0vw;
           background-color: white;}
 
-        .section-kategorije {height: 3vh; justify-content: space-around; align-items: center; flex: 1 1 auto;} 
-        .section-kategorije:hover {height: 20vh;}
-
+        .section-kategorije {height: 5vh; justify-content: space-around; align-items: stretch; flex: 1 1 auto;} 
+        .section-kategorije:hover {height: 50vh;} 
+        .section-kategorije > div {border-right: 1px solid grey; border-bottom: 1px solid grey; padding-right: 3vw;}              
+        
+        li:hover {font-size: larger; font-weight: bolder;}
+        .ul-kategorije {list-style-type: none;}
+        a {color: crimson; text-decoration: none;}
+        a:link {color: crimson;}
+        a:visited {color: crimson;}
+        a:hover {color: crimson; text-decoration: underline;}
+        a:active {color:dimgrey;}  
+        
         .section-brendovi {flex-wrap: wrap; background-color: lightgrey;}        
 
         .pojedini-proizvod {position: relative; height: fit-content; display: flex; flex-direction: column; flex-wrap: wrap; flex: 1 1 auto;
@@ -27,7 +37,7 @@
             .div-srce:hover {color: crimson;}
             
         .gornja-slika {padding: 1px; z-index: 2;}            
-        #slika {border-top-left-radius: 30%; border-bottom-right-radius: 30%;
+        #slika {width: 200px; height: 300px; border-top-left-radius: 30%; border-bottom-right-radius: 30%;
             transition-property: border-radius; transition-duration: 2s; transition-timing-function: ease;} 
             #slika:hover {border-radius: 0% 30% 0% 30%;} 
 
@@ -37,12 +47,12 @@
           .donji-podaci:hover {opacity: 80%;}          
         .marka-proizvoda {padding: 0.5vh 0vw; margin: 0.5vh 0vw; font-weight: bolder;}
         .naziv-proizvoda {padding: 0.5vh 0vw; margin: 0.5vh 0vw;}
-        .cijena-proizvoda {padding: 0.5vh 0vw; margin: 0.5vh 0vw; font-weight: bold;}
+        .cijena-proizvoda {padding: 0.5vh 0vw; margin: 0.5vh 0vw; font-weight: bold; color: crimson;}
         .boja-veličina-proizvoda {display: flex; flex-direction: row; 
             padding: 0.5vh 0vw; margin: 0.5vh 0vw; font-size: smaller;} 
         .boja-proizvoda, .veličina-proizvoda {padding: 4px;}
         .div-buttona-proizvoda {margin: 0.5vh 0vw; padding: 0.5vh 0vw;}
-        .button-proizvoda {width: 100%; text-align: center;} 
+        .button-proizvoda {width: 100%; text-align: center; background-color: dimgrey; color: white;} 
         .button-proizvoda:hover {background-color: crimson; color: white;}
         
         .newsletter {background-color: crimson; height: 40vh; margin-top: 0.5vh; margin-bottom: 0.5vh; }
@@ -61,9 +71,9 @@
 
 <body>       
     <header>
-        <iframe src="./partials/header.html" width="100%" class="auto-height-iframe"></iframe>
+        <iframe src="./partials/header.html" width="100%" class="auto-height-iframe" border="0" height="160vh" ></iframe>
     </header>    
-    <header class="podheader"><div id="pod-div">PROIZVODI / ELEGANS</div></header>   
+    <header class="podheader"><div id="podheader-div">PROIZVODI / ELEGANS</div></header>   
 
     <main>
 
@@ -84,61 +94,82 @@
 
       <section class="section-kategorije">
         <div>
-          <h3>ŽENE</h3>
-          <p>
-            <ul>
-              <li>haljine</li>
-              <li>suknje</li>
-            </ul>
-          </p> 
+          
+          <ul class="ul-kategorije">
+              <h3>ŽENE ↓</h3>
+              <li><a href="women-products.html" target="_parent">Haljine</a></li>
+              <li><a href="women-products.html" target="_parent">Suknje</a></li>                    
+              <li><a href="women-products.html" target="_parent ">Bluze & Košulje</a></li>
+              <li><a href="women-products.html" target="_parent ">Majice & Topići</a></li>
+              <li><a href="women-products.html" target="_parent ">Kombinezoni</a></li>
+              <li><a href="women-products.html" target="_parent ">Majice sa kapuljačom</a></li>                    
+              <li><a href="women-products.html" target="_parent ">Trenirke</a></li>
+              <li><a href="women-products.html" target="_parent ">Hlače & Traperice</a></li>                    
+              <li><a href="women-products.html" target="_parent ">Sakoi & Odijela</a></li>
+              <li><a href="women-products.html" target="_parent ">Jakne & Kaputi</a></li>
+              <li><a href="women-products.html" target="_parent ">Puloveri & Blejzeri</a></li>
+              <li><a href="women-products.html" target="_parent ">Pidžame & Spavaćice</a></li>
+              <li><a href="women-products.html" target="_parent ">Rublje</a></li>                    
+          </ul> 
+           
         </div>
         <div>
-          <h3>MUŠKARCI</h3>
-          <p>
-            <ul>
-              <li>hlače</li>
-              <li>košulje</li>
-            </ul>
-          </p> 
+          <ul class="ul-kategorije">
+            <h3>MUŠKARCI ↓</h3>                               
+            <li><a href="men-products.html" target="_parent">Košulje</a></li>            
+            <li><a href="men-products.html" target="_parent ">Majice kratki/dugi rukav</a></li>
+            <li><a href="men-products.html" target="_parent ">Kompleti</a></li>
+            <li><a href="men-products.html" target="_parent ">Majice sa kapuljačom</a></li>                    
+            <li><a href="men-products.html" target="_parent ">Trenirke</a></li>
+            <li><a href="men-products.html" target="_parent ">Hlače & Traperice</a></li>                    
+            <li><a href="men-products.html" target="_parent ">Sakoi & Odijela</a></li>
+            <li><a href="men-products.html" target="_parent ">Jakne & Kaputi</a></li>
+            <li><a href="men-products.html" target="_parent ">Puloveri & Prsluci</a></li>
+            <li><a href="men-products.html" target="_parent ">Pidžame</a></li>
+            <li><a href="men-products.html" target="_parent ">Rublje</a></li>                    
+        </ul> 
         </div>
         <div>
-          <h3>MODNI DODACI</h3>
-          <p>
-            <ul>
-              <li>marame</li>
-              <li>torbice</li>
-            </ul>
-          </p> 
+          <ul class="ul-kategorije">            
+            <h3>MODNI DODACI ↓</h3>
+            <li><a href="">Šalovi & Marame</a></li>
+            <li><a href="">Šeširi & Rukavice</a></li>
+            <li><a href="">Remeni & Kravate</a></li>
+            <li><a href="">Torbice & Novčanici</a></li>
+            <li><a href="">Sunčane naočale</a></li>               
+        </ul>
         </div>
     </section>
 
-        <section>                               
-            <div class="pojedini-proizvod">
+        <section> 
+          <div class="pojedini-proizvod">
                 
-                <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
+            <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
 
-                    <div class="gornja-slika">
-                      <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
+                <div class="gornja-slika">
+                  <a href="product-detail.html" target="_parent">
+                  <img src="./images/proizvodi-odjeća/ELegans haljina Amarena-1.jpg" alt="" id="slika"/>
+                  </a>          
+                </div>
+
+                <div class="donji-podaci">
+                  <div class="marka-proizvoda">DIOR / ELEGANS</div>
+                  <div class="naziv-proizvoda">Ženska večernja haljina - Amarena</div>
+                  <div class="cijena-proizvoda">209,90 €</div>                      
+                  <div class="boja-veličina-proizvoda">
+                    <div class="boja-proizvoda">
+                        Crna
                     </div>
-
-                    <div class="donji-podaci">
-                      <div class="marka-proizvoda">DIOR / ELEGANS</div>
-                      <div class="naziv-proizvoda">Ženska večernja haljina - Coco</div>
-                      <div class="cijena-proizvoda">1000 €</div>                      
-                      <div class="boja-veličina-proizvoda">
-                        <div class="boja-proizvoda">
-                            Srebrna
-                        </div>
-                        <div class="veličina-proizvoda">
-                            S
-                        </div>            
-                      </div>
-                      <div class="div-buttona-proizvoda">
-                      <button class="button-proizvoda">DODATI U KOŠARICU</button>
-                      </div>
-                    </div>
-            </div>
-
+                    <div class="veličina-proizvoda">
+                        M
+                    </div>            
+                  </div>
+                  <div class="div-buttona-proizvoda">
+                  <button class="button-proizvoda">DODATI U KOŠARICU</button>
+                  </div>
+                </div>
+          </div>        
+            
             <div class="pojedini-proizvod">
                 
               <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
@@ -637,6 +668,31 @@
           </div>
         </div>
   </div>
+</section>
+
+<section>
+  <div class="usluge-u-slici">
+    <div>
+        <h5>Besplatna dostava za narudžbe od 50 EUR i više</h5>
+        <figure>
+            <img src="./images/Brendovi-Logo/truck-speed-svgrepo-com.svg" width="40px" style="opacity: 50%;" alt="Ikonica dostavni kamiončić">
+        </figure>
+        <p>Na području Hrvatske, 3-5 dana.</p>            
+    </div>
+    <div>
+        <h5>Sigurno plaćanje</h5>
+        <figure>
+            <img src="./images/Brendovi-Logo/lock-keyhole-minimalistic-unlocked-svgrepo-com.svg" width="30px" style="opacity: 70%;"  alt="Ikonica lokot">
+        </figure>
+        <p>Vaši podaci zaštićeni su sigurnosnim protokolom.</p>            
+    </div>
+    <div>
+        <h5>Siguran i jednostavan povrat</h5>
+            <img src="./images/Brendovi-Logo/package-svgrepo-com.svg" width="30px" style="opacity: 60%;" alt="Ikonica paket">
+        </figure>
+        <p>Narudžbu moguće vratiti u roku 14 dana od primitka.</p>            
+    </div>
+</div> 
 </section>
 
 <section class="newsletter">
