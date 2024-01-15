@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plaćanje / ELegans</title>
+    <link rel="icon" type="image/icon" href="./images/favicon.ico"> 
     <link rel="stylesheet" href="./js/javascript.js">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style-newsletter.css">
@@ -15,12 +16,14 @@
             border-top-right-radius: 30%; border-bottom-left-radius: 30%;}             
             #podheader-div {width: 95%; padding-right: 2vw; padding-left: 2vw; text-align: right;}      
     
-        section {position: relative; top: 0%; left: 10%;
+        section {position: relative; top: 0%; left: 10%; height: 100vh;
             display: flex; flex-wrap: wrap; justify-content:right; align-items: flex-start;
             padding-top: 5vh; padding-bottom: 5vh; margin-top: 2vh;}
-        .lijevi-div {width: 63%;}
-        .desni-div {width: 34%; padding-left: 2vw; display: flex; flex-direction: column; flex-wrap: wrap;} 
+        .lijevi-div {width: 63%; display: flex; flex-direction: column;}
+        .desni-div {width: 34%; padding-left: 2vw; display: flex; flex-direction: column; flex-wrap: wrap; 
+            } 
         fieldset {border-color: lightgrey; box-shadow: 1px 3px 3px 2px lightgrey;}
+        .fieldset1 {margin-bottom: 2vh;}        
         legend {color: dimgrey;}
          
         #input-field1 {width: 45%; height: 5vh; border-color: lightgrey; box-shadow: 1px 2px 1px lightgrey;}              
@@ -28,7 +31,11 @@
         input:hover {border-style: outset;}
         ul {list-style-type: none; padding-right: 1vw;}
         li {padding-top: 3vh; padding-bottom: 4vh;}
-        span {color: crimson;}
+        span {color: crimson;}   
+        
+        #submit-button {padding: 1.5vh 5vw; width: 100%;}
+        #submit-button:hover {background-color: crimson; color: white;}       
+        
 
         .link-natrag {text-decoration: none;}
         .link-natrag:visited {color: crimson;}
@@ -41,8 +48,16 @@
         h3 {text-align: left;}
         #slika-trenirka:hover {width: 35%;} 
 
-        .button-narudžba {width:100%; padding: 10px 25px; background-color: goldenrod; color: white; font-size: large;}
-        .button-narudžba:hover {border: 1px solid grey; background-color: crimson;}
+        .button-narudžba {width: 100%; height: 10.5vh; padding: 10px 23px; background-color: goldenrod; color: white; font-size: large;}
+            .button-narudžba:hover {border: 1px solid dimgrey; padding: 10px 25px; background-color:crimson;
+                font-weight: bold; box-shadow:1px 1px 1px 2px lightgrey;} 
+            .button-narudžba::after {content: url(images/Brendovi-Logo/suit-1-svgrepo-com.svg); visibility: hidden; padding-left: 1vw;}
+            .button-narudžba:hover::after {content: url(images/Brendovi-Logo/suit-1-svgrepo-com.svg); visibility: visible;}
+            .button-narudžba::before {content: url(images/Brendovi-Logo/dress-1-svgrepo-com.svg); visibility: hidden; padding-right: 1vw;}
+            .button-narudžba:hover::before {content: url(images/Brendovi-Logo/dress-1-svgrepo-com.svg); visibility: visible;}
+
+            #checkbox, #radio {accent-color: dimgrey;}
+
 
         .div-logo-platne-kartice {display: flex; flex-wrap: wrap; width: 100%; justify-content: center; }        
         #slika-platne-kartice {width: 60px;}
@@ -70,32 +85,57 @@
                     <form action="action/page">
                         <ul>
                             <li> 
-                                <input type="text" name="Ime" placeholder="* Ime" id="input-field1">
-                                <input type="text" name="Prezime" placeholder="* Prezime" id="input-field1">
+                                <input type="text" name="Ime" placeholder="* Ime" id="input-field1" required>
+                                <input type="text" name="Prezime" placeholder="* Prezime" id="input-field1" required>
                             </li>
                             <li>                            
-                                <input type="text" name="Ulica i broj" id="dugi-input" placeholder="* Ulica i broj" id="input-field1">
+                                <input type="text" name="Ulica i broj" id="dugi-input" placeholder="* Ulica i broj" id="input-field1" required>
                             </li>                            
                             <li>
-                                <input type="number" name="Poštanski broj" placeholder="* Poštanski broj" id="input-field1">
-                                <input type="text" name="Grad" placeholder="* Grad" id="input-field1">
+                                <input type="number" name="Poštanski broj" placeholder="* Poštanski broj" id="input-field1" required>
+                                <input type="text" name="Grad" placeholder="* Grad" id="input-field1" required>
                             </li>
                             <li>
-                                <input type="text" name="Država" id="dugi-input" placeholder="* Država" id="input-field1">
+                                <input type="text" name="Država" id="dugi-input" placeholder="* Država" id="input-field1" required>
                             </li>
                             <li>
-                                <input type="tel" name="Telefon" placeholder="* Telefon" id="input-field1">
-                                <input type="email" name="Email" placeholder="* E-mail" id="input-field1">
+                                <input type="tel" name="Telefon" placeholder="* Telefon" id="input-field1" required>
+                                <input type="email" name="Email" placeholder="* E-mail" id="input-field1" required>
                             </li>
                             <li><small><span>*</span>Obavezna polja</small></li>                            
                         </ul>
+                        <button type="submit" id="submit-button">Pošalji</button>                        
                     </form>                                       
-                </fieldset>
-                <div>
+                </fieldset>  
+
+                <div class="div-natrag">
                     <p>
                         <a href="cart.html" target="_parent" class="link-natrag"><< Natrag na Košaricu</a>
                     </p>                    
-                </div>                
+                </div>
+
+                <div id="bijeli-div"></div>
+
+                        <div class="div-logo-platne-kartice">
+                            <div>
+                            <figure>
+                                <img src="./images/Brendovi-Logo/mastercard-full-svgrepo-com.svg" alt="Logo MasterCard" id="slika-platne-kartice">
+                            </figure>
+                            </div>
+                            <div>
+                            <figure>
+                                <img src="./images/Brendovi-Logo/apple-pay-svgrepo-com.svg" alt="Logo ApplePay" id="slika-platne-kartice">
+                            </figure>
+                            </div>
+                            <div>
+                            <figure>
+                                <img src="./images/Brendovi-Logo/visa-logo-svgrepo-com.svg" alt="Logo Visa" id="slika-platne-kartice">
+                            </figure>
+                            </div>
+                        </div>
+
+                        
+                                
             </div>
 
             <div class="desni-div">
@@ -131,42 +171,26 @@
                        
 
                 <div class="div-plati">
-                <form action="page/action">
+                <form action="zahvala.html">
                     <p>
-                        <input type="checkbox" name="Pristani"> *Pročitao/la sam i prihvaćam uvjete korištenja i politiku o privatnosti.
+                        <input type="checkbox" checked="checked" name="Pristanak" id="checkbox"> *Pročitao/la sam i prihvaćam uvjete korištenja i politiku o privatnosti.
                         <br>
-                        <input type="checkbox" name="Newsletter"> Želim primati ELegans Newsletter.
+                        <input type="checkbox" name="Newsletter" id="checkbox"> Želim primati ELegans Newsletter.
                         <br>
                     </p>
                     <p>
-                        <button class="button-narudžba">ZAVRŠI NARUDŽBU</button>                        
+                        <a href="zahvala.html" target="_parent">
+                        <button type="submit" class="button-narudžba">ZAVRŠI NARUDŽBU</button>
+                        </a>                        
                     </p>                    
                 </form>
                 </div>                               
-            </div>
-            
-        </section>  
-        
-    </main>
+            </div>            
+        </section>   
 
-    <div class="div-logo-platne-kartice">
-        <div>
-        <figure>
-            <img src="./images/Brendovi-Logo/mastercard-full-svgrepo-com.svg" alt="Logo MasterCard" id="slika-platne-kartice">
-        </figure>
-        </div>
-        <div>
-        <figure>
-            <img src="./images/Brendovi-Logo/apple-pay-svgrepo-com.svg" alt="Logo ApplePay" id="slika-platne-kartice">
-        </figure>
-        </div>
-        <div>
-        <figure>
-            <img src="./images/Brendovi-Logo/visa-logo-svgrepo-com.svg" alt="Logo Visa" id="slika-platne-kartice">
-        </figure>
-        </div>
-    </div>     
-    
+        
+    </main> 
+
     <div class="usluge-u-slici">
         <div>
             <h5>Besplatna dostava za narudžbe od 50 EUR i više</h5>
@@ -194,7 +218,7 @@
         <tr id="table-left">
             <td><strong>NEWSLETTER</strong></td>
             <td>
-                <form action="action/page">
+                <form action="action_page.html">
                     <input type="email" name="email" id="news-email" placeholder="Upište Vaš e-mail">
                     <button type="submit" class="button-newsletter">Prijava</button>
                 </form>
@@ -203,11 +227,11 @@
         <tr id="table-right">
             <td>Prijavite se na naš newsletter i ostvarite 15% popusta na svoju prvu kupovinu i primajte obavijesti o našim promocijama i proizvodima.</td>
             <td>
-                <form action="action/page">
-                    <input type="checkbox">
+                <form action="action_page.html">
+                    <input type="checkbox" checked="checked" id="checkbox" value="privacy" name="privacy">
                     Pročitao sam i slažem se sa sadržajem <a href="privacy.html" target="_blank" title="ELegans/Politika privatnosti" id="privacy-link"> politika privatnosti</a> (privolu je moguće opozvati u bilo kojem trenutku). <br><br>
-                    <input type="checkbox">
-                    Prijavi se na newsletter.
+                    <input type="checkbox" id="checkbox" value="newsletter" name="newsletter">
+                    Prijavi se na ELegans newsletter.
                 </form>
             </td>
         </tr>

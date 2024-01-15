@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ELegans WebShop</title>    
+    <title>ELegans WebShop</title>
+    <link rel="icon" type="image/icon" href="./images/favicon.ico">    
     <link rel="stylesheet" href="./js/javascript.js">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style-newsletter.css">
     <link rel="stylesheet" href="./css/style-usluge-dno.css">
 
     <style>
+        .podheader {display: flex; align-items: center;}             
+            #podheader-div {width: 95%; padding-right: 2vw; padding-left: 2vw; text-align: right;} 
     
     section {position: relative; top: 0%; left: 1%; width: 99%;
             height: 90vh; display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;
@@ -96,6 +99,7 @@
               }            
             .sect5 > div:first-of-type:hover {height: 9%; font-weight: bolder;}
             .sect5 > div {width: 44%; height: 45%; margin: 2px; box-shadow: 1px 1px 1px 1px lightgrey;}
+            #p-crna {color: black;}
 
             #blog-naslovni {background-color: white;}           
 
@@ -143,7 +147,9 @@
             a:link {color: crimson;}
             a:visited {color: crimson;}
             a:hover {font-weight: bold; color: crimson;}
-            a:active {color:crimson;} 
+            a:active {color:crimson;}
+            
+            #article-natrag-na-vrh {text-align: center;}
 
     </style>
 
@@ -249,51 +255,67 @@
             
 
             <div id="blog-drugi">
-                <article id="blog-article">
-                    <p><small>BLOG NEWS</small></p>               
+                <a href="blog-detail-jedan.html" target="_parent">
+                <article id="blog-article">                    
+                    <p id="p-crna"><small>BLOG NEWS</small></p>               
                     <h1>Top 5 dodataka za proljeće 2024.</h1>
                     <time>01/01/2024</time>                                         
-                    <p>
+                    <p id="p-crna">
                     Evo 5 nekonvencionalnih proljetnih dodataka koje smo pronašli gledajući najnovije trendove s modnih pista...
-                    </p>
-                </article>                
+                    </p>                    
+                </article> 
+                </a>               
             </div>
 
             <div id="blog-treci">
+                <a href="blog.html" target="_parent">
                 <article id="kraljevski-article">
-                    <p><small>KRALJEVSKA MODA</small></p>               
+                    <p id="p-crna"><small>KRALJEVSKA MODA</small></p>               
                     <h1>Kraljica Letizia ponovo modno briljira</h1>
                     <time>08/01/2024</time>                                         
-                    <p>
+                    <p id="p-crna">
                         Španjolska kraljica ponovno je uspjela zadiviti svojom elegantnom modnom kombinacijom s potpisom njezine omiljene dizajnerice Caroline Herrere...
                     </p>                    
-                </article>                               
+                </article>
+                </a>                              
             </div>
 
-            <div id="blog-cetvrti">                
+            <div id="blog-cetvrti">
+                <a href="blog.html" target="_parent">               
                 <article id="active-living-article">
-                    <p><small>ACTIVE LIVING</small></p>               
+                    <p id="p-crna"><small>ACTIVE LIVING</small></p>               
                     <h1>Lionel Messi i Adidas udružili snage?</h1>
                     <time>08/01/2024</time>                                         
-                    <p>
+                    <p id="p-crna">
                         U domeni sporta i mode čini se da bismo mogli dobiti Lionel Messi i Adidas Samba tenisice... 
                     </p>
                 </article>
+                </a>
             </div>
 
-            <div id="blog-peti">                
+            <div id="blog-peti">
+                <a href="blog.html" target="_parent">              
                 <article id="home-lifestyle-article">
-                    <p><small>HOME & LIFESTYLE</small></p>               
+                    <p id="p-crna"><small>HOME & LIFESTYLE</small></p>               
                     <h1>Kako ukrasiti stan u proljeće?</h1>
                     <time>08/01/2024</time>                                         
-                    <p>
+                    <p id="p-crna">
                         Proljeće je savršeno vrijeme za osvježenje doma. Dajte svojim interijerima potpuno novi duh tekstilom... 
                     </p>
                 </article>
+                </a>
             </div>
             <a href="blog.html" target="_parent"><span id="blog-span">BLOG</span></a>
-        </section> 
+        </section>        
         
+            <article id="article-natrag-na-vrh">
+                <p>
+                <a href="#" id="natrag-na-vrh">
+                - Natrag na vrh - 
+                </a>
+                </p>              
+            </article>
+
     </main> 
 
     <div class="usluge-u-slici">
@@ -325,7 +347,7 @@
             <td>
                 <form action="action/page">
                     <input type="email" name="email" id="news-email" placeholder="Upište Vaš e-mail">
-                    <button type="submit">Prijava</button>
+                    <button type="submit" class="button-newsletter">Prijava</button>
                 </form>
             </td>
         </tr>
@@ -333,10 +355,10 @@
             <td>Prijavite se na naš newsletter i ostvarite 15% popusta na svoju prvu kupovinu i primajte obavijesti o našim promocijama i proizvodima.</td>
             <td>
                 <form action="action/page">
-                    <input type="checkbox">
+                    <input type="checkbox" value="privacy" name="privacy" id="checkbox" checked="checked">
                     Pročitao sam i slažem se sa sadržajem <a href="privacy.html" target="_blank" title="ELegans/Politika privatnosti" id="privacy-link"> politika privatnosti</a> (privolu je moguće opozvati u bilo kojem trenutku). <br><br>
-                    <input type="checkbox">
-                    Prijavi se na newsletter.
+                    <input type="checkbox" value="newsletter" name="newsletter" id="checkbox">
+                    Prijavi se na ELegans newsletter.
                 </form>
             </td>
         </tr>

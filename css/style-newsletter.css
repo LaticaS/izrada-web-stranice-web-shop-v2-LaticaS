@@ -3,7 +3,7 @@
      padding: 1rem; color: white;
     display: flex; flex-wrap: wrap; align-items: center; text-align: center;}
     tr, tr {flex-wrap: wrap;}
-button {padding: 1rem 2.5rem; border: none;}
-button:hover {background-color: lightgrey;} 
+.button-newsletter {padding: 1rem 2.5rem; border: none;}
+.button-newsletter:hover {background-color: lightgrey;} 
 #news-email {width: 14vw; padding: 1rem; border: none;}
 #privacy-link {text-decoration: underline; color: white;}

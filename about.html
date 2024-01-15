@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O nama / ELegans</title>
+    <link rel="icon" type="image/icon" href="./images/favicon.ico"> 
     <link rel="stylesheet" href="./js/javascript.js">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style-newsletter.css">
@@ -18,7 +19,8 @@
         #fotka-tim {padding: 1vw; transition-property: width height; transition-duration: 2s; transition-timing-function: ease;} 
         #fotka-tim:hover {width: 60%; height: 60%;} 
         figcaption {color: crimson;}
-        p::first-letter {font-size: 130%; color: crimson; font-weight: bold;}      
+        p::first-letter {font-size: 130%; color: crimson; font-weight: bold;}        
+        
         
     </style>
 
@@ -122,7 +124,7 @@
             </figure>
             <span>Narudžbu moguće vratiti u roku 14 dana od primitka.</span>            
         </div>
-    </div> 
+    </div>    
 
     <table class="newsletter">
         <tr id="table-left">
@@ -130,7 +132,7 @@
             <td>
                 <form action="action/page">
                     <input type="email" name="email" id="news-email" placeholder="Upište Vaš e-mail">
-                    <button type="submit">Prijava</button>
+                    <button type="submit" class="button-newsletter">Prijava</button>
                 </form>
             </td>
         </tr>
@@ -138,10 +140,10 @@
             <td>Prijavite se na naš newsletter i ostvarite 15% popusta na svoju prvu kupovinu i primajte obavijesti o našim promocijama i proizvodima.</td>
             <td>
                 <form action="action/page">
-                    <input type="checkbox">
+                    <input type="checkbox" value="privacy" name="privacy" id="checkbox" checked="checked">
                     Pročitao sam i slažem se sa sadržajem <a href="privacy.html" target="_blank" title="ELegans/Politika privatnosti" id="privacy-link"> politika privatnosti</a> (privolu je moguće opozvati u bilo kojem trenutku). <br><br>
-                    <input type="checkbox">
-                    Prijavi se na newsletter.
+                    <input type="checkbox" id="checkbox" value="newsletter" name="newsletter">
+                    Prijavi se na ELegans newsletter.
                 </form>
             </td>
         </tr>

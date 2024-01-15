@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modni blog / ELegans</title>
+    <link rel="icon" type="image/icon" href="./images/favicon.ico"> 
     <link rel="stylesheet" href="./js/javascript.js">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-newsletter.css">
+
     <style>
             
         .podheader {height: 30vh; background-image: url(./images/fashion-designer-template-new-arrival-header-img.jpg);
@@ -17,18 +20,25 @@
         section {position: relative; top: 0%; left: 10%; display: flex; justify-content: center; padding: 4vh 1vw; margin: 2px;} 
         .drugi-section, .cetvrti-section {background-color: lightsalmon; border-top-right-radius: 8%; border-bottom-left-radius: 8%;}       
         .div-container-lijevo, .div-container-desno {display:flex; flex-direction: row; flex-wrap: wrap; flex: 1 1 auto; }
-        .div-container-desno {padding-left: 2vw;}
-        .div-container-desno:hover {width: 140%;} 
+        .div-container-desno {padding-left: 2vw;}         
         .first-img {border-top-right-radius: 20%; border-bottom-left-radius: 20%;
             transition-property: all; transition-duration: 2s; transition-timing-function: ease;}
-        .first-img:hover {border-radius: 20% 0% 20% 0%;}
+        .first-img:hover {border-radius: 20% 0% 20% 0%; width: 107%;}
+        #img-drugih-blogova {border-top-right-radius: 20%; border-bottom-left-radius: 20%; width: 280px;
+            transition-property: border-radius; transition-duration: 2s; transition-timing-function: ease;}
+            #img-drugih-blogova:hover {border-radius: 20% 0% 20% 0%; width: 300px;}
                     
 
         p {font-style: italic; color: darkslategrey;}
-        h1 {color: black;}
+        h1 {color: darkslategrey;}
 
-        button {padding: 8px 10px; border: 1px solid; border-top-right-radius: 30%; border-bottom-left-radius: 30%;}
-        button:hover {border: 2px solid crimson;}
+        #button-blog {padding: 8px 10px; border: 1px solid; border-top-right-radius: 30%; border-bottom-left-radius: 30%;}
+        #button-blog:hover {border: 2px solid crimson;}
+
+        #natrag-na-vrh:link {color: crimson; text-decoration: none;}
+            #natrag-na-vrh:visited {color: crimson;}
+            #natrag-na-vrh:hover {color: crimson; font-weight:bolder;}
+            #natrag-na-vrh:active {color: crimson;}
 
         time {font-size: small; color: crimson;}
         .paginacija > div {padding: 5px; margin: 6px; background-color: lightgrey; text-align: center; color: darkslategray;}
@@ -59,7 +69,7 @@
                     Evo 5 nekonvencionalnih proljetnih dodataka koje smo pronašli gledajući najnovije trendove s modnih pista ali i ponudu vrhunskih modnih marki...
                     </p>
                     <a href="blog-detail-jedan.html" target="_parent">
-                    <button>Saznajte više</button>
+                    <button id="button-blog">Saznajte više</button>
                     </a>
                 </article>
             </div> 
@@ -78,7 +88,8 @@
         <section class="drugi-section">            
             <div class="div-container-lijevo">
                 <div>
-                    <img src="https://fastly.picsum.photos/id/411/200/200.jpg?hmac=OVYhfXZUSeIPuy2vvqvn56l4Y8YZjUzJ57HIaxnjdTQ" alt="Ženski model za jesen-zimu">
+                    <a href="blog-detail-jedan.html" target="_parent">
+                    <img src="./images/za blog/ELegans-blog-jesen-zima.jpg" width="" alt="Ženski modeli za jesen-zimu" title="Šarenilo zime" id="img-drugih-blogova"></a>
                 </div>
                 <div>                    
                     <article>
@@ -87,14 +98,15 @@
                         <p>
                         Jesensko-zimskom sezonom dominirat će minimalizam. Jednostavne forme i lookovi u nenametljivim formama. Trendovi koji se brzo mijenjaju ustupaju mjesto modnim klasicima, čime odjevne kombinacije...
                         </p>                                       
-                        <button>Saznajte više</button>
+                        <button id="button-blog">Saznajte više</button>
                     </article> 
                 </div>
             </div>
             
             <div class="div-container-desno">
                 <div>
-                    <img src="https://fastly.picsum.photos/id/411/200/200.jpg?hmac=OVYhfXZUSeIPuy2vvqvn56l4Y8YZjUzJ57HIaxnjdTQ" alt="Torbica i cipele">
+                    <a href="blog-detail-jedan.html" target="_parent">
+                    <img src="images/za blog/ELegans blog-cipele i torbe različitih boja.jpg" id="img-drugih-blogova" width="" alt="Torbica i cipele" title="Obojite svoj svijet"></a>
                 </div>
                 <div class="roza">                    
                     <article>
@@ -103,7 +115,7 @@
                         <p>
                         Vaše cipele i torba moraju pasati uz vašu odjeću, ali ne jedno s drugim. Kada nađete savršenu odjevnu kombinaciju slobodno odaberite...
                         </p>
-                        <button>Saznajte više</button>
+                        <button id="button-blog">Saznajte više</button>
                     </article>                    
                 </div>
             </div>
@@ -113,7 +125,8 @@
         <section class="treci-section">
             <div class="div-container-lijevo">
                 <div>
-                    <img src="https://fastly.picsum.photos/id/411/200/200.jpg?hmac=OVYhfXZUSeIPuy2vvqvn56l4Y8YZjUzJ57HIaxnjdTQ" alt="">
+                    <a href="blog-detail-jedan.html" target="_parent">
+                    <img src="images/za blog/ELegans-blog-vintage odjeća.jpg" id="img-drugih-blogova" width="" alt="Ilustracija vintage odjeće" title="Klasika je uvijek u modi"></a>
                 </div>
                 <div>
                     <article>
@@ -122,23 +135,24 @@
                         <p>
                             Odjeća u vintage stilu proizvodi su koji će uljepšati svaki stajling. Mogu se pronaći ne samo u second-hand trgovinama, već i na tržnicama i buvljacima. Gdje točno tražiti takve ponude? 
                         </p>
-                        <button>Saznajte više</button>
+                        <button id="button-blog">Saznajte više</button>
                     </article>
                 </div>
             </div>
 
             <div class="div-container-desno">
                 <div>
-                    <img src="https://fastly.picsum.photos/id/411/200/200.jpg?hmac=OVYhfXZUSeIPuy2vvqvn56l4Y8YZjUzJ57HIaxnjdTQ" alt="">
+                    <a href="blog-detail-jedan.html" target="_parent">
+                    <img src="./images/za blog/ELegans-haljina cvjetnog uzorka.jpg" id="img-drugih-blogova" width="" alt="Haljina cvjetnog uzorka" title="Modni evergreen"></a>
                 </div>
                 <div>
                     <article>
                         <h1>Cvjetni uzorak</h1>
                         <time>20/09/2023</time>
                         <p>
-                          Najbolji proljetni trend koji nikada neće napustiti modni svijet! Ovaj romantični uzorak svake se godine vraća u naše ormare, pa tako i ove...
+                          Najbolji proljetni trend koji nikada neće napustiti modni svijet! Kako proljeće stiže, i oko nas priroda počinje cvjetati, procvjeta i garderoba. Ovaj romantični uzorak svake se godine vraća u naše ormare, pa tako i ove...
                         </p>
-                        <button>Saznajte više</button>
+                        <button id="button-blog">Saznajte više</button>
                     </article>
                 </div>
             </div>
@@ -148,37 +162,51 @@
         <section class="cetvrti-section">            
             <div class="div-container-lijevo">
                 <div>
-                    <img src="https://fastly.picsum.photos/id/411/200/200.jpg?hmac=OVYhfXZUSeIPuy2vvqvn56l4Y8YZjUzJ57HIaxnjdTQ" alt="Ženski model za jesen-zimu">
+                    <a href="blog-detail-jedan.html" target="_parent">
+                    <img src="./images/ELegans-blog-kraljicaLetizia.jpg" id="img-drugih-blogova" width="" alt="Španjolska kraljica Letizia" title="Kraljica stila"></a>
                 </div>
                 <div>                    
                     <article>
-                        <h1>NEŠTO</h1>
+                        <h1>Kraljica Letizia ponovno modno briljira</h1>
                         <time>01/11/2023</time> 
                         <p>
-                        Jesensko-zimskom sezonom dominirat će minimalizam. Jednostavne forme i lookovi u nenametljivim formama. Trendovi koji se brzo mijenjaju ustupaju mjesto modnim klasicima, čime odjevne kombinacije...
+                          Svečani prijem u Buckinghamskoj palači kralja Charlesa okupio je brojne VIP goste, a među njima u pripadnike kraljevskih obitelji. Pažnju mnogih privukla je, sasvim, očekivano, španjolska kraljica Letizia. Ovom prigodom zablistala je u prekrasnoj kombinaciji čiji dizajn potpisuje Carolina Herrera...
                         </p>                                       
-                        <button>Saznajte više</button>
+                        <button id="button-blog">Saznajte više</button>
                     </article> 
                 </div>
             </div>
             
             <div class="div-container-desno">
                 <div>
-                    <img src="https://fastly.picsum.photos/id/411/200/200.jpg?hmac=OVYhfXZUSeIPuy2vvqvn56l4Y8YZjUzJ57HIaxnjdTQ" alt="Torbica i cipele">
+                    <a href="blog-detail-jedan.html" target="_parent">
+                    <img src="./images/naslovna/Lionel Messi.jpg" id="img-drugih-blogova" width="" alt="Foto: Lionel Messi" title="Modni dribler"></a>
                 </div>
                 <div>                    
                     <article>
-                        <h1>NEŠTO2</h1>
+                        <h1>Lionel Messi i Adidas udružili snage?</h1>
                         <time>10/10/2023</time> 
                         <p>
-                        Vaše cipele i torba moraju pasati uz vašu odjeću, ali ne jedno s drugim. Kada nađete savršenu odjevnu kombinaciju slobodno odaberite...
+                        U domeni sporta i mode rijetko koja suradnja izaziva toliko uzbuđenja kao kada se spajaju legendarne sportske ikone i renomirani brendovi, a kako prenosi Highsnobiety, čini se da bismo mogli dobiti Lionel Messi i adidas Samba tenisice... 
                         </p>
-                        <button>Saznajte više</button>
+
+                        <button id="button-blog">Saznajte više</button>
+
                     </article>                    
                 </div>
             </div>
         </section>
-                
+
+        <section>
+            <article>
+                <p>
+                <a href="#" id="natrag-na-vrh">
+                ELegans Blogging - natrag na vrh
+                </a>
+                </p>              
+            </article>
+        </section>
+
         <section class="paginacija">
             <div>                
                 <img src="./images/left-arrow-next-svgrepo-com.svg" width="15px" alt="Strelica lijevo" title="Lijevo">
@@ -190,9 +218,31 @@
                 <img src="./images/right-arrow-next-svgrepo-com (1).svg" width="15px" alt="Strelica desno" title="Desno">
             </div>
         </section>
-
         
     </main>
+
+    <table class="newsletter">
+        <tr id="table-left">
+            <td><strong>NEWSLETTER</strong></td>
+            <td>
+                <form action="action/page">
+                    <input type="email" name="email" id="news-email" placeholder="Upište Vaš e-mail">
+                    <button type="submit" class="button-newsletter">Prijava</button>
+                </form>
+            </td>
+        </tr>
+        <tr id="table-right">
+            <td>Prijavite se na naš newsletter i ostvarite 15% popusta na svoju prvu kupovinu i primajte obavijesti o našim promocijama i proizvodima.</td>
+            <td>
+                <form action="action/page">
+                    <input type="checkbox" value="privacy" name="privacy" id="checkbox" checked="checked">
+                    Pročitao sam i slažem se sa sadržajem <a href="privacy.html" target="_blank" title="ELegans/Politika privatnosti" id="privacy-link"> politika privatnosti</a> (privolu je moguće opozvati u bilo kojem trenutku). <br><br>
+                    <input type="checkbox" id="checkbox" value="newsletter" name="newsletter">
+                    Prijavi se na ELegans newsletter.
+                </form>
+            </td>
+        </tr>
+    </table>
 
     <footer>
         <iframe src="./partials/footer.html"width="100%" class="auto-height-iframe" border="0" height="200vh"></iframe>

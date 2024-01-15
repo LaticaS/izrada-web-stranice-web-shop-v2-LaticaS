@@ -3,487 +3,428 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog detail - trenutno probno polje</title>
+    <title>Modni dodaci / ELegans</title>
+    <link rel="icon" type="image/icon" href="./images/favicon.ico"> 
     <link rel="stylesheet" href="./js/javascript.js">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-usluge-dno.css">
+   
+    <style>
+        #podheader-img {opacity: 70%;}
 
-    <style>     
+        .aside-kategorije {float: left; position: sticky; top: 0%; left: 0%; background-color: white;} 
+
+        .section-kategorije {float: right; width: 75%; display: flex; flex: 1 1 auto; height: 5vh;
+            justify-content: space-around; align-items: stretch; text-align:left;} 
+        .section-kategorije:hover {height: 50vh;} 
+        .section-kategorije > div {border-right: 1px solid grey; border-bottom: 1px solid grey; padding-right: 3vw;}         
         
-        .podheader {height: 30vh; background-image: url(./images/fashion-designer-template-new-arrival-header-img.jpg);
-            background-size: cover; background-repeat: no-repeat; background-position:center;
-            transition-property: padding-bottom padding-left font-weight; transition-duration: 2s; transition-timing-function: ease;}
-            .podheader:hover {padding-bottom: 3vh; padding-left: 3vh; font-weight: bold;} 
-            #podheader-div {width: 75%; padding-right: 2vw; padding-left: 2vw; text-align: right;}    
+        li:hover {font-size: larger; font-weight: bolder;}
+        .ul-kategorije {list-style-type: none;}
+        a {color: crimson; text-decoration: none;}
+        a:link {color: crimson;}
+        a:visited {color: crimson;}
+        a:hover {color: crimson; text-decoration: underline;}
+        a:active {color:dimgrey;}  
 
-        aside {float: left; position: sticky; top: 0%; left: 0%;}             
-        section {width: 76%; float: right; display: flex; flex-wrap: wrap; padding: 1vh 0vw; margin: 1vh 0vw;}
-        .pojedini-proizvod {height: fit-content; flex-direction: column; flex-wrap: wrap; flex: 1 1 auto;
-            text-align: center; padding: 2px; border: 1px solid white;} 
-        .gornja-slika {background-color: teal; padding: 1px;}
-        #slika {border-top-left-radius: 30%; border-bottom-right-radius: 30%;}
-        .donji-podaci {flex-direction: column; align-content: space-between; flex-wrap: wrap; background-color: blueviolet; padding: 1px;}
-        .marka-proizvoda {padding: 0.5vh 0vw; margin: 0.5vh 0vw;}
+        #naslov-modni-dodaci {color: crimson;}
+
+        section {float: right; width: 75%; display: flex; flex-wrap: wrap; padding: 1vh 0vw; margin: 1vh 0vw;
+          background-color: white;}
+
+          .pojedini-proizvod {position: relative; height: fit-content; display: flex; flex-direction: column; flex-wrap: wrap; flex: 1 1 auto;
+            text-align: center; padding: 2px; border: 1px solid white; 
+            transition-property: border-color background-color; transition-duration: 2s; transition-timing-function: ease;}
+        .pojedini-proizvod:hover {border-color: dimgrey; background-color: black;}
+        .div-srce {position: absolute; top: 2%; right: 4%; z-index: 5; width: 30px; height: 30px;
+            border: 1px solid dimgrey; background-color: white; color: dimgrey; border-radius: 50%;}
+            .div-srce:hover {color: crimson;}
+
+                        
+        .gornja-slika {padding: 1px; z-index: 2; }            
+        #slika {width: 200px; height: 300px; border-top-left-radius: 30%; border-bottom-right-radius: 30%;
+            transition-property: border-radius; transition-duration: 2s; transition-timing-function: ease;} 
+            #slika:hover {border-radius: 0% 30% 0% 30%;} 
+
+        .donji-podaci {display: flex; flex-direction: column; align-items: center; flex-wrap: wrap; padding: 1px;
+          background-color: whitesmoke; 
+          transition-property: opacity; transition-duration: 2s; transition-timing-function: ease;} 
+          .donji-podaci:hover {opacity: 80%;}          
+        .marka-proizvoda {padding: 0.5vh 0vw; margin: 0.5vh 0vw; font-weight: bolder;}
         .naziv-proizvoda {padding: 0.5vh 0vw; margin: 0.5vh 0vw;}
-        .cijena-proizvoda {padding: 0.5vh 0vw; margin: 0.5vh 0vw;}
-        .boja-veličina-proizvoda {display: flex; flex-direction: row; justify-content: space-around; background-color: yellowgreen; padding: 0.5vh 0vw; margin: 0.5vh 0vw;} 
-        .button-proizvoda {width: 100%; font-size: small; margin: 0.5vh 0vw} 
+        .cijena-proizvoda {padding: 0.5vh 0vw; margin: 0.5vh 0vw; font-weight: bold; color: crimson;}
+        .boja-veličina-proizvoda {display: flex; flex-direction: row; 
+            padding: 0.5vh 0vw; margin: 0.5vh 0vw; font-size: smaller;} 
+        .boja-proizvoda, .veličina-proizvoda {padding: 4px;}
+        .div-buttona-proizvoda {margin: 0.5vh 0vw; padding: 0.5vh 0vw;}
+        .button-proizvoda {width: 100%; text-align: center; background-color: dimgrey; color: white;} 
+        .button-proizvoda:hover {background-color: crimson; color: white;}
 
-
-
+        #article-natrag-na-vrh {width: 100%; text-align: center;}
+        
+        .newsletter {background-color: crimson; height: 40vh; margin-top: 0.5vh; margin-bottom: 0.5vh; }
+        table {width: 100%; height: 70%; padding: 1rem; color: white;
+            display: flex; flex-wrap: wrap; align-items: center; text-align: center;}
+            tr, tr {flex-wrap: wrap;}
+        button {padding: 1rem 2.5rem; border: none;}
+        button:hover {background-color: lightgrey;} 
+        #news-email {width: 14vw; padding: 1rem; border: none;}
+        #privacy-link {text-decoration: underline; color: white;}    
+          
+          
+            
+         
+                   
+        
+        
+        
     </style>
-    
+
 </head>
+
 <body>
     <header>
         <iframe src="./partials/header.html" width="100%" class="auto-height-iframe" border="0" height="160vh" ></iframe>
     </header>
 
-    <header class="podheader"><div id="podheader-div">Blog detail</div></header>
+    <header class="podheader">
+      <div id="div-podheader-ikonica">
+        <img src="./images/Brendovi-Logo/dress-1-svgrepo-com.svg" width="25px" alt="Ikonica-odijelo" id="podheader-img">
+      </div>
+      <div id="podheader-div">WOMEN / ELEGANS</div>
+    </header>
 
-    <main> 
-        <aside>
-          <form action="action/page">
-              <div>
-                  <h3>VELIČINA</h3>
-                  <hr>
-                  <p>
-                  <ul>
-                      <li><input type="radio" name="size" value="XXS"><label for="sizeXXS"> XXS</label></li>
-                      <li><input type="radio" name="size" value="XS"><label for="sizeXS"> XS</label></li>
-                      <li><input type="radio" name="size" value="XS/S"><label for="sizeXS/S"> XS/S</label></li>
-                      <li><input type="radio" name="size" value="S"><label for="sizeS"> S</label></li>
-                      <li><input type="radio" name="size" value="S/M"><label for="sizeS/M"> S/M</label></li>
-                      <li><input type="radio" name="size" value="M"><label for="sizeM"> M</label></li>
-                      <li><input type="radio" name="size" value="M/L"><label for="sizeM/L"> M/L</label></li>
-                      <li><input type="radio" name="size" value="L"><label for="sizeL"> L</label></li>
-                      <li><input type="radio" name="size" value="L/XL"><label for="sizeL/XL"> L/XL</label></li>
-                      <li><input type="radio" name="size" value="XL"><label for="sizeXL"> XL</label></li>
-                      <li><input type="radio" name="size" value="XXL"><label for="sizeXXL"> XXL</label></li>                       
-                  </ul>
-                  </p>
-              </div>
-              <div>
-                  <h3>BOJA</h3>
-                  <hr>
-                  <p>
-                  <ul>
-                      <li><input type="checkbox" name="boja" value="bež"><label for="boja-bež"> bež</label></li>
-                      <li><input type="checkbox" name="boja" value="bijela"><label for="boja-bijela"> bijela</label></li>
-                      <li><input type="checkbox" name="boja" value="crna"><label for="boja-crna"> crna</label></li>
-                      <li><input type="checkbox" name="boja" value="crvena"><label for="boja-crvena"> crvena</label></li>
-                      <li><input type="checkbox" name="boja" value="plava"><label for="boja-plava"> plava</label></li>
-                      <li><input type="checkbox" name="boja" value="siva"><label for="boja-siva"> siva</label></li>
-                      <li><input type="checkbox" name="boja" value="roza"><label for="boja-roza"> roza</label></li>                        
-                      <li><input type="checkbox" name="boja" value="zlatna"><label for="boja-zlatna"> zlatna</label></li>
-                      <li><input type="checkbox" name="boja" value="žuta"><label for="boja-žuta"> žuta</label></li>
-                      <li><input type="checkbox" name="boja" value="zelena"><label for="boja-zelena"> zelena</label></li>
-                      <li><input type="checkbox" name="boja" value="narančasta"><label for="boja-naranča"> naranča</label></li>
-                      <li><input type="checkbox" name="boja" value="smeđa"><label for="boja-smeđa"> smeđa</label></li>
-                      <li><input type="checkbox" name="boja" value="srebrna"><label for="boja-srebrna"> srebrna</label></li>                        
-                      <li><input type="checkbox" name="boja" value="ostalo"><label for="boja-ostalo"> ostalo</label></li>
-                  </ul>
-                  </p>
-                  <p>
-                      <button type="submit" name="submit" value="Pošalji">Pošalji</button>
-                  </p>
-              </div>
-          </form> 
-      </aside>
-
-        <section>                               
-            <div class="pojedini-proizvod">
-
-                    <div class="gornja-slika">
-                      <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
-                    </div>
-
-                    <div class="donji-podaci">
-                      <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
-                      <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
-                      <div class="cijena-proizvoda">$65</div>                      
-                      <div class="boja-veličina-proizvoda">
-                        <div class="boja-proizvoda">
-                            boja
-                        </div>
-                        <div class="veličina-proizvoda">
-                            veličina
-                        </div>            
-                      </div>
-                      <div class="button-proizvoda">
-                      <button>DODATI U KOŠARICU</button>
-                      </div>
-                    </div>
+    <main>
+        <aside class="aside-kategorije">
+            <iframe src="./partials/asideProducts.html" class="auto-height-iframe" border="0" height="380vh"></iframe>
+        </aside>
+        
+        <section class="section-kategorije">
+            <div class="div-kategorije">
+                
+                <h3 >ŽENE ↓</h3> 
+                <ul class="ul-kategorije">
+                  <li><a href="women-products.html" target="_parent">Haljine</a></li>
+                  <li><a href="women-products.html" target="_parent">Suknje</a></li>                    
+                  <li><a href="women-products.html" target="_parent">Bluze & Košulje</a></li>
+                  <li><a href="women-products.html" target="_parent">Majice & Topići</a></li>
+                  <li><a href="women-products.html" target="_parent">Kombinezoni</a></li>
+                  <li><a href="women-products.html" target="_parent">Majice sa kapuljačom</a></li>                    
+                  <li><a href="women-products.html" target="_parent">Trenirke</a></li>
+                  <li><a href="women-products.html" target="_parent">Hlače & Traperice</a></li>                    
+                  <li><a href="women-products.html" target="_parent">Sakoi & Odijela</a></li>
+                  <li><a href="women-products.html" target="_parent">Jakne & Kaputi</a></li>
+                  <li><a href="women-products.html" target="_parent">Puloveri & Blejzeri</a></li>
+                  <li><a href="women-products.html" target="_parent">Pidžame & Spavaćice</a></li>
+                  <li><a href="women-products.html" target="_parent">Rublje</a></li>                    
+              </ul>                
             </div>
+            <div class="div-kategorije">
+                
+                <h3>MUŠKARCI ↓</h3>
+              <ul class="ul-kategorije">                               
+                <li><a href="men-products.html" target="_parent">Košulje</a></li>
+                <li><a href="men-products.html" target="_parent">Majice kratki/dugi rukav</a></li>
+                <li><a href="men-products.html" target="_parent">Kompleti</a></li>
+                <li><a href="men-products.html" target="_parent">Majice sa kapuljačom</a></li>                    
+                <li><a href="men-products.html" target="_parent">Trenirke</a></li>
+                <li><a href="men-products.html" target="_parent">Hlače & Traperice</a></li>                    
+                <li><a href="men-products.html" target="_parent">Sakoi & Odijela</a></li>
+                <li><a href="men-products.html" target="_parent">Jakne & Kaputi</a></li>
+                <li><a href="men-products.html" target="_parent">Puloveri & Prsluci</a></li>
+                <li><a href="men-products.html" target="_parent">Pidžame</a></li>
+                <li><a href="men-products.html" target="_parent">Rublje</a></li>                    
+            </ul> 
+            </div>
+            <div class="div-kategorije">
+                
+                <h3 id="naslov-modni-dodaci">MODNI DODACI ↓</h3>
+              <ul class="ul-kategorije">
+                <li><a href="">Šalovi & Marame</a></li>
+                <li><a href="">Šeširi & Rukavice</a></li>
+                <li><a href="">Remeni & Kravate</a></li>
+                <li><a href="">Torbice & Novčanici</a></li>
+                <li><a href="">Sunčane naočale</a></li>                 
+            </ul>
+            </div>
+        </section>
 
-            <div class="pojedini-proizvod">
+        <section>
+          <div class="pojedini-proizvod">
+                
+            <a href="cart.html" target="_parent"><div class="div-srce" title="Dodaj u košaricu / ELegans">EL</div></a>                
 
                 <div class="gornja-slika">
-                  <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
+                  <a href="product-detail.html" target="_parent"><img src="./images/proizvodi-odjeća/ELegans Sunčane naočale Versace.webp" alt="Haljina" id="slika"/></a>          
                 </div>
 
                 <div class="donji-podaci">
-                  <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
-                  <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
-                  <div class="cijena-proizvoda">$65</div>                      
+                  <div class="marka-proizvoda">VERSACE / ELEGANS</div>
+                  <div class="naziv-proizvoda">Sunčane naočale - Biggie Unisex</div>
+                  <div class="cijena-proizvoda">238,77 €</div>                      
                   <div class="boja-veličina-proizvoda">
                     <div class="boja-proizvoda">
-                        boja
+                        Crna
                     </div>
                     <div class="veličina-proizvoda">
-                        veličina
+                        UNISEX
                     </div>            
                   </div>
-                  <div class="button-proizvoda">
-                  <button>DODATI U KOŠARICU</button>
+                  <div class="div-buttona-proizvoda">
+                  <button class="button-proizvoda">DODATI U KOŠARICU</button>
                   </div>
                 </div>
         </div>
-
-        <div class="pojedini-proizvod">
-
-            <div class="gornja-slika">
-              <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
+            
+            <div class="pojedini-proizvod">
+                
+                <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
+    
+                    <div class="gornja-slika">
+                      <a href="product-detail.html" target="_parent">
+                      <img src="./images/proizvodi-odjeća/ELegans-ženska torbica Hermes.webp" alt="" id="slika"/></a>          
+                    </div>
+    
+                    <div class="donji-podaci">
+                      <div class="marka-proizvoda">HERMES / ELEGANS</div>
+                      <div class="naziv-proizvoda">Ženska torbica - Heart</div>
+                      <div class="cijena-proizvoda">492,27 €</div>                      
+                      <div class="boja-veličina-proizvoda">
+                        <div class="boja-proizvoda">
+                            Modra/denim
+                        </div>
+                        <div class="veličina-proizvoda">
+                            UNISEX
+                        </div>            
+                      </div>
+                      <div class="div-buttona-proizvoda">
+                      <button class="button-proizvoda">DODATI U KOŠARICU</button>
+                      </div>
+                    </div>
             </div>
-
-            <div class="donji-podaci">
-              <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
-              <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
-              <div class="cijena-proizvoda">$65</div>                      
-              <div class="boja-veličina-proizvoda">
-                <div class="boja-proizvoda">
-                    boja
-                </div>
-                <div class="veličina-proizvoda">
-                    veličina
-                </div>            
-              </div>
-              <div class="button-proizvoda">
-              <button>DODATI U KOŠARICU</button>
-              </div>
+            <div class="pojedini-proizvod">
+                
+                <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
+    
+                    <div class="gornja-slika">
+                      <a href="product-detail.html" target="_parent">
+                      <img src="./images/proizvodi-odjeća/ELegans-sat Versace Tortun.webp" alt="" id="slika"/></a>          
+                    </div>
+    
+                    <div class="donji-podaci">
+                      <div class="marka-proizvoda">VERSACE / ELEGANS</div>
+                      <div class="naziv-proizvoda">Ručni sat - Tortun</div>
+                      <div class="cijena-proizvoda">170 €</div>                      
+                      <div class="boja-veličina-proizvoda">
+                        <div class="boja-proizvoda">
+                            Zlatna
+                        </div>
+                        <div class="veličina-proizvoda">
+                            UNISEX
+                        </div>            
+                      </div>
+                      <div class="div-buttona-proizvoda">
+                      <button class="button-proizvoda">DODATI U KOŠARICU</button>
+                      </div>
+                    </div>
             </div>
-    </div>
-
-    <div class="pojedini-proizvod">
-
-        <div class="gornja-slika">
-          <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
-        </div>
-
-        <div class="donji-podaci">
-          <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
-          <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
-          <div class="cijena-proizvoda">$65</div>                      
-          <div class="boja-veličina-proizvoda">
-            <div class="boja-proizvoda">
-                boja
+            <div class="pojedini-proizvod">
+                
+                <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
+    
+                    <div class="gornja-slika">
+                      <a href="product-detail.html" target="_parent">
+                      <img src="./images/proizvodi-odjeća/ELegans-pletena kapa Versace.webp" alt="" id="slika"/></a>          
+                    </div>
+    
+                    <div class="donji-podaci">
+                      <div class="marka-proizvoda">VERSACE / ELEGANS</div>
+                      <div class="naziv-proizvoda">Pletena kapa</div>
+                      <div class="cijena-proizvoda">39,90 €</div>                      
+                      <div class="boja-veličina-proizvoda">
+                        <div class="boja-proizvoda">
+                            Crna
+                        </div>
+                        <div class="veličina-proizvoda">
+                            UNISEX
+                        </div>            
+                      </div>
+                      <div class="div-buttona-proizvoda">
+                      <button class="button-proizvoda">DODATI U KOŠARICU</button>
+                      </div>
+                    </div>
             </div>
-            <div class="veličina-proizvoda">
-                veličina
-            </div>            
-          </div>
-          <div class="button-proizvoda">
-          <button>DODATI U KOŠARICU</button>
-          </div>
-        </div>
-</div>
+            <div class="pojedini-proizvod">
+                
+                <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
+    
+                    <div class="gornja-slika">
+                      <a href="product-detail.html" target="_parent">
+                      <img src="./images/proizvodi-odjeća/Elegans-remen crno zlato Boss.jpg" alt="" id="slika"/></a>          
+                    </div>
+    
+                    <div class="donji-podaci">
+                      <div class="marka-proizvoda">BOSS / ELEGANS</div>
+                      <div class="naziv-proizvoda">Ženski remen - Vitello</div>
+                      <div class="cijena-proizvoda">118,95 €</div>                      
+                      <div class="boja-veličina-proizvoda">
+                        <div class="boja-proizvoda">
+                            Crna
+                        </div>
+                        <div class="veličina-proizvoda">
+                            L
+                        </div>            
+                      </div>
+                      <div class="div-buttona-proizvoda">
+                      <button class="button-proizvoda">DODATI U KOŠARICU</button>
+                      </div>
+                    </div>
+            </div>
+            <div class="pojedini-proizvod">
+                
+                <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
+    
+                    <div class="gornja-slika">
+                      <a href="product-detail.html" target="_parent">
+                      <img src="./images/proizvodi-odjeća/ELegans-marama Chanel.webp" alt="" id="slika"/></a>          
+                    </div>
+    
+                    <div class="donji-podaci">
+                      <div class="marka-proizvoda">CHANEL / ELEGANS</div>
+                      <div class="naziv-proizvoda">Marama/šal - Nautical</div>
+                      <div class="cijena-proizvoda">372,82 €</div>                      
+                      <div class="boja-veličina-proizvoda">
+                        <div class="boja-proizvoda">
+                            Modra
+                        </div>
+                        <div class="veličina-proizvoda">
+                            UNISEX
+                        </div>            
+                      </div>
+                      <div class="div-buttona-proizvoda">
+                      <button class="button-proizvoda">DODATI U KOŠARICU</button>
+                      </div>
+                    </div>
+            </div>
+            <div class="pojedini-proizvod">
+                
+                <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
+    
+                    <div class="gornja-slika">
+                      <a href="product-detail.html" target="_parent">
+                      <img src="./images/proizvodi-odjeća/ELegans-torbica Couture.jpg" alt="" id="slika"/></a>          
+                    </div>
+    
+                    <div class="donji-podaci">
+                      <div class="marka-proizvoda">JOOP! / ELEGANS</div>
+                      <div class="naziv-proizvoda">Ženska torbica - Couture</div>
+                      <div class="cijena-proizvoda">109,95 €</div>                      
+                      <div class="boja-veličina-proizvoda">
+                        <div class="boja-proizvoda">
+                            Crna
+                        </div>
+                        <div class="veličina-proizvoda">
+                            S
+                        </div>            
+                      </div>
+                      <div class="div-buttona-proizvoda">
+                      <button class="button-proizvoda">DODATI U KOŠARICU</button>
+                      </div>
+                    </div>
+            </div>
+            <div class="pojedini-proizvod">
+                
+                <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
+    
+                    <div class="gornja-slika">
+                      <a href="product-detail.html" target="_parent">
+                      <img src="./images/proizvodi-odjeća/ELegans-kapa-levis.jpg" alt="" id="slika"/></a>          
+                    </div>
+    
+                    <div class="donji-podaci">
+                      <div class="marka-proizvoda">LEVIS / ELEGANS</div>
+                      <div class="naziv-proizvoda">Pletena kapa - EmKa</div>
+                      <div class="cijena-proizvoda">49,90 €</div>                      
+                      <div class="boja-veličina-proizvoda">
+                        <div class="boja-proizvoda">
+                            Siva
+                        </div>
+                        <div class="veličina-proizvoda">
+                            L
+                        </div>            
+                      </div>
+                      <div class="div-buttona-proizvoda">
+                      <button class="button-proizvoda">DODATI U KOŠARICU</button>
+                      </div>
+                    </div>
+            </div>  
+        </section>
 
-<div class="pojedini-proizvod">
+        <section>
+          <article id="article-natrag-na-vrh">
+            <p>
+            <a href="#" id="natrag-na-vrh">
+            - Natrag na vrh - 
+            </a>
+            </p>              
+        </article>
+        </section>
 
-    <div class="gornja-slika">
-      <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
-    </div>
+        <section>
+          <div class="usluge-u-slici">
+            <div>
+                <h5>Besplatna dostava za narudžbe od 50 EUR i više</h5>
+                <figure>
+                    <img src="./images/Brendovi-Logo/truck-speed-svgrepo-com.svg" width="40px" style="opacity: 50%;" alt="Ikonica dostavni kamiončić">
+                </figure>
+                <p>Na području Hrvatske, 3-5 dana.</p>            
+            </div>
+            <div>
+                <h5>Sigurno plaćanje</h5>
+                <figure>
+                    <img src="./images/Brendovi-Logo/lock-keyhole-minimalistic-unlocked-svgrepo-com.svg" width="30px" style="opacity: 70%;"  alt="Ikonica lokot">
+                </figure>
+                <p>Vaši podaci zaštićeni su sigurnosnim protokolom.</p>            
+            </div>
+            <div>
+                <h5>Siguran i jednostavan povrat</h5>
+                    <img src="./images/Brendovi-Logo/package-svgrepo-com.svg" width="30px" style="opacity: 60%;" alt="Ikonica paket">
+                </figure>
+                <p>Narudžbu moguće vratiti u roku 14 dana od primitka.</p>            
+            </div>
+        </div> 
+        </section>
 
-    <div class="donji-podaci">
-      <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
-      <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
-      <div class="cijena-proizvoda">$65</div>                      
-      <div class="boja-veličina-proizvoda">
-        <div class="boja-proizvoda">
-            boja
-        </div>
-        <div class="veličina-proizvoda">
-            veličina
-        </div>            
-      </div>
-      <div class="button-proizvoda">
-      <button>DODATI U KOŠARICU</button>
-      </div>
-    </div>
-</div>
+        <section class="newsletter">
+            <table>
+                <tr id="table-left">
+                    <td><strong>NEWSLETTER</strong></td>
+                    <td>
+                        <form action="action/page">
+                            <input type="email" name="email" id="news-email" placeholder="Upište Vaš e-mail">
+                            <button type="submit" class="button-newsletter">Prijava</button>
+                        </form>
+                    </td>
+                </tr>
+                <tr id="table-right">
+                    <td>Prijavite se na naš newsletter i ostvarite 15% popusta na svoju prvu kupovinu i primajte obavijesti o našim promocijama i proizvodima.</td>
+                    <td>
+                        <form action="action/page">
+                            <input type="checkbox" value="privacy" name="privacy" id="checkbox" checked="checked">
+                            Pročitao sam i slažem se sa sadržajem <a href="privacy.html" target="_blank" title="ELegans/Politika privatnosti" id="privacy-link"> politika privatnosti</a> (privolu je moguće opozvati u bilo kojem trenutku). <br><br>
+                            <input type="checkbox" value="newsletter" name="newsletter" id="checkbox">
+                            Prijavi se na ELegans newsletter.
+                        </form>
+                    </td>
+                </tr>
+            </table>
+          </section> 
 
-<div class="pojedini-proizvod">
+    </main>
 
-    <div class="gornja-slika">
-      <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
-    </div>
-
-    <div class="donji-podaci">
-      <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
-      <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
-      <div class="cijena-proizvoda">$65</div>                      
-      <div class="boja-veličina-proizvoda">
-        <div class="boja-proizvoda">
-            boja
-        </div>
-        <div class="veličina-proizvoda">
-            veličina
-        </div>            
-      </div>
-      <div class="button-proizvoda">
-      <button>DODATI U KOŠARICU</button>
-      </div>
-    </div>
-</div>
-
-<div class="pojedini-proizvod">
-
-    <div class="gornja-slika">
-      <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
-    </div>
-
-    <div class="donji-podaci">
-      <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
-      <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
-      <div class="cijena-proizvoda">$65</div>                      
-      <div class="boja-veličina-proizvoda">
-        <div class="boja-proizvoda">
-            boja
-        </div>
-        <div class="veličina-proizvoda">
-            veličina
-        </div>            
-      </div>
-      <div class="button-proizvoda">
-      <button>DODATI U KOŠARICU</button>
-      </div>
-    </div>
-</div>
-
-<div class="pojedini-proizvod">
-
-    <div class="gornja-slika">
-      <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
-    </div>
-
-    <div class="donji-podaci">
-      <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
-      <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
-      <div class="cijena-proizvoda">$65</div>                      
-      <div class="boja-veličina-proizvoda">
-        <div class="boja-proizvoda">
-            boja
-        </div>
-        <div class="veličina-proizvoda">
-            veličina
-        </div>            
-      </div>
-      <div class="button-proizvoda">
-      <button>DODATI U KOŠARICU</button>
-      </div>
-    </div>
-</div>
-</section>
-
-
-<section>
-<div class="pojedini-proizvod">
-
-    <div class="gornja-slika">
-      <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
-    </div>
-
-    <div class="donji-podaci">
-      <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
-      <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
-      <div class="cijena-proizvoda">$65</div>                      
-      <div class="boja-veličina-proizvoda">
-        <div class="boja-proizvoda">
-            boja
-        </div>
-        <div class="veličina-proizvoda">
-            veličina
-        </div>            
-      </div>
-      <div class="button-proizvoda">
-      <button>DODATI U KOŠARICU</button>
-      </div>
-    </div>
-</div>
-
-<div class="pojedini-proizvod">
-
-    <div class="gornja-slika">
-      <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
-    </div>
-
-    <div class="donji-podaci">
-      <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
-      <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
-      <div class="cijena-proizvoda">$65</div>                      
-      <div class="boja-veličina-proizvoda">
-        <div class="boja-proizvoda">
-            boja
-        </div>
-        <div class="veličina-proizvoda">
-            veličina
-        </div>            
-      </div>
-      <div class="button-proizvoda">
-      <button>DODATI U KOŠARICU</button>
-      </div>
-    </div>
-</div>
-
-<div class="pojedini-proizvod">
-
-    <div class="gornja-slika">
-      <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
-    </div>
-
-    <div class="donji-podaci">
-      <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
-      <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
-      <div class="cijena-proizvoda">$65</div>                      
-      <div class="boja-veličina-proizvoda">
-        <div class="boja-proizvoda">
-            boja
-        </div>
-        <div class="veličina-proizvoda">
-            veličina
-        </div>            
-      </div>
-      <div class="button-proizvoda">
-      <button>DODATI U KOŠARICU</button>
-      </div>
-    </div>
-</div>
-
-<div class="pojedini-proizvod">
-
-    <div class="gornja-slika">
-      <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
-    </div>
-
-    <div class="donji-podaci">
-      <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
-      <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
-      <div class="cijena-proizvoda">$65</div>                      
-      <div class="boja-veličina-proizvoda">
-        <div class="boja-proizvoda">
-            boja
-        </div>
-        <div class="veličina-proizvoda">
-            veličina
-        </div>            
-      </div>
-      <div class="button-proizvoda">
-      <button>DODATI U KOŠARICU</button>
-      </div>
-    </div>
-</div>
-
-<div class="pojedini-proizvod">
-
-    <div class="gornja-slika">
-      <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
-    </div>
-
-    <div class="donji-podaci">
-      <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
-      <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
-      <div class="cijena-proizvoda">$65</div>                      
-      <div class="boja-veličina-proizvoda">
-        <div class="boja-proizvoda">
-            boja
-        </div>
-        <div class="veličina-proizvoda">
-            veličina
-        </div>            
-      </div>
-      <div class="button-proizvoda">
-      <button>DODATI U KOŠARICU</button>
-      </div>
-    </div>
-</div>
-
-<div class="pojedini-proizvod">
-
-    <div class="gornja-slika">
-      <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
-    </div>
-
-    <div class="donji-podaci">
-      <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
-      <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
-      <div class="cijena-proizvoda">$65</div>                      
-      <div class="boja-veličina-proizvoda">
-        <div class="boja-proizvoda">
-            boja
-        </div>
-        <div class="veličina-proizvoda">
-            veličina
-        </div>            
-      </div>
-      <div class="button-proizvoda">
-      <button>DODATI U KOŠARICU</button>
-      </div>
-    </div>
-</div>
-
-<div class="pojedini-proizvod">
-
-    <div class="gornja-slika">
-      <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
-    </div>
-
-    <div class="donji-podaci">
-      <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
-      <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
-      <div class="cijena-proizvoda">$65</div>                      
-      <div class="boja-veličina-proizvoda">
-        <div class="boja-proizvoda">
-            boja
-        </div>
-        <div class="veličina-proizvoda">
-            veličina
-        </div>            
-      </div>
-      <div class="button-proizvoda">
-      <button>DODATI U KOŠARICU</button>
-      </div>
-    </div>
-</div>
-
-<div class="pojedini-proizvod">
-
-    <div class="gornja-slika">
-      <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
-    </div>
-
-    <div class="donji-podaci">
-      <div class="marka-proizvoda">ELegans LEBRON MAX AIR</div>
-      <div class="naziv-proizvoda">ženska haljina KIDS' BACKPACK</div>
-      <div class="cijena-proizvoda">$65</div>                      
-      <div class="boja-veličina-proizvoda">
-        <div class="boja-proizvoda">
-            boja
-        </div>
-        <div class="veličina-proizvoda">
-            veličina
-        </div>            
-      </div>
-      <div class="button-proizvoda">
-      <button>DODATI U KOŠARICU</button>
-      </div>
-    </div>
-</div>
-        </section>      
-     
-</main>
-
-<footer>
-    <iframe src="./partials/footer.html"width="100%" class="auto-height-iframe" border="0" height="200vh"></iframe>
-</footer>
-
+    <footer>
+        <iframe src="./partials/footer.html"width="100%" class="auto-height-iframe" border="0" height="200vh"></iframe>
+    </footer>
+    
 </body>
 </html>

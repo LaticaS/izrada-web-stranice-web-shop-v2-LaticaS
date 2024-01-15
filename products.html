@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proizvodi / ELegans</title>
+    <link rel="icon" type="image/icon" href="./images/favicon.ico"> 
     <link rel="stylesheet" href="./js/javascript.js">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style-usluge-dno.css">    
    
-    <style> 
-         
-        aside {float: left; position: sticky; top: 0%; left: 0%; background-color: white;}             
+    <style>     
+      
+        aside {float: left; top: 0%; left: 0%; background-color: white;}             
         section {float: right; width: 75%; display: flex; flex-wrap: wrap; padding: 1vh 0vw; margin: 1vh 0vw;
           background-color: white;}
 
@@ -26,7 +27,12 @@
         a:hover {color: crimson; text-decoration: underline;}
         a:active {color:dimgrey;}  
         
-        .section-brendovi {flex-wrap: wrap; background-color: lightgrey;}        
+        .section-brendovi {flex-wrap: wrap; } 
+        .container-loga-brendova {display: flex; flex-wrap: wrap; flex: 1 1 auto; width: 100%;}
+            #div-loga {padding: 0.5rem;}
+            #div-loga:hover {border: 1px solid grey ;}
+            #logo-brend {width: 60px;}
+        
 
         .pojedini-proizvod {position: relative; height: fit-content; display: flex; flex-direction: column; flex-wrap: wrap; flex: 1 1 auto;
             text-align: center; padding: 2px; border: 1px solid white; 
@@ -54,6 +60,8 @@
         .div-buttona-proizvoda {margin: 0.5vh 0vw; padding: 0.5vh 0vw;}
         .button-proizvoda {width: 100%; text-align: center; background-color: dimgrey; color: white;} 
         .button-proizvoda:hover {background-color: crimson; color: white;}
+
+        #article-natrag-na-vrh {width: 100%; text-align: center;}
         
         .newsletter {background-color: crimson; height: 40vh; margin-top: 0.5vh; margin-bottom: 0.5vh; }
         table {width: 100%; height: 70%; padding: 1rem; color: white;
@@ -62,15 +70,14 @@
         button {padding: 1rem 2.5rem; border: none;}
         button:hover {background-color: lightgrey;} 
         #news-email {width: 14vw; padding: 1rem; border: none;}
-        #privacy-link {text-decoration: underline; color: white;}   
+        #privacy-link {text-decoration: underline; color: white;} 
 
-        
     </style>
     
 </head>
 
 <body>       
-    <header>
+    <header class="glavni-header">
         <iframe src="./partials/header.html" width="100%" class="auto-height-iframe" border="0" height="160vh" ></iframe>
     </header>    
     <header class="podheader"><div id="podheader-div">PROIZVODI / ELEGANS</div></header>   
@@ -82,14 +89,35 @@
       </aside>
 
       <section class="section-brendovi">
-        <div class="div-brendovi">
-            <ul>
-                <li><a href="">GUCCI</a></li>
-                <li><a href="">DIOR</a></li>
-                <li><a href="">STELA MCCARTNEY</a></li>
-                <li><a href="">CHANEL</a></li>                
-            </ul> 
-        </div>             
+        <div class="container-loga-brendova">
+          <div id="div-loga"><a href="https://www.dior.com/en_hr" target="_blank"><img src="./images/Brendovi-Logo/dior-logo-svgrepo-com.svg" alt="" id="logo-brend"></a></div>
+          <div id="div-loga"><a href="https://www.chanel.com/us/" target="_blank"><img src="./images/Brendovi-Logo/chanel-2-logo-svgrepo-com.svg" alt="" id="logo-brend"></a></div>
+          <div id="div-loga"><a href="https://www.gucci.com/us/en/" target="_blank"><img src="./images/Brendovi-Logo/gucci-logo-svgrepo-com.svg" alt="" id="logo-brend"></a></div>
+          <div id="div-loga"><a href="https://www.versace.com/hr/en/" target="_blank"><img src="./images/Brendovi-Logo/versace-medusa-logo-svgrepo-com.svg" alt="" id="logo-brend" ></a></div>
+          <div id="div-loga"><a href="https://www.hugoboss.com/hr/en/men/" target="_blank"><img src="./images/Brendovi-Logo/boss-hugo-boss-logo-svgrepo-com.svg" alt="" id="logo-brend"></a></div>
+          <div id="div-loga"><a href="https://www.prada.com/eu/en.html" target="_blank"><img src="./images/Brendovi-Logo/prada-logo-svgrepo-com.svg" alt="" id="logo-brend"></a></div>
+          <div id="div-loga"><a href="https://www.armani.com/en-hr " target="_blank"><img src="./images/Brendovi-Logo/emporio-armani-2-logo-svgrepo-com.svg" alt="" id="logo-brend"></a></div>
+          <div id="div-loga"><a href="https://www.nike.com/hr/" target="_blank"><img src="./images/Brendovi-Logo/nike-3-logo-svgrepo-com.svg" alt="" id="logo-brend"></a></div>
+          <div id="div-loga"><a href="https://www.dolcegabbana.com/en-hr/" target="_blank"><img src="./images/Brendovi-Logo/dolce-gabbana-1-logo-svgrepo-com.svg" alt="" id="logo-brend"></a></div>
+          <div id="div-loga"><a href="https://www.adidas.com/us " target="_blank"><img src="./images/Brendovi-Logo/adidas-svgrepo-com.svg" alt="" id="logo-brend"></a></div>
+          <div id="div-loga"><a href=""><img src="./images/Brendovi-Logo/cartier-2-logo-svgrepo-com.svg" alt="" id="logo-brend"></a></div>
+          <div id="div-loga"><a href=""><img src="./images/Brendovi-Logo/zara-logo-svgrepo-com.svg" alt="" id="logo-brend"></a></div>
+          <div id="div-loga"><a href=""><img src="./images/Brendovi-Logo/Levis-logo.jpg" alt="" id="logo-brend"></a></div>
+          <div id="div-loga"><a href=""><img src="./images/Brendovi-Logo/calvin-klein.jpg" alt="" id="logo-brend"></a></div>
+          <div id="div-loga"><a href=""><img src="./images/Brendovi-Logo/louis-vuitton-logo-black-and-white.png" alt="" id="logo-brend"></a></div>
+          <div id="div-loga"><a href=""><img src="./images/Brendovi-Logo/burberry-logo-01-freelogovectors.net_.png" alt="" id="logo-brend"></a></div>
+          <div id="div-loga"><a href=""><img src="./images/Brendovi-Logo/lacoste-logo-black-and-white.png" alt="" id="logo-brend"></a></div>
+          <div id="div-loga"><a href=""><img src="./images/Brendovi-Logo/Givenchy.jpeg" alt="" id="logo-brend"></a></div>
+          <div id="div-loga"><a href=""><img src="./images/Brendovi-Logo/Michael Kors logo.png" alt="" id="logo-brend"></a></div>
+          <div id="div-loga"><a href=""><img src="./images/Brendovi-Logo/ralph-lauren logo.png" alt="" id="logo-brend"></a></div>
+          <div id="div-loga"><a href=""><img src="./images/Brendovi-Logo/Jimmy Choo.jpeg" alt="" id="logo-brend"></a></div>
+          <div id="div-loga"><a href=""><img src="./images/Brendovi-Logo/hermes.jpg" alt="" id="logo-brend"></a></div>
+          <div id="div-loga"><a href=""><img src="./images/Brendovi-Logo/Missoni-Logo.png" alt="" id="logo-brend"></a></div>
+          <div id="div-loga"><a href="https://int.bape.com/ " target="_blank"><img src="./images/Brendovi-Logo/Bape.png" alt="" id="logo-brend"></a></div>            
+           
+          
+      </div>
+        
       </section>
 
       <section class="section-kategorije">
@@ -132,11 +160,11 @@
         <div>
           <ul class="ul-kategorije">            
             <h3>MODNI DODACI ↓</h3>
-            <li><a href="">Šalovi & Marame</a></li>
-            <li><a href="">Šeširi & Rukavice</a></li>
-            <li><a href="">Remeni & Kravate</a></li>
-            <li><a href="">Torbice & Novčanici</a></li>
-            <li><a href="">Sunčane naočale</a></li>               
+            <li><a href="modni-dodaci.html" target="_parent">Šalovi & Marame</a></li>
+            <li><a href="modni-dodaci.html" target="_parent">Šeširi & Rukavice</a></li>
+            <li><a href="modni-dodaci.html" target="_parent">Remeni & Kravate</a></li>
+            <li><a href="modni-dodaci.html" target="_parent">Torbice & Novčanici</a></li>
+            <li><a href="modni-dodaci.html" target="_parent">Sunčane naočale</a></li>               
         </ul>
         </div>
     </section>
@@ -175,19 +203,20 @@
               <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
 
                   <div class="gornja-slika">
-                    <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
+                    <a href="product-detail.html" target="_parent">
+                    <img src="./images/proizvodi-odjeća/ELegans ženska siva trenirka Reebok.jpg" alt="" id="slika"/></a>          
                   </div>
 
                   <div class="donji-podaci">
-                    <div class="marka-proizvoda">DIOR / ELEGANS</div>
-                    <div class="naziv-proizvoda">Ženska večernja haljina - Coco</div>
-                    <div class="cijena-proizvoda">1000 €</div>                      
+                    <div class="marka-proizvoda">REEBOK / ELEGANS</div>
+                    <div class="naziv-proizvoda">Ženska siva trenirka</div>
+                    <div class="cijena-proizvoda">150 €</div>                      
                     <div class="boja-veličina-proizvoda">
                       <div class="boja-proizvoda">
-                          Srebrna
+                          Siva
                       </div>
                       <div class="veličina-proizvoda">
-                          S
+                          XL
                       </div>            
                     </div>
                     <div class="div-buttona-proizvoda">
@@ -201,19 +230,20 @@
             <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
 
                 <div class="gornja-slika">
-                  <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
+                  <a href="product-detail.html" target="_parent">
+                  <img src="./images/naslovna/ELjakne.jpg" alt="" id="slika"/></a>          
                 </div>
 
                 <div class="donji-podaci">
-                  <div class="marka-proizvoda">DIOR / ELEGANS</div>
-                  <div class="naziv-proizvoda">Ženska večernja haljina - Coco</div>
-                  <div class="cijena-proizvoda">1000 €</div>                      
+                  <div class="marka-proizvoda">BOSS / ELEGANS</div>
+                  <div class="naziv-proizvoda">Muška kožna jakna</div>
+                  <div class="cijena-proizvoda">500 €</div>                      
                   <div class="boja-veličina-proizvoda">
                     <div class="boja-proizvoda">
-                        Srebrna
+                        Crna
                     </div>
                     <div class="veličina-proizvoda">
-                        S
+                        L
                     </div>            
                   </div>
                   <div class="div-buttona-proizvoda">
@@ -227,16 +257,17 @@
           <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
 
               <div class="gornja-slika">
-                <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
+                <a href="product-detail.html" target="_parent">
+                <img src="./images/proizvodi-odjeća/ELegans-ženska bluza.jpg" alt="" id="slika"/></a>          
               </div>
 
               <div class="donji-podaci">
-                <div class="marka-proizvoda">DIOR / ELEGANS</div>
-                <div class="naziv-proizvoda">Ženska večernja haljina - Coco</div>
-                <div class="cijena-proizvoda">1000 €</div>                      
+                <div class="marka-proizvoda">MORGAN / ELEGANS</div>
+                <div class="naziv-proizvoda">Ženska bluza</div>
+                <div class="cijena-proizvoda">44,99 €</div>                      
                 <div class="boja-veličina-proizvoda">
                   <div class="boja-proizvoda">
-                      Srebrna
+                       Zelena/metalic
                   </div>
                   <div class="veličina-proizvoda">
                       S
@@ -253,19 +284,20 @@
         <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
 
             <div class="gornja-slika">
-              <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
+              <a href="product-detail.html" target="_parent">
+              <img src="./images/proizvodi-odjeća/ELegans-muška pamučna majica sa kapuljačom.jpg" alt="" id="slika"/></a>          
             </div>
 
             <div class="donji-podaci">
-              <div class="marka-proizvoda">DIOR / ELEGANS</div>
-              <div class="naziv-proizvoda">Ženska večernja haljina - Coco</div>
-              <div class="cijena-proizvoda">1000 €</div>                      
+              <div class="marka-proizvoda">EMPORIO ARMANI / ELEGANS</div>
+              <div class="naziv-proizvoda">Muška pamučna dukserica</div>
+              <div class="cijena-proizvoda">69,99 €</div>                      
               <div class="boja-veličina-proizvoda">
                 <div class="boja-proizvoda">
-                    Srebrna
+                     Tamno modra
                 </div>
                 <div class="veličina-proizvoda">
-                    S
+                    XL
                 </div>            
               </div>
               <div class="div-buttona-proizvoda">
@@ -279,19 +311,20 @@
       <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
 
           <div class="gornja-slika">
-            <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
+            <a href="product-detail.html" target="_parent">
+            <img src="./images/proizvodi-odjeća/ELegans-ženski crveni sako Hugo.jpg" alt="" id="slika"/></a>          
           </div>
 
           <div class="donji-podaci">
-            <div class="marka-proizvoda">DIOR / ELEGANS</div>
-            <div class="naziv-proizvoda">Ženska večernja haljina - Coco</div>
-            <div class="cijena-proizvoda">1000 €</div>                      
+            <div class="marka-proizvoda">HUGO / ELEGANS</div>
+            <div class="naziv-proizvoda">Ženski crveni sako</div>
+            <div class="cijena-proizvoda">149,90 €</div>                      
             <div class="boja-veličina-proizvoda">
               <div class="boja-proizvoda">
-                  Srebrna
+                  Crvena
               </div>
               <div class="veličina-proizvoda">
-                  S
+                  M
               </div>            
             </div>
             <div class="div-buttona-proizvoda">
@@ -305,19 +338,20 @@
     <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
 
         <div class="gornja-slika">
-          <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
+          <a href="product-detail.html" target="_parent">
+          <img src="./images/proizvodi-odjeća/ELegans-muška-traper-košulja.jpg" alt="" id="slika"/></a>          
         </div>
 
         <div class="donji-podaci">
-          <div class="marka-proizvoda">DIOR / ELEGANS</div>
-          <div class="naziv-proizvoda">Ženska večernja haljina - Coco</div>
-          <div class="cijena-proizvoda">1000 €</div>                      
+          <div class="marka-proizvoda">RALPH LAUREN / ELEGANS</div>
+          <div class="naziv-proizvoda">Muška traper košulja - Polo</div>
+          <div class="cijena-proizvoda">149,90 €</div>                      
           <div class="boja-veličina-proizvoda">
             <div class="boja-proizvoda">
-                Srebrna
+                Modra
             </div>
             <div class="veličina-proizvoda">
-                S
+                XL
             </div>            
           </div>
           <div class="div-buttona-proizvoda">
@@ -331,16 +365,17 @@
   <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
 
       <div class="gornja-slika">
-        <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
+        <a href="product-detail.html" target="_parent">
+        <img src="./images/proizvodi-odjeća/ELegans-zelena pletena suknja Sisley.jpg" alt="" id="slika"/></a>          
       </div>
 
       <div class="donji-podaci">
-        <div class="marka-proizvoda">DIOR / ELEGANS</div>
-        <div class="naziv-proizvoda">Ženska večernja haljina - Coco</div>
-        <div class="cijena-proizvoda">1000 €</div>                      
+        <div class="marka-proizvoda">SISLEY / ELEGANS</div>
+        <div class="naziv-proizvoda">Ženska pletena suknja</div>
+        <div class="cijena-proizvoda">59,99 €</div>                      
         <div class="boja-veličina-proizvoda">
           <div class="boja-proizvoda">
-              Srebrna
+              Zelena
           </div>
           <div class="veličina-proizvoda">
               S
@@ -351,7 +386,6 @@
         </div>
       </div>
 </div>
-
 </section>
 
 <section>
@@ -360,16 +394,102 @@
     <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
 
         <div class="gornja-slika">
-          <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
+          <a href="product-detail.html" target="_parent">
+          <img src="./images/proizvodi-odjeća/ELegans-muški pamučni pulover Hilfiger.jpg" alt="" id="slika"/>
+          </a>          
         </div>
 
         <div class="donji-podaci">
-          <div class="marka-proizvoda">DIOR / ELEGANS</div>
-          <div class="naziv-proizvoda">Ženska večernja haljina - Coco</div>
-          <div class="cijena-proizvoda">1000 €</div>                      
+          <div class="marka-proizvoda">TOMMY HILFIGER / ELEGANS</div>
+          <div class="naziv-proizvoda">Muški pamučni pulover</div>
+          <div class="cijena-proizvoda">199,90 €</div>                      
           <div class="boja-veličina-proizvoda">
             <div class="boja-proizvoda">
-                Srebrna
+                Plava
+            </div>
+            <div class="veličina-proizvoda">
+                XL
+            </div>            
+          </div>
+          <div class="div-buttona-proizvoda">
+          <button class="button-proizvoda">DODATI U KOŠARICU</button>
+          </div>
+        </div>
+  </div>        
+
+  <div class="pojedini-proizvod">
+                
+    <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
+
+        <div class="gornja-slika">
+          <a href="product-detail.html" target="_parent">
+          <img src="./images/proizvodi-odjeća/ELegans-haljina Rotate.jpg" alt="" id="slika"/>
+          </a>          
+        </div>
+
+        <div class="donji-podaci">
+          <div class="marka-proizvoda">ROTATE / ELEGANS</div>
+          <div class="naziv-proizvoda">Ženska haljina - Rotate</div>
+          <div class="cijena-proizvoda">419,90 €</div>                      
+          <div class="boja-veličina-proizvoda">
+            <div class="boja-proizvoda">
+                Crna/modra
+            </div>
+            <div class="veličina-proizvoda">
+                M
+            </div>            
+          </div>
+          <div class="div-buttona-proizvoda">
+          <button class="button-proizvoda">DODATI U KOŠARICU</button>
+          </div>
+        </div>
+  </div>  
+  
+  <div class="pojedini-proizvod">
+                
+    <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
+
+        <div class="gornja-slika">
+          <a href="product-detail.html" target="_parent">
+          <img src="./images/proizvodi-odjeća/ELegans-muške hlače RipCurl.jpg" alt="" id="slika"/>
+          </a>          
+        </div>
+
+        <div class="donji-podaci">
+          <div class="marka-proizvoda">RIP CURL / ELEGANS</div>
+          <div class="naziv-proizvoda">Muške hlače - Base</div>
+          <div class="cijena-proizvoda">169,90 €</div>                      
+          <div class="boja-veličina-proizvoda">
+            <div class="boja-proizvoda">
+                Siva
+            </div>
+            <div class="veličina-proizvoda">
+                XL
+            </div>            
+          </div>
+          <div class="div-buttona-proizvoda">
+          <button class="button-proizvoda">DODATI U KOŠARICU</button>
+          </div>
+        </div>
+  </div>    
+
+  <div class="pojedini-proizvod">
+                
+    <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
+
+        <div class="gornja-slika">
+          <a href="product-detail.html" target="_parent">
+          <img src="./images/proizvodi-odjeća/ELegans-ženski kombinezon Medicine.jpg" alt="" id="slika"/>
+          </a>          
+        </div>
+
+        <div class="donji-podaci">
+          <div class="marka-proizvoda">MEDICINE / ELEGANS</div>
+          <div class="naziv-proizvoda">Ženski kombinezon - Dream</div>
+          <div class="cijena-proizvoda">24,99 €</div>                      
+          <div class="boja-veličina-proizvoda">
+            <div class="boja-proizvoda">
+                Tirkiz/modra
             </div>
             <div class="veličina-proizvoda">
                 S
@@ -379,295 +499,19 @@
           <button class="button-proizvoda">DODATI U KOŠARICU</button>
           </div>
         </div>
-</div>
+  </div>    
 
-<div class="pojedini-proizvod">
-                
-  <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
+</section>
 
-      <div class="gornja-slika">
-        <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
-      </div>
-
-      <div class="donji-podaci">
-        <div class="marka-proizvoda">DIOR / ELEGANS</div>
-        <div class="naziv-proizvoda">Ženska večernja haljina - Coco</div>
-        <div class="cijena-proizvoda">1000 €</div>                      
-        <div class="boja-veličina-proizvoda">
-          <div class="boja-proizvoda">
-              Srebrna
-          </div>
-          <div class="veličina-proizvoda">
-              S
-          </div>            
-        </div>
-        <div class="div-buttona-proizvoda">
-        <button class="button-proizvoda">DODATI U KOŠARICU</button>
-        </div>
-      </div>
-</div>
-
-<div class="pojedini-proizvod">
-                
-  <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
-
-      <div class="gornja-slika">
-        <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
-      </div>
-
-      <div class="donji-podaci">
-        <div class="marka-proizvoda">DIOR / ELEGANS</div>
-        <div class="naziv-proizvoda">Ženska večernja haljina - Coco</div>
-        <div class="cijena-proizvoda">1000 €</div>                      
-        <div class="boja-veličina-proizvoda">
-          <div class="boja-proizvoda">
-              Srebrna
-          </div>
-          <div class="veličina-proizvoda">
-              S
-          </div>            
-        </div>
-        <div class="div-buttona-proizvoda">
-        <button class="button-proizvoda">DODATI U KOŠARICU</button>
-        </div>
-      </div>
-</div>
-
-<div class="pojedini-proizvod">
-                
-  <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
-
-      <div class="gornja-slika">
-        <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
-      </div>
-
-      <div class="donji-podaci">
-        <div class="marka-proizvoda">DIOR / ELEGANS</div>
-        <div class="naziv-proizvoda">Ženska večernja haljina - Coco</div>
-        <div class="cijena-proizvoda">1000 €</div>                      
-        <div class="boja-veličina-proizvoda">
-          <div class="boja-proizvoda">
-              Srebrna
-          </div>
-          <div class="veličina-proizvoda">
-              S
-          </div>            
-        </div>
-        <div class="div-buttona-proizvoda">
-        <button class="button-proizvoda">DODATI U KOŠARICU</button>
-        </div>
-      </div>
-</div>
-
-<div class="pojedini-proizvod">
-                
-  <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
-
-      <div class="gornja-slika">
-        <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
-      </div>
-
-      <div class="donji-podaci">
-        <div class="marka-proizvoda">DIOR / ELEGANS</div>
-        <div class="naziv-proizvoda">Ženska večernja haljina - Coco</div>
-        <div class="cijena-proizvoda">1000 €</div>                      
-        <div class="boja-veličina-proizvoda">
-          <div class="boja-proizvoda">
-              Srebrna
-          </div>
-          <div class="veličina-proizvoda">
-              S
-          </div>            
-        </div>
-        <div class="div-buttona-proizvoda">
-        <button class="button-proizvoda">DODATI U KOŠARICU</button>
-        </div>
-      </div>
-</div>
-
-<div class="pojedini-proizvod">
-                
-  <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
-
-      <div class="gornja-slika">
-        <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
-      </div>
-
-      <div class="donji-podaci">
-        <div class="marka-proizvoda">DIOR / ELEGANS</div>
-        <div class="naziv-proizvoda">Ženska večernja haljina - Coco</div>
-        <div class="cijena-proizvoda">1000 €</div>                      
-        <div class="boja-veličina-proizvoda">
-          <div class="boja-proizvoda">
-              Srebrna
-          </div>
-          <div class="veličina-proizvoda">
-              S
-          </div>            
-        </div>
-        <div class="div-buttona-proizvoda">
-        <button class="button-proizvoda">DODATI U KOŠARICU</button>
-        </div>
-      </div>
-</div>
-
-<div class="pojedini-proizvod">
-                
-  <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
-
-      <div class="gornja-slika">
-        <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
-      </div>
-
-      <div class="donji-podaci">
-        <div class="marka-proizvoda">DIOR / ELEGANS</div>
-        <div class="naziv-proizvoda">Ženska večernja haljina - Coco</div>
-        <div class="cijena-proizvoda">1000 €</div>                      
-        <div class="boja-veličina-proizvoda">
-          <div class="boja-proizvoda">
-              Srebrna
-          </div>
-          <div class="veličina-proizvoda">
-              S
-          </div>            
-        </div>
-        <div class="div-buttona-proizvoda">
-        <button class="button-proizvoda">DODATI U KOŠARICU</button>
-        </div>
-      </div>
-</div>
-
-<div class="pojedini-proizvod">
-                
-  <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
-
-      <div class="gornja-slika">
-        <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
-      </div>
-
-      <div class="donji-podaci">
-        <div class="marka-proizvoda">DIOR / ELEGANS</div>
-        <div class="naziv-proizvoda">Ženska večernja haljina - Coco</div>
-        <div class="cijena-proizvoda">1000 €</div>                      
-        <div class="boja-veličina-proizvoda">
-          <div class="boja-proizvoda">
-              Srebrna
-          </div>
-          <div class="veličina-proizvoda">
-              S
-          </div>            
-        </div>
-        <div class="div-buttona-proizvoda">
-        <button class="button-proizvoda">DODATI U KOŠARICU</button>
-        </div>
-      </div>
-</div>
-</section> 
 
 <section>
-  <div class="pojedini-proizvod">
-                
-    <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
-  
-        <div class="gornja-slika">
-          <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
-        </div>
-  
-        <div class="donji-podaci">
-          <div class="marka-proizvoda">DIOR / ELEGANS</div>
-          <div class="naziv-proizvoda">Ženska večernja haljina - Coco</div>
-          <div class="cijena-proizvoda">1000 €</div>                      
-          <div class="boja-veličina-proizvoda">
-            <div class="boja-proizvoda">
-                Srebrna
-            </div>
-            <div class="veličina-proizvoda">
-                S
-            </div>            
-          </div>
-          <div class="div-buttona-proizvoda">
-          <button class="button-proizvoda">DODATI U KOŠARICU</button>
-          </div>
-        </div>
-  </div>
-
-  <div class="pojedini-proizvod">
-                
-    <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
-  
-        <div class="gornja-slika">
-          <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
-        </div>
-  
-        <div class="donji-podaci">
-          <div class="marka-proizvoda">DIOR / ELEGANS</div>
-          <div class="naziv-proizvoda">Ženska večernja haljina - Coco</div>
-          <div class="cijena-proizvoda">1000 €</div>                      
-          <div class="boja-veličina-proizvoda">
-            <div class="boja-proizvoda">
-                Srebrna
-            </div>
-            <div class="veličina-proizvoda">
-                S
-            </div>            
-          </div>
-          <div class="div-buttona-proizvoda">
-          <button class="button-proizvoda">DODATI U KOŠARICU</button>
-          </div>
-        </div>
-  </div>
-
-  <div class="pojedini-proizvod">
-                
-    <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
-  
-        <div class="gornja-slika">
-          <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
-        </div>
-  
-        <div class="donji-podaci">
-          <div class="marka-proizvoda">DIOR / ELEGANS</div>
-          <div class="naziv-proizvoda">Ženska večernja haljina - Coco</div>
-          <div class="cijena-proizvoda">1000 €</div>                      
-          <div class="boja-veličina-proizvoda">
-            <div class="boja-proizvoda">
-                Srebrna
-            </div>
-            <div class="veličina-proizvoda">
-                S
-            </div>            
-          </div>
-          <div class="div-buttona-proizvoda">
-          <button class="button-proizvoda">DODATI U KOŠARICU</button>
-          </div>
-        </div>
-  </div>
-
-  <div class="pojedini-proizvod">
-                
-    <a href="cart.html" title="Dodaj u košaricu / ELegans"><div class="div-srce">EL</div></a>                
-  
-        <div class="gornja-slika">
-          <img src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" alt="" id="slika"/>          
-        </div>
-  
-        <div class="donji-podaci">
-          <div class="marka-proizvoda">DIOR / ELEGANS</div>
-          <div class="naziv-proizvoda">Ženska večernja haljina - Coco</div>
-          <div class="cijena-proizvoda">1000 €</div>                      
-          <div class="boja-veličina-proizvoda">
-            <div class="boja-proizvoda">
-                Srebrna
-            </div>
-            <div class="veličina-proizvoda">
-                S
-            </div>            
-          </div>
-          <div class="div-buttona-proizvoda">
-          <button class="button-proizvoda">DODATI U KOŠARICU</button>
-          </div>
-        </div>
-  </div>
+  <article id="article-natrag-na-vrh">
+    <p>
+    <a href="#" id="natrag-na-vrh">
+    - Natrag na vrh - 
+    </a>
+    </p>              
+</article>
 </section>
 
 <section>
@@ -702,7 +546,7 @@
           <td>
               <form action="action/page">
                   <input type="email" name="email" id="news-email" placeholder="Upište Vaš e-mail">
-                  <button type="submit">Prijava</button>
+                  <button type="submit" class="button-newsletter">Prijava</button>
               </form>
           </td>
       </tr>
@@ -710,18 +554,17 @@
           <td>Prijavite se na naš newsletter i ostvarite 15% popusta na svoju prvu kupovinu i primajte obavijesti o našim promocijama i proizvodima.</td>
           <td>
               <form action="action/page">
-                  <input type="checkbox">
+                  <input type="checkbox" value="privacy" name="privacy" id="checkbox" checked="checked">
                   Pročitao sam i slažem se sa sadržajem <a href="privacy.html" target="_blank" title="ELegans/Politika privatnosti" id="privacy-link"> politika privatnosti</a> (privolu je moguće opozvati u bilo kojem trenutku). <br><br>
-                  <input type="checkbox">
-                  Prijavi se na newsletter.
+                  <input type="checkbox" id="checkbox" value="newsletter" name="newsletter">
+                  Prijavi se na ELegans newsletter.
               </form>
           </td>
       </tr>
   </table>
 </section>
-     
 
-</main>
+</main> 
 
 <footer>
     <iframe src="./partials/footer.html"width="100%" class="auto-height-iframe" border="0" height="200vh"></iframe>

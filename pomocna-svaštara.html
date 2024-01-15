@@ -12,6 +12,29 @@
 
         #blogCard {transition-property: padding-left; transition-duration: 4s; transition-timing-function: ease;}
         #blogCard:hover {padding-left: 76%;}
+
+        span {color: var(--sekundarna-boja);}
+        .dva {background-color: var(--primarna-boja); width: 400px;}
+
+        .pseudo-button::before {content: url(./images/Brendovi-Logo/suit-1-svgrepo-com.svg); visibility: hidden; padding-right: 0.5vw; }
+            .pseudo-button:hover::before {content:url(./images/Brendovi-Logo/suit-1-svgrepo-com.svg); visibility: visible; color: aqua;} 
+            .pseudo-div {width: 200px;}
+            .pseudo-div:hover {background-color: goldenrod; width: 400px;} 
+
+            #boja {background-color: crimson; padding: 1rem; color: white;}
+            #boja:hover {background-color: goldenrod; padding: 1.5rem; color: black;} 
+            #boja::after {content: url(images/Brendovi-Logo/suit-1-svgrepo-com.svg); visibility: hidden; padding-left: 1vw;}
+            #boja:hover::after {content: url(images/Brendovi-Logo/suit-1-svgrepo-com.svg); visibility: visible; opacity: 80%;}
+            #boja::before {content: url(images/Brendovi-Logo/dress-1-svgrepo-com.svg); visibility: hidden; padding-right: 1vw;}
+            #boja:hover::before {content: url(images/Brendovi-Logo/dress-1-svgrepo-com.svg); visibility: visible; opacity: 80%;}
+
+            .container-loga-brendova {display: flex; flex-wrap: wrap; flex: 1 1 auto; width: 100%;}
+            #div-loga {padding: 0.5rem;}
+            #logo-brend {width: 60px;}
+
+
+
+
         
     </style>
 
@@ -26,7 +49,51 @@
     <iframe src="./partials/blogCard.html" width="100%" class="auto-height-iframe" border="0" height="250vh" id="blogCard"></iframe>        
 
     <main>
+
+
+        <div class="container-loga-brendova">
+            <div id="div-loga"><a href=""><img src="./images/Brendovi-Logo/dior-logo-svgrepo-com.svg" alt="" id="logo-brend"></a></div>
+            <div id="div-loga"><a href=""><img src="./images/Brendovi-Logo/chanel-2-logo-svgrepo-com.svg" alt="" id="logo-brend"></a></div>
+            <div id="div-loga"><a href=""><img src="./images/Brendovi-Logo/gucci-logo-svgrepo-com.svg" alt="" id="logo-brend"></a></div>
+            <div id="div-loga"><a href=""><img src="./images/Brendovi-Logo/versace-medusa-logo-svgrepo-com.svg" alt="" id="logo-brend" ></a></div>
+            <div id="div-loga"><a href=""><img src="./images/Brendovi-Logo/boss-hugo-boss-logo-svgrepo-com.svg" alt="" id="logo-brend"></a></div>
+            <div id="div-loga"><a href=""><img src="./images/Brendovi-Logo/prada-logo-svgrepo-com.svg" alt="" id="logo-brend"></a></div>            
+
+        </div>
+
         <section>
+            <div class="pseudo-div">
+            <button class="pseudo-button">Provjerite ponudu!</button>
+            </div>
+        </section>
+        
+        <section>
+            <button id="boja">bojaj ikonica after</button>
+        </section>
+
+            <span>nešto nešto nešto</span>
+            <div class="dva">PROBA SEKUNDARNA - PRIMARNA BOJA</div>
+
+
+            <div class="div-skriveno-polje">                            
+                <legend>NAČIN PLAĆANJA</legend>
+                <form action="action_page.html">
+                <ul id="lista-nacin-placanja">
+                    <li><input type="radio" id="radio" name="placanje" value="karticom"> Plaćanje karticom</li>
+                    <li><input type="radio" id="radio" name="placanje" value="pouzecem"> Pouzećem</li>
+                    <li><input type="radio" id="radio" name="placanje" value="paypalom"> PayPalom</li>
+                    <li><input type="radio"id="radio" name="placanje" value="predracunom"> Plaćanje sa predračunom</li>                                       
+                </ul>                        
+                </form>                           
+        <p>
+            Uplatu ćete izvršiti direktno na naš bankovni račun. Pojedinosti o plaćanju predračuna poslat ćemo na vašu e-adresu. 
+            Narudžba će biti poslana na vašu odabranu adresu po primitku uplate. Ponuda vrijedi 1 dan.
+        </p>                        
+        </div>
+
+
+
+
             <fieldset>
                 <ol>
                     <li>

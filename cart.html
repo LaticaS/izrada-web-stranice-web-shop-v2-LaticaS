@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Košarica</title>
+    <link rel="icon" type="image/icon" href="./images/favicon.ico"> 
     <link rel="stylesheet" href="./js/javascript.js">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style-newsletter.css">
@@ -40,7 +41,8 @@
 
         .div-naruci {width: 100%;}        
         .button-naruči {width:100%; padding: 10px 25px; background-color: goldenrod; color: white; font-size: large;}
-        .button-naruči:hover {border: 1px solid grey; background-color: crimson;}
+        .button-naruči:hover {border: 1px solid grey; background-color: crimson;
+            box-shadow: 1px 1px 1px 2px lightgrey;}
         
         .button-newsletter:hover {background-color: lightgrey;}      
          
@@ -172,10 +174,10 @@
             <td>Prijavite se na naš newsletter i ostvarite 15% popusta na svoju prvu kupovinu i primajte obavijesti o našim promocijama i proizvodima.</td>
             <td>
                 <form action="action/page">
-                    <input type="checkbox" class="input-newsletter-checkbox">
+                    <input type="checkbox" value="privacy" name="privacy" id="checkbox" checked="checked">
                     Pročitao sam i slažem se sa sadržajem <a href="privacy.html" target="_blank" title="ELegans/Politika privatnosti" id="privacy-link"> politika privatnosti</a> (privolu je moguće opozvati u bilo kojem trenutku). <br><br>
-                    <input type="checkbox" class="input-newsletter-checkbox">
-                    Prijavi se na newsletter.
+                    <input type="checkbox" id="checkbox" value="newsletter" name="newsletter">
+                    Prijavi se na ELegans newsletter.
                 </form>
             </td>
         </tr>

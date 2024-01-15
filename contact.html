@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontaktirajte nas / ELegans</title>
+    <link rel="icon" type="image/icon" href="./images/favicon.ico"> 
     <link rel="stylesheet" href="./js/javascript.js">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style-newsletter.css">
@@ -27,6 +28,7 @@
         .textarea {border-color: lightgrey; box-shadow: 1px 2px 1px 2px lightgrey;} 
         input:hover {border-style: outset;}
         .textarea:hover {border-style: outset;}
+        #privacy-link-kontakt {color: black; text-decoration: underline;}
         
         span {color: crimson;}        
         .button-contact {padding: 1rem 2.5rem; border: 1px solid dimgrey;} 
@@ -60,12 +62,12 @@
                     <form action="action/page">
                         <p>                        
                         <label for="ime-prezime"> Ime i prezime<span>*</span> </label><br>
-                        <input type="text" id="ime" name="ime" placeholder="Upišite ime i prezime" class="ime-prezime">
+                        <input type="text" id="ime" name="ime" placeholder="Upišite ime i prezime" class="ime-prezime" required>
                         </p>
 
                         <p> 
                         <label for="mail"> E-mail<span>*</span> </label><br>
-                        <input type="email" id="mail" name="email" placeholder=" Upišite email" class="email">
+                        <input type="email" id="mail" name="email" placeholder=" Upišite email" class="email" required>
                         </p> 
                         
                         <p>
@@ -74,17 +76,17 @@
                         </p>
 
                         <p>                        
-                        <label for="Poruka"> Vaša poruka<span>*</span> </label><br>
+                        <label for="Poruka"> Vaša poruka </label><br>
                         <textarea name="poruka" cols="70" rows="10" placeholder=" Upišite poruku" style="margin-left: 1rem;" class="textarea"></textarea>
                         </p>                        
                         
                         <p>
                         <small><span>*</span>Polja označena zvjezdicom su obavezna.</small>
                         </p>
-                        <input type="checkbox">
-                        Pročitao sam i slažem se sa sadržajem <a href="privacy.html" target="_blank" title="ELegans/Politika privatnosti" id="privacy-link"> politika privatnosti.</a> 
+                        <input type="checkbox" value="kontakt-privola" name="kontakt-privola" id="checkbox" checked="checked"> 
+                        <small>Upoznat sam sa <a href="privacy.html" id="privacy-link-kontakt">politikom privatnosti</a> i suglasan sa prikupljanjem osobnih podataka u svrhu kontakta.  
                         <br>
-                        (privolu je moguće opozvati u bilo kojem trenutku).                        
+                        (privolu je moguće opozvati u bilo kojem trenutku).</small>                        
                         <p>
                             <button class="button-contact">Pošalji</button>
                         </p>                     
@@ -156,10 +158,10 @@
             <td>Prijavite se na naš newsletter i ostvarite 15% popusta na svoju prvu kupovinu i primajte obavijesti o našim promocijama i proizvodima.</td>
             <td>
                 <form action="action/page">
-                    <input type="checkbox">
+                    <input type="checkbox" value="privacy" name="privacy" id="checkbox" checked="checked">
                     Pročitao sam i slažem se sa sadržajem <a href="privacy.html" target="_blank" title="ELegans/Politika privatnosti" id="privacy-link"> politika privatnosti</a> (privolu je moguće opozvati u bilo kojem trenutku). <br><br>
-                    <input type="checkbox">
-                    Prijavi se na newsletter.
+                    <input type="checkbox" id="checkbox" value="newsletter" name="newsletter">
+                    Prijavi se na ELegans newsletter.
                 </form>
             </td>
         </tr>

@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog-detail / ELegans</title>
+    <link rel="icon" type="image/icon" href="./images/favicon.ico"> 
     <link rel="stylesheet" href="./js/javascript.js">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-newsletter.css">
    
     <style>        
         
@@ -24,16 +26,25 @@
             .span-datum {color: crimson; font-size: smaller;}
             p:first-of-type {font-weight: bold; color: darkslategrey;}
 
+            h3 {color: var(--primarna-boja);}
+
             
             img {border-top-left-radius: 30%; border-bottom-right-radius: 30%;
             transition-property: border-radius; transition-duration: 2s; transition-timing-function: ease;} 
-            img:hover {border-radius: 0% 30% 0% 30%;} 
+            img:hover {border-radius: 0% 30% 0% 30%;}
+
+            #article-natrag-na-vrh {text-align: center;}
+
+            #natrag-na-vrh:link {color: crimson; text-decoration: none;}
+            #natrag-na-vrh:visited {color: crimson;}
+            #natrag-na-vrh:hover {color: crimson; font-weight:bolder;}
+            #natrag-na-vrh:active {color: crimson;}
+
 
         .paginacija {float: left; width: 70%;}        
         .paginacija > div {padding: 5px; margin: 6px; background-color: lightgrey;
             text-align: center; color: darkslategray;}
-        .paginacija > div:hover {border: 1px solid grey;}
-        
+        .paginacija > div:hover {border: 1px solid grey;}              
         
         
     </style>
@@ -114,8 +125,12 @@
         </section>
 
         <section>
-            <article>
-                <p>ELegans Blogging continues...</p>                
+            <article id="article-natrag-na-vrh">
+                <p>
+                <a href="#" id="natrag-na-vrh">
+                ELegans Blogging - natrag na vrh
+                </a>
+                </p>              
             </article>
         </section>
         
@@ -134,7 +149,28 @@
 
     </main>
 
-    
+    <table class="newsletter">
+        <tr id="table-left">
+            <td><strong>NEWSLETTER</strong></td>
+            <td>
+                <form action="action/page">
+                    <input type="email" name="email" id="news-email" placeholder="Upište Vaš e-mail">
+                    <button type="submit" class="button-newsletter">Prijava</button>
+                </form>
+            </td>
+        </tr>
+        <tr id="table-right">
+            <td>Prijavite se na naš newsletter i ostvarite 15% popusta na svoju prvu kupovinu i primajte obavijesti o našim promocijama i proizvodima.</td>
+            <td>
+                <form action="action/page">
+                    <input type="checkbox" value="privacy" name="privacy" id="checkbox" checked="checked">
+                    Pročitao sam i slažem se sa sadržajem <a href="privacy.html" target="_blank" title="ELegans/Politika privatnosti" id="privacy-link"> politika privatnosti</a> (privolu je moguće opozvati u bilo kojem trenutku). <br><br>
+                    <input type="checkbox" id="checkbox" value="newsletter" name="newsletter">
+                    Prijavi se na ELegans newsletter.
+                </form>
+            </td>
+        </tr>
+    </table>    
 
     <footer>
         <iframe src="./partials/footer.html"width="100%" class="auto-height-iframe" border="0" height="200vh"></iframe>

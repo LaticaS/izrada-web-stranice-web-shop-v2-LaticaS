@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kolačići / ELegans</title>
+    <link rel="icon" type="image/icon" href="./images/favicon.ico"> 
     <link rel="stylesheet" href="./js/javascript.js">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style-usluge-dno.css">
@@ -17,7 +18,8 @@
 
         section {position: relative; top: 0%; left: 10%; display: flex; flex-wrap: wrap;
             background-color: white; line-height: 1.3em;}
-        .cookie {position: relative; top: 0%; left: 45%;}             
+        .cookie {position: relative; top: 0%; left: 45%;} 
+        strong {color: crimson;}            
         
         
     </style>
@@ -91,11 +93,11 @@
     
     <table class="newsletter">
         <tr id="table-left">
-            <td><strong>NEWSLETTER</strong></td>
+            <td><b>NEWSLETTER</b> </td>
             <td>
                 <form action="action/page">
                     <input type="email" name="email" id="news-email" placeholder="Upište Vaš e-mail">
-                    <button type="submit">Prijava</button>
+                    <button type="submit" class="button-newsletter">Prijava</button>
                 </form>
             </td>
         </tr>
@@ -103,10 +105,10 @@
             <td>Prijavite se na naš newsletter i ostvarite 15% popusta na svoju prvu kupovinu i primajte obavijesti o našim promocijama i proizvodima.</td>
             <td>
                 <form action="action/page">
-                    <input type="checkbox">
+                    <input type="checkbox" value="privacy" name="privacy" id="checkbox" checked="checked">
                     Pročitao sam i slažem se sa sadržajem <a href="privacy.html" target="_blank" title="ELegans/Politika privatnosti" id="privacy-link"> politika privatnosti</a> (privolu je moguće opozvati u bilo kojem trenutku). <br><br>
-                    <input type="checkbox">
-                    Prijavi se na newsletter.
+                    <input type="checkbox" id="checkbox" value="newsletter" name="newsletter">
+                    Prijavi se na ELegans newsletter.
                 </form>
             </td>
         </tr>
