@@ -13,7 +13,11 @@ section {width: 80%;}
     border-top-right-radius: 30%; border-bottom-left-radius: 30%;
     background: rgb(156,14,65);
 background: linear-gradient(298deg, rgba(156,14,65,1) 13%, rgba(147,8,55,1) 29%, rgba(174,25,28,1) 40%, rgba(175,26,27,1) 49%, rgba(189,180,166,1) 99%);
-    }    
+    } 
+    .podheader:hover {color:crimson; font-weight: bold; background: rgb(156,14,65);
+        background: linear-gradient(298deg, rgba(189,180,166,1) 13%,  rgba(175,26,27,1) 29%,  rgba(174,25,28,1) 40%, rgba(147,8,55,1) 49%, rgba(156,14,65,1) 99%);            
+
+    }   
 #podheader-div {width: 95%; float: right; padding-right: 2vw; padding-left: 2vw; text-align: right;}
 #div-podheader-ikonica {width: 5%; float: left; padding-left: 2vw;}
 h1 {color: dimgrey;}

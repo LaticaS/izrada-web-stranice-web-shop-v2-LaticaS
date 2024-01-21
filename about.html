@@ -14,8 +14,10 @@
         section {position: relative; top: 0%; left: 10%;}
 
         #figure-CEO {float: right; width: 40%; shape-outside: circle(20%);}
-        #fotka-CEO {transition-property: width height; transition-duration: 2s; transition-timing-function: ease;}
-        #fotka-CEO:hover {width: 55%; height: 55%;}
+        #fotka-CEO {transition-property: width height;
+            transition-duration: 2s; transition-timing-function: ease;
+            max-width: 100%; min-width: 50%;}
+        #fotka-CEO:hover {width: 55%; height: 55%; }
         #fotka-tim {padding: 1vw; transition-property: width height; transition-duration: 2s; transition-timing-function: ease;} 
         #fotka-tim:hover {width: 60%; height: 60%;} 
         figcaption {color: crimson;}
@@ -40,7 +42,7 @@
             </p>
             <figcaption align="right"><em>ELegans CEO mr. Ana Anić</em></figcaption>              
                <figure id="figure-CEO">
-                <img src="./images/pngtree-smiling-business-woman-portrait-ceo-photo-png-image_13262220.png" alt="ELegans CEO Ana Anić" title="ELegans CEO Ana Anić" width="50%" height="50%" align="right" id="fotka-CEO">
+                <img src="./images/pngtree-smiling-business-woman-portrait-ceo-photo-png-image_13262220.png" alt="ELegans CEO Ana Anić" width="50%"title="ELegans CEO Ana Anić" align="right" id="fotka-CEO">
                </figure>
             <p>
                 Mi smo trgovina mode koja je zahvaljujući svojoj prepoznatljivoj robnoj marki u 30 godina izrasla u društvo s više od 400 zaposlenih.

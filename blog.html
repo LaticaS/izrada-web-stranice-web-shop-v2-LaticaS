@@ -10,11 +10,18 @@
     <link rel="stylesheet" href="./css/style-newsletter.css">
 
     <style>
+        @font-face {
+            font-family:Poiret;
+            src: url(./fonts/PoiretOne-Regular.ttf);
+        }
             
         .podheader {height: 30vh; background-image: url(./images/fashion-designer-template-new-arrival-header-img.jpg);
             background-size: cover; background-repeat: no-repeat; background-position:center;
             transition-property: padding-bottom padding-left font-weight; transition-duration: 2s; transition-timing-function: ease;}
-            .podheader:hover {padding-bottom: 3vh; padding-left: 3vh; font-weight: bold;} 
+            .podheader:hover {padding-bottom: 3vh; padding-left: 3vh; font-weight: bold;
+                background-image: url(./images/fashion-designer-template-new-arrival-header-img.jpg);
+            background-size: cover; background-repeat: no-repeat; color: white;            
+            } 
             #podheader-div {width: 95%; padding-right: 2vw; padding-left: 2vw; text-align: right;}        
                 
         section {position: relative; top: 0%; left: 10%; display: flex; justify-content: center; padding: 4vh 1vw; margin: 2px;} 
@@ -29,8 +36,8 @@
             #img-drugih-blogova:hover {border-radius: 20% 0% 20% 0%; width: 300px;}
                     
 
-        p {font-style: italic; color: darkslategrey;}
-        h1 {color: darkslategrey;}
+        p {font-style: italic; color: darkslategrey; line-height: 1.5;}
+        h1 {color: darkslategrey; font-family:Poiret;}
 
         #button-blog {padding: 8px 10px; border: 1px solid; border-top-right-radius: 30%; border-bottom-left-radius: 30%;}
         #button-blog:hover {border: 2px solid crimson;}
@@ -77,7 +84,7 @@
             <div class="div-container-desno"> 
                 <figure>
                     <a href="blog-detail-jedan.html" target="_parent">
-                    <img src="./images/spring.png" width="80%" alt="Proljetni dodaci - zelena torbica" title="Proljetni dodaci - zelena torbica" class="first-img">
+                    <img src="./images/spring2.jpg" width="80%" alt="Proljetni dodaci - zelena torbica" title="Proljetni dodaci - zelena torbica" class="first-img">
                     </a>
                 </figure>  
             </div>         
@@ -94,7 +101,7 @@
                 </div>
                 <div>                    
                     <article>
-                        <h1>Top trendovi za sezonu jesen-zima 2023/2024</h1>
+                        <h1>Top trendovi za sezonu jesen - zima 2023/2024</h1>
                         <time>01/11/2023</time> 
                         <p>
                         Jesensko-zimskom sezonom dominirat će minimalizam. Jednostavne forme i lookovi u nenametljivim formama. Trendovi koji se brzo mijenjaju ustupaju mjesto modnim klasicima, čime odjevne kombinacije...
