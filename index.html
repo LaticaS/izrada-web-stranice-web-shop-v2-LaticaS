@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="desctription" content="WebShop ELegans New Fashion, brendirana odjeća i modni dodaci za žene i muškarce.">
+    <meta name="desctription" content="WebShop ELegans New Fashion, brendirana odjeća i modni dodaci za žene i muškarce">
     <title>ELegans WebShop</title>
     <link rel="icon" type="image/icon" href="./images/favicon.ico">    
     <link rel="stylesheet" href="./js/javascript.js">
@@ -12,8 +12,13 @@
     <link rel="stylesheet" href="./css/style-usluge-dno.css">
 
     <style>
-        .podheader {display: flex; align-items: center;}             
-            #podheader-div {width: 95%; padding-right: 2vw; padding-left: 2vw; text-align: right;} 
+        .podheader {display: flex; align-items: center;} 
+        .podheader:hover {color: crimson;}            
+            #podheader-div {width: 95%; padding: 0vh 2vw; text-align: right;
+            transition-property: color; transition-duration: 1s; transition-timing-function: ease;}                       
+            #prvi-h1{color: lightgrey; font-size: large; font-family: Arial Narrow; font-weight: lighter; padding: 3vh 0vw;}
+            #prvi-h1:hover{color:crimson; font-weight: bold;}             
+
     
     section {position: relative; top: 0%; left: 1%; width: 99%;
             height: 90vh; display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;
@@ -27,9 +32,8 @@
             font-family: Arial; font-size: 3rem; color: white;        
         }  
         .div-banner:hover {border-radius: 40% 0% 40% 0%; width: 101%; color: gold; font-weight: bolder; } 
-        .div-text-banner {position: absolute; top: 45%; left: 25%; width: 50%; text-align: center;} 
-        
-          #prvi-h1{color: white;}                     
+        .div-text-banner {position: absolute; top: 45%; left: 25%; width: 50%; text-align: center;}       
+                              
 
         .sect2 {background-color: white; margin-top: 1vh; margin-bottom: 0.5vh;}
         .sect2 > div:first-of-type {width: 100%; height: 10%; color: white; border-radius: 0% 30% 0% 30%;
@@ -55,7 +59,7 @@
             #ime-kategorije {width: 50%; position: absolute; top: 60%; left: 30%;
                 background-color:white; color: crimson;
                 padding: 1px; border-radius:10%; opacity: 85%;}
-                #ime-kategorije:hover {padding: 1.5px; font-size: larger; opacity: 90%;}
+                #ime-kategorije:hover {padding: 1.5px; font-size: larger; opacity: 93%;}
 
             #link-u-naslovu {text-decoration: none;}
             #link-u-naslovu:link {color: white;}
@@ -168,13 +172,13 @@
 
 <body>
     <header>
-        <iframe src="./partials/header.html" width="100%" class="auto-height-iframe" border="0" height="160vh" ></iframe>
+        <iframe src="./partials/header.html" width="100%" class="auto-height-iframe" border="0" height="160vh" title="WebShop ELegans New Fashion - links" ></iframe>
     </header>
-    <header class="podheader"><div id="podheader-div">Moda ELegans / WebShop</div></header>
+    <header class="podheader"><div id="podheader-div"><h1 id="prvi-h1">MODA ELEGANS / WEBSHOP</h1></div></header>
     
     <main>
         
-        <a href="products.html" title="AKCIJSKI POPUSTI NA XL ARTIKLE 50%">
+        <a href="products.html" title="AKCIJSKI POPUSTI NA XL ARTIKLE 50%" target="_parent">
         <div class="div-banner">            
             <div class="div-text-banner">
                 AKCIJSKI POPUSTI 50%
@@ -187,20 +191,20 @@
             
             <div>
                 <a href="products.html" target="_parent" id="link-u-naslovu">                
-                <h1 id="prvi-h1">ELEGANS 4 EVERYONE</h1>
+                <h2>ELEGANS 4 EVERYONE</h2>
                 </a>              
             </div>                       
-            <div id="div-kategorija-žene">
+            <div id="div-kategorija-žene" title="Bogata ponuda odjeće za žene">
                 <a href="women-products.html" target="_parent">
                 <div id="ime-kategorije"><h3>ŽENE</h3></div>
                 </a>               
             </div>
-            <div id="div-kategorija-modni-dodaci">
+            <div id="div-kategorija-modni-dodaci" title="Upotpunite svoj stil ELegans modnim dodacima">
                 <a href="modni-dodaci.html" target="_parent">
                 <div id="ime-kategorije"><h3>MODNI DODACI</h3></div>
                 </a>          
             </div>
-            <div id="div-kategorija-muškarci">
+            <div id="div-kategorija-muškarci" title="Bogat izbor odjeće za muškarce">
                 <a href="men-products.html" target="_parent">
                 <div id="ime-kategorije"><h3>MUŠKARCI</h3></div>
                 </a>
@@ -211,22 +215,22 @@
             <div>
                 <h2>POPULARNO</h2>
             </div>
-            <div id="div-haljine">
+            <div id="div-haljine" title="Haljine za dnevne i svečane prigode">
                 <a href="products.html" target="_parent" id="link-u-naslovu">
                 <div id="ime-kategorije"><h3>HALJINE </h3></div>
                 </a>
             </div>
-            <div id="div-bluze">
+            <div id="div-bluze" title="Bogata ponuda ženstvenih bluza">
                 <a href="products.html" target="_parent" id="link-u-naslovu">
                 <div id="ime-kategorije"><h3>BLUZE </h3></div>
                 </a>
             </div>
-            <div id="div-kaputi">
+            <div id="div-kaputi" title="Topli kaputi za hladne dane">
                 <a href="products.html" target="_parent" id="link-u-naslovu">
                 <div id="ime-kategorije"><h3>KAPUTI </h3></div>
                 </a>
             </div>
-            <div id="div-trenerke">
+            <div id="div-trenerke" title="Udobne trenirke za rekreaciju i odmor">
                 <a href="products.html" target="_parent" id="link-u-naslovu">
                 <div id="ime-kategorije"><h3>TRENIRKE </h3></div>
                 </a>
@@ -272,22 +276,22 @@
 
 
         <section class="sect4">
-            <div id="div-suknje">
+            <div id="div-suknje" title="Klasični i moderni krojevi suknji">
                 <a href="products.html" target="_parent" id="link-u-naslovu">
                 <div id="ime-kategorije"><h3>SUKNJE </h3></div>
                 </a>
             </div>
-            <div id="div-majice">
+            <div id="div-majice" title="Majice poznatih brendova">
                 <a href="products.html" target="_parent" id="link-u-naslovu">
                 <div id="ime-kategorije"><h3>MAJICE </h3></div>
                 </a>
             </div>
-            <div id="div-jakne">
+            <div id="div-jakne" title="Brojni modeli jakni">
                 <a href="products.html" target="_parent" id="link-u-naslovu">
                 <div id="ime-kategorije"><h3>JAKNE </h3></div>
                 </a>
             </div>
-            <div id="div-puloveri">
+            <div id="div-puloveri" title="Bogat izbor pulovera">
                 <a href="products.html" target="_parent" id="link-u-naslovu">
                 <div id="ime-kategorije"><h3>PULOVERI </h3></div>
                 </a>
@@ -303,7 +307,7 @@
                 </div>
             
 
-            <div id="blog-drugi">
+            <div id="blog-drugi" title="Blogging News & Trends">
                 <a href="blog-detail-jedan.html" target="_parent">
                 <article id="blog-article">                    
                     <p id="p-crna"><small>BLOG NEWS</small></p>               
@@ -316,7 +320,7 @@
                 </a>               
             </div>
 
-            <div id="blog-treci">
+            <div id="blog-treci" title="Showbiz & Royalty">
                 <a href="blog.html" target="_parent">
                 <article id="kraljevski-article">
                     <p id="p-crna"><small>KRALJEVSKA MODA</small></p>               
@@ -329,7 +333,7 @@
                 </a>                              
             </div>
 
-            <div id="blog-cetvrti">
+            <div id="blog-cetvrti" title="Sport & Moda">
                 <a href="blog.html" target="_parent">               
                 <article id="active-living-article">
                     <p id="p-crna"><small>ACTIVE LIVING</small></p>               
@@ -342,7 +346,7 @@
                 </a>
             </div>
 
-            <div id="blog-peti">
+            <div id="blog-peti" title="Home & Lifestyle">
                 <a href="blog.html" target="_parent">              
                 <article id="home-lifestyle-article">
                     <p id="p-crna"><small>HOME & LIFESTYLE</small></p>               
@@ -405,16 +409,16 @@
             <td>
                 <form action="action/page">
                     <input type="checkbox" value="privacy" name="privacy" id="checkbox" checked="checked">
-                    Pročitao sam i slažem se sa sadržajem <a href="privacy.html" target="_blank" title="ELegans/Politika privatnosti" id="privacy-link"> politika privatnosti</a> (privolu je moguće opozvati u bilo kojem trenutku). <br><br>
+                    <label for="Pristanak-newsletter">Pročitao sam i slažem se sa sadržajem <a href="privacy.html" target="_blank" title="ELegans/Politika privatnosti" id="privacy-link"> politika privatnosti</a> (privolu je moguće opozvati u bilo kojem trenutku).</label> <br><br>
                     <input type="checkbox" value="newsletter" name="newsletter" id="checkbox">
-                    Prijavi se na ELegans newsletter.
+                    <label for="Prijava-newsletter">Prijavi se na ELegans newsletter.</label>
                 </form>
             </td>
         </tr>
     </table>   
 
     <footer>
-        <iframe src="./partials/footer.html"width="100%" class="auto-height-iframe" border="0" height="200vh"></iframe>
+        <iframe src="./partials/footer.html"width="100%" class="auto-height-iframe" border="0" height="200vh" title="WebShop ELegans - info"></iframe>
     </footer>
     
     
