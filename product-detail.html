@@ -15,10 +15,12 @@
         .lijeva-strana {float: left; width: 60%; background-color: white;
             display: flex; flex-wrap: wrap; justify-content: center; margin-top: 2vh;}
         .div-kolumna-male-fotke {width: 15%; flex-direction: column; padding-top: 2.6vh; flex: 1 1 auto;}
-        #foto {width: 100%; }                     
+        #foto {width: 100%; }  
+        #foto:hover {filter: brightness(105%);}                   
 
         .div-velika-fotka {width: 80%; 
-            padding-right:2vw; border-top: 1px solid grey; border-right: 1px solid grey;}               
+            padding-right:2vw; border-top: 1px solid grey; border-right: 1px solid grey;} 
+            #velika-foto:hover {filter: brightness(105%);}              
             
 
 
@@ -55,8 +57,7 @@
         .usluge-u-slici {width: 100%; display: flex; flex-wrap: wrap; justify-content: space-around; background-color: white;}
         .usluge-u-slici>div{width: 20%; border: 1px solid lightgrey; 
             text-align: center; font-family: Arial, Helvetica, sans-serif; color: gray; font-size: small; padding: 1vh; margin-bottom: 4vh; margin-top: 10vh;}
-
-        
+        .usluge-u-slici>div:hover{color: darkslategrey; width: 20.5%; border: 1px solid darkslategrey;}        
         
     </style>
 
@@ -100,7 +101,7 @@
             <div class="div-velika-fotka">
 
                 <figure>
-                    <a href="./images/proizvodi-odjeća/ELegans haljina Amarena-1.jpg" target="_blank" title="Kliknite za veći prikaz">              
+                    <a href="./images/proizvodi-odjeća/ELegans haljina Amarena-1.jpg" target="_blank" title="Kliknite za veći prikaz" id="velika-foto">              
                 <img src="./images/proizvodi-odjeća/ELegans haljina Amarena-1.jpg" width="100%" alt="">
                     </a>
                 </figure>
@@ -120,7 +121,9 @@
             <p>Boja: <button id="button-boja"></button></p>            
             </div>             
             <div class="div-brend-logo">
+                <a href="https://www.dior.com/en_hr/fashion" target="_blank">
                 <img src="./images/Brendovi-Logo/dior-logo-svgrepo-com.svg" width="100vw" alt="Logo Dior">
+                </a>
             </div>
            </div>
 
@@ -233,7 +236,7 @@
             <td><strong>NEWSLETTER</strong></td>
             <td>
                 <form action="action/page">
-                    <input type="email" name="email" id="news-email" placeholder="Upište Vaš e-mail">
+                    <input type="email" name="email" id="news-email" placeholder="Upišite Vaš e-mail">
                     <button type="submit" class="button-newsletter">Prijava</button>
                 </form>
             </td>

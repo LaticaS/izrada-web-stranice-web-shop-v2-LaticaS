@@ -92,7 +92,7 @@
                                 <input type="text" name="Ulica i broj" id="dugi-input" placeholder="* Ulica i broj" id="input-field1" required>
                             </li>                            
                             <li>
-                                <input type="number" name="Poštanski broj" placeholder="* Poštanski broj" id="input-field1" required>
+                                <input type="number" name="Poštanski broj" placeholder="* Poštanski broj" id="input-field1" min="10000" max="53296" required>
                                 <input type="text" name="Grad" placeholder="* Grad" id="input-field1" required>
                             </li>
                             <li>
@@ -148,7 +148,7 @@
                        
 
                 <div class="div-plati">
-                <form action="zahvala.html">
+                <form action="action/page">
                     <p>
                         <input type="checkbox" checked="checked" name="Pristanak" id="checkbox"> *Pročitao/la sam i prihvaćam uvjete korištenja i politiku o privatnosti.
                         <br>
@@ -170,22 +170,29 @@
     
     <div id="bijeli-div"></div>
 
-    <div class="div-logo-platne-kartice">
+    <div class="div-logo-platne-kartice">        
         <div>
         <figure>
+        <a href="terms-sale.html" target="_parent" title="Upoznajte naše uvjete prodaje i plaćanja">
             <img src="./images/Brendovi-Logo/mastercard-full-svgrepo-com.svg" alt="Logo MasterCard" id="slika-platne-kartice">
+        </a>
         </figure>
         </div>
         <div>
         <figure>
+            <a href="terms-sale.html" target="_parent" title="Upoznajte naše uvjete prodaje i plaćanja">
             <img src="./images/Brendovi-Logo/apple-pay-svgrepo-com.svg" alt="Logo ApplePay" id="slika-platne-kartice">
+        </a>
         </figure>
         </div>
         <div>
         <figure>
+            <a href="terms-sale.html" target="_parent" title="Upoznajte naše uvjete prodaje i plaćanja">
             <img src="./images/Brendovi-Logo/visa-logo-svgrepo-com.svg" alt="Logo Visa" id="slika-platne-kartice">
+        </a>
         </figure>
         </div>
+        
     </div>
 
     <div class="usluge-u-slici">
@@ -216,7 +223,7 @@
             <td><strong>NEWSLETTER</strong></td>
             <td>
                 <form action="action_page.html">
-                    <input type="email" name="email" id="news-email" placeholder="Upište Vaš e-mail">
+                    <input type="email" name="email" id="news-email" placeholder="Upišite Vaš e-mail">
                     <button type="submit" class="button-newsletter">Prijava</button>
                 </form>
             </td>

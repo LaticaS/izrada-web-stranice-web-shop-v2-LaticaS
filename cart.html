@@ -27,7 +27,8 @@
         h3 {text-align: left;}
 
         .redni-broj {padding: 1px 4px; border: 1px solid dimgrey;}         
-        .input-količina-proizvod {width: 50px; height: 20px; border-color: lightgrey; box-shadow: 1px 2px 1px lightgrey;}
+        #input-količina-proizvod {width: 50px; height: 20px; border-color: lightgrey; box-shadow: 1px 2px 1px lightgrey;
+           accent-color: dimgrey;}
         .link-natrag {text-decoration: none;}
         .link-natrag:visited {color: crimson;}
         .link-natrag:hover {text-decoration: underline; color: crimson;}    
@@ -87,8 +88,8 @@
                             <td class="ćelija-table-proizvod">
                                 <p>Količina:</p>
                                 <p>
-                                <form action="">
-                                    <input type="number" name="količina" min="1" max="50" id="input-količina-proizvod">
+                                <form action="action/page">
+                                    <input type="number" name="količina" min="1" max="50" id="input-količina-proizvod" style="accent-color: dimgrey;">
                                 </form>
                                </p>
                             </td>                            
@@ -165,7 +166,7 @@
             <td><strong>NEWSLETTER</strong></td>
             <td>
                 <form action="action/page">
-                    <input type="email" name="email" id="news-email" placeholder="Upište Vaš e-mail">
+                    <input type="email" name="email" id="news-email" placeholder="Upišite Vaš e-mail">
                     <button type="submit" class="button-newsletter">Prijava</button>
                 </form>
             </td>
