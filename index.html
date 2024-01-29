@@ -59,7 +59,7 @@
             #ime-kategorije {width: 50%; position: absolute; top: 60%; left: 30%;
                 background-color:white; color: crimson;
                 padding: 1px; border-radius:10%; opacity: 85%;}
-                #ime-kategorije:hover {padding: 1.5px; font-size: larger; opacity: 93%;}
+                #ime-kategorije:hover {padding: 1.3px; font-size: larger; opacity: 93%;}
 
             #link-u-naslovu {text-decoration: none;}
             #link-u-naslovu:link {color: white;}
@@ -164,7 +164,55 @@
             a:hover {font-weight: bold; color: crimson;}
             a:active {color:crimson;}
             
-            #article-natrag-na-vrh {text-align: center;}
+            .div-natrag-na-vrh {height: 10vh; width: 100%; margin: 2vh 0vw; padding: 2vh 1vw; text-align: center; font-family: Arial;}            
+
+            @media screen and (max-width: 768px) {
+                #prvi-h1:hover{color:white;}
+                .div-banner {height: 60vh; font-size: 2rem; }
+                .sect2 {height: 120vh;}
+                .sect2 > div {width: 40%; height: 40%;}
+                .sect2 > div:first-of-type {font-size: small; height: 8%;}
+
+                .sect3 {height: 120vh;}
+                .sect3 > div {width: 40%; height: 40%;}
+                .sect3 > div:first-of-type {height: 8%; font-size: small;} 
+
+                #logo-brend {width: 30px;}
+                .sect4 {height: 120vh;} 
+                .sect4 > div {width: 40%; height:50%;}
+                #ime-kategorije {width: 50%; font-size: small; position: absolute; top: 70%; left: 30%; }
+                #ime-kategorije:hover {font-size: 1rem;}
+
+                .sect5 {height: 120vh;}
+                .sect5 > div {width: 45%; height:45%;}                
+                .sect5 > div:first-of-type {height: 8%; font-size: small;}
+                #blog-article, #kraljevski-article, #active-living-article, #home-lifestyle-article {width: 80%; height: 70%; font-size: smaller; overflow: hidden;}
+                #blog-span {position: absolute; top: 52%; left: 44%;} 
+
+             }
+
+            @media screen and (max-width: 320px) {                
+                #prvi-h1:hover{color:white;}
+                .div-banner {height: 40vh; font-size: 2rem; }                
+                .div-text-banner {position: absolute; top: 35%; left: 20%; width: 55%; text-align: center;}
+                .sect2 > div {width: 100%; height:30vh;}
+                .sect2 > div:first-of-type {height: 8%; font-size: small;}
+                .sect3 > div {width: 100%; height:19vh;}
+                .sect3 > div:first-of-type {height: 8%; font-size: small;} 
+
+                #logo-brend {width: 20px;}
+                .sect4 {height: 90vh;} 
+                .sect4 > div {width: 100%; height:22vh;}
+                #ime-kategorije {width: 50%; font-size: small; top: 50%; left: 30%; }
+                #ime-kategorije:hover {font-size: 1rem;}
+
+                .sect5 {margin-bottom: 10vh;}
+                .sect5 > div {width: 100%; height:30vh;}
+                .sect5 > div:first-of-type {height: 8%; font-size: small;}
+                #blog-article, #kraljevski-article, #active-living-article, #home-lifestyle-article {width: 80%; height: 90%; font-size: small;}
+                #blog-span {display: none;}                             
+                
+            }
 
     </style>
 
@@ -327,7 +375,7 @@
                     <h1>Kraljica Letizia ponovo modno briljira</h1>
                     <time>08/01/2024</time>                                         
                     <p id="p-crna">
-                        Španjolska kraljica ponovno je uspjela zadiviti svojom elegantnom modnom kombinacijom s potpisom njezine omiljene dizajnerice Caroline Herrere...
+                        Španjolska kraljica ponovno je uspjela zadiviti elegantnom modnom kombinacijom s potpisom njezine omiljene dizajnerice Caroline Herrere...
                     </p>                    
                 </article>
                 </a>                              
@@ -346,6 +394,8 @@
                 </a>
             </div>
 
+            <a href="blog.html" target="_parent"><span id="blog-span">BLOG</span></a>
+
             <div id="blog-peti" title="Home & Lifestyle">
                 <a href="blog.html" target="_parent">              
                 <article id="home-lifestyle-article">
@@ -357,19 +407,18 @@
                     </p>
                 </article>
                 </a>
-            </div>
-            <a href="blog.html" target="_parent"><span id="blog-span">BLOG</span></a>
-        </section>        
+            </div>            
+        </section>         
         
-            <article id="article-natrag-na-vrh">
-                <p>
-                <a href="#" id="natrag-na-vrh">
-                - Natrag na vrh - 
-                </a>
-                </p>              
-            </article>
-
     </main> 
+
+    <div class="div-natrag-na-vrh">
+            <p id="p-natrag-na-vrh">
+            <a href="#" id="natrag-na-vrh">
+            - Natrag na vrh - 
+            </a>
+            </p>
+    </div>
 
     <div class="usluge-u-slici">
         <div>

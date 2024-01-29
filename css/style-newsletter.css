@@ -2,8 +2,16 @@
     background-color: crimson; height: 40vh; margin-top: 0.5vh; margin-bottom: 0.5vh; 
      padding: 1rem; color: white;
     display: flex; flex-wrap: wrap; align-items: center; text-align: center;}
-    tr, tr {flex-wrap: wrap;}
+    tr, td {flex-wrap: wrap;}
 .button-newsletter {padding: 1rem 2.5rem; border: none;}
 .button-newsletter:hover {background-color: lightgrey;} 
 #news-email {width: 14vw; padding: 1rem; border: none;}
 #privacy-link {text-decoration: underline; color: white;}
+@media screen and (max-width: 768px) { 
+    .newsletter {height: 70vh;}
+    #news-email {margin: 0.5rem; width: 16vw;}
+}
+@media screen and (max-width: 320px) {     
+    .newsletter {height: 70vh;}
+    #news-email {margin: 0.5rem; width: 20vw;}
+}

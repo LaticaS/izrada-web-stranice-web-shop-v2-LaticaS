@@ -54,9 +54,32 @@
         .paginacija {float: left; width: 70%;}        
         .paginacija > div {padding: 5px; margin: 6px; background-color: lightgrey;
             text-align: center; color: darkslategray;}
-        .paginacija > div:hover {border: 1px solid grey;}              
+        .paginacija > div:hover {border: 1px solid grey;}  
         
-        
+        @media screen and (max-width: 1190px) {
+          aside {width: 30%;} 
+          section {width: 55%; float: left;}
+          
+        }
+        @media screen and (max-width: 1000px) {         
+          aside {width: 30%;} 
+          h1 {width: 55%;}
+          section {width: 55%; float: left;}
+               
+        }
+        @media screen and (max-width: 680px) {
+          .podheader {height: 10vh;}            
+          aside {width: 30%;} 
+          h1 {width: 50%; float: left;}                
+          section {float: left; width: 50%;}          
+        } 
+        @media screen and (max-width: 550px) {            
+          .podheader {height: 10vh;}           
+          aside {width: 100%;}
+          h1 {width: 100%;}                 
+          section {width: 100%;}          
+        } 
+
     </style>
 
 </head>

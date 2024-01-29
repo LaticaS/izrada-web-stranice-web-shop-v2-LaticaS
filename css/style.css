@@ -22,4 +22,10 @@ background: linear-gradient(298deg, rgba(156,14,65,1) 13%, rgba(147,8,55,1) 29%,
 #div-podheader-ikonica {width: 5%; float: left; padding-left: 2vw;}
 h1 {color: dimgrey;}
 #checkbox {accent-color: dimgrey;}
-   
+
+@media screen and (max-width: 768px) {
+    .podheader:hover {color:white;}
+}
+@media screen and (max-width: 320px) {
+    .podheader:hover {color:white;}
+}

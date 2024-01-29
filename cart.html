@@ -33,19 +33,45 @@
         .link-natrag:visited {color: crimson;}
         .link-natrag:hover {text-decoration: underline; color: crimson;}    
         
-        .table-proizvod, .table-blagajna {width: 100%;}        
+        .table-proizvod, .table-blagajna {width: 100%;} 
         .ćelija-table-proizvod, .ćelija-table-blagajna {border: solid 1px white; padding: 1rem;}
         .redak-sveukupno {background-color: lightgray;}
         .redak-table-proizvod, .redak-table-blagajna {height: 6vh;}       
-        p {font-size: small; color: dimgrey;}
-        #img-trenirka:hover {width: 35%;}
+        p {font-size: medium; color: dimgrey;}
+        #img-trenirka {width:40%; }
+        #img-trenirka:hover {width: 45%;}
 
         .div-naruci {width: 100%;}        
         .button-naruči {width:100%; padding: 10px 25px; background-color: goldenrod; color: white; font-size: large;}
         .button-naruči:hover {border: 1px solid grey; background-color: crimson;
             box-shadow: 1px 1px 1px 2px lightgrey;}
         
-        .button-newsletter:hover {background-color: lightgrey;}      
+        .button-newsletter:hover {background-color: lightgrey;}   
+        
+        @media screen and (max-width: 815px) {
+            .lijevi-div, .desni-div {width: 100%;}
+            .fieldset1 {padding-right: 12vw; }
+            .ćelija-table-proizvod {display: flex; flex-wrap: wrap; width: 30%;}
+            .ćelija-table-proizvod:first-of-type {width:70%;}
+            .redak-table-proizvod {width: 100%;}
+            #input-količina-proizvod {width: 100px; height: 30px;} 
+            
+        }
+        @media screen and (max-width: 320px) {
+            section {position: relative; top: 0%; left: 0.5%;
+            padding-left: 0px;}
+            .lijevi-div, .desni-div {width: 100%;}
+            .fieldset1, .fieldset2 {width: 100%;} 
+            .fieldset1 {padding-right: 12vw; }
+            .ćelija-table-proizvod {display: flex; flex-wrap: wrap; width: 50%;}
+            .ćelija-table-proizvod:first-of-type {width:100%;} 
+            .redak-table-proizvod {width: 50%;}
+            #img-trenirka {width: 80%;} 
+            #img-trenirka:hover {width: 85%;}
+            #input-količina-proizvod {width: 100px; height: 30px;}
+        
+        }           
+        
          
         
         
@@ -71,25 +97,27 @@
                     <ol>
                         <li>
                     <table class="table-proizvod">
-                        <tr class="redak-table-proizvod">
-                            <td class="ćelija-table-proizvod">
-                                
-                            </td>
+                        <tr class="redak-table-proizvod">                            
                             <td class="ćelija-table-proizvod">
                                 <h3>ŽENSKA TRENIRKA SIVA PAMUK, REEBOK, ELEGANS</h3>
-                                <a href="./images/proizvodi-odjeća/ELegans ženska siva trenirka Reebok.jpg" target="_parent"><img src="./images/proizvodi-odjeća/ELegans ženska siva trenirka Reebok.jpg" width="30%" height="30%" id="img-trenirka" alt="Ženska siva trenirka pamuk Reebok, ELegans" title="Kliknite za veći prikaz" align="left" style="padding-right: 0.5vw;"></a>
+                                <a href="./images/proizvodi-odjeća/ELegans ženska siva trenirka Reebok.jpg" target="_parent">
+                                    <img src="./images/proizvodi-odjeća/ELegans ženska siva trenirka Reebok.jpg" id="img-trenirka" alt="Ženska siva trenirka pamuk Reebok, ELegans" title="Kliknite za veći prikaz" align="left" style="padding-right: 0.5vw;">
+                                </a>
                                 <p>Veličina: XL</p>
+                                <br>
                                 <p>Boja: tamno siva</p>                                        
                             </td>
                             <td class="ćelija-table-proizvod">
-                                <p>Cijena:</p>
-                                <p>20,99€</p>
+                                <p>Cijena: </p>
+                                <br>
+                                <p> 20,99€</p>
                             </td>                    
                             <td class="ćelija-table-proizvod">
-                                <p>Količina:</p>
+                                <p>Količina: </p>
+                                <br>
                                 <p>
                                 <form action="action/page">
-                                    <input type="number" name="količina" min="1" max="50" id="input-količina-proizvod" style="accent-color: dimgrey;">
+                                    <input type="number" name="količina" min="1" max="20" id="input-količina-proizvod" style="accent-color: dimgrey;">
                                 </form>
                                </p>
                             </td>                            
@@ -98,7 +126,7 @@
                        </li>                       
                     </ol> 
                 </fieldset>  
-                <div>                    
+                <div id="div-link-natrag">                    
                     <p>
                     <a href="products.html" target="_parent" class="link-natrag"><< Natrag na Proizvode</a>
                     </p>                    

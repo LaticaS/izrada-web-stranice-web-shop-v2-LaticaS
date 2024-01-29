@@ -28,7 +28,7 @@
         a:active {color:dimgrey;}  
 
         #naslov-zene {color: crimson;}
-
+        
         section {float: right; width: 75%; display: flex; flex-wrap: wrap; padding: 1vh 0vw; margin: 1vh 0vw;
           background-color: white;}
 
@@ -69,15 +69,44 @@
         button {padding: 1rem 2.5rem; border: none;}
         button:hover {background-color: lightgrey;} 
         #news-email {width: 14vw; padding: 1rem; border: none;}
-        #privacy-link {text-decoration: underline; color: white;}    
+        #privacy-link {text-decoration: underline; color: white;}  
+        
+        @media screen and (max-width: 1190px) {
+          aside {width: 30%;} 
+          section, .section-brendovi {width: 65%; float: right;}
+          .section-kategorije {float: right; width: 65%; padding-right: 0vw;}           
+          .div-ul-ovi {width: 25%;}
+          .ul-kategorije {font-size: smaller;}
+          #logo-brend {width: 40px;}          
+          .pojedini-proizvod {width: 30%;} 
           
+          .newsletter {height: 70vh;}
+          #news-email {margin: 0.5rem; width: 16vw;}
+        }
+        @media screen and (max-width: 1000px) {
+          aside {width: 30%;} 
+          section, .section-brendovi {width: 65%; float: right;}
+          .section-kategorije {float: right; width: 65%; padding-right: 0vw;}
+          .section-kategorije:hover {height: 75vh;} 
+          .div-ul-ovi {width: 25%;}
+          .ul-kategorije {font-size: smaller;}
+          #logo-brend {width: 40px;}          
+          .pojedini-proizvod {width: 40%;}
+
+          .newsletter {height: 70vh;}
+          #news-email {margin: 0.5rem; width: 16vw;}        
+        }
+        @media screen and (max-width: 680px) {
+          aside {width: 100%;}
+          .section-brendovi {display: none;}
+          .section-kategorije {display: none;}          
+          section {float: left; width: 100%;}
+          .pojedini-proizvod {width: 100%;}
           
-            
-         
-                   
-        
-        
-        
+          .newsletter {height: 70vh;}
+          #news-email {margin: 0.5rem; width: 20vw;}
+        }   
+
     </style>
 
 </head>

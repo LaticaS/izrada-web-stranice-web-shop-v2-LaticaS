@@ -22,9 +22,11 @@
             .head1 > div {padding-right: 1.5vw;}
             .div-Logo {padding-bottom: 2rem;}           
             #logo {transition-property: width height; transition-duration: 2s; transition-timing-function:ease;}
-            #logo:hover {width: 140px; height: 70px;}                        
+            #logo:hover {width: 140px; height: 70px;} 
             
-            input {border: 1px solid crimson; width: 15vw; height: 16vh;} 
+            .div-trazilica {display: flex; flex-wrap: wrap;}
+            
+            #input-header-pretrazi {border: 1px solid crimson; width: 15vw; height: 16vh;} 
             #search {margin-top: 2px; border: none; border-top-right-radius: 30%; border-bottom-right-radius: 30%;}                                            
             #search:hover {background-color: lightgray;}
 
@@ -40,7 +42,25 @@
             #Face:hover, #Insta:hover, #Twitt:hover {opacity: 95%;}
 
             main {margin-top: 10px;}
+
+            @media screen and (max-width: 768px) { 
+            .div-Logo {display: none;}
+            .div-navi {padding: 7px 15px;}
+            .div-trazilica {width: 100%;}
+            #input-header-pretrazi {width: 80%;}
+            #div-ikonica-search {width: 10%;}
+            .head2 {padding-top: 2vh;}
             
+        }
+        @media screen and (max-width: 320px) {            
+            .div-Logo {display: none;}
+            .div-navi {padding: 3px 10px;}
+            .div-trazilica {width: 100%;}
+            #input-header-pretrazi {width: 80%;}
+            #div-ikonica-search {width: 10%;}
+            .head2 {padding-top: 1vh;}
+
+        }           
 
     </style>
 
@@ -53,12 +73,16 @@
     <object data="" type="">
         <header>            
                 <section class="head1">
+                
+                <div class="div-trazilica">
                     <form action="action/page">
-                    <input type="text" name="search" placeholder="Pretraži shop">                                       
+                    <input type="text" name="search" placeholder="Pretraži shop" id="input-header-pretrazi">                                       
                     </form>   
-                <div class="div-search">
+                    <div id="div-ikonica-search">
                     <img src="../images/search-svgrepo-com.svg" alt="Traži" title="Traži" width="30px" height="30px" id="search"> 
+                    </div>
                 </div>
+
                 <div>
                     <a href="../cart.html" target="_parent"><img src="../images/cart-3-svgrepo-com.svg" alt="Košarica" width="30px" height="30px" title="Moja košarica" id="Kosara"></a>
                 </div> 

@@ -9,15 +9,13 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style-usluge-dno.css">    
    
-    <style>     
-      
-        aside {float: left; top: 0%; left: 0%; background-color: white;}             
-        section {float: right; width: 75%; display: flex; flex-wrap: wrap; padding: 1vh 0vw; margin: 1vh 0vw;
-          background-color: white;}
+    <style>
+      .aside-kategorije {float: left; position: sticky; top: 0%; left: 0%; background-color: white;}      
 
-        .section-kategorije {height: 5vh; justify-content: space-around; align-items: stretch; flex: 1 1 auto;} 
+        .section-kategorije {float: right; width: 75%; display: flex; flex-wrap: wrap; flex: 1 1 auto; height: 5vh;
+            justify-content: space-around; align-items: stretch; text-align:left;} 
         .section-kategorije:hover {height: 50vh;} 
-        .section-kategorije > div {border-right: 1px solid grey; border-bottom: 1px solid grey; padding-right: 3vw;}              
+        .section-kategorije > div {border-right: 1px solid grey; border-bottom: 1px solid grey; padding-right: 3vw; flex-wrap: wrap;} 
         
         li:hover {font-size: larger; font-weight: bolder;}
         .ul-kategorije {list-style-type: none;}
@@ -32,7 +30,9 @@
             #div-loga {padding: 0.5rem;}
             #div-loga:hover {border: 1px solid grey ;}
             #logo-brend {width: 60px;}
-        
+
+        section {float: right; width: 75%; display: flex; flex-wrap: wrap; padding: 1vh 0vw; margin: 1vh 0vw;
+          background-color: white;}        
 
         .pojedini-proizvod {position: relative; height: fit-content; display: flex; flex-direction: column; flex-wrap: wrap; flex: 1 1 auto;
             text-align: center; padding: 2px; border: 1px solid white; 
@@ -72,6 +72,42 @@
         #news-email {width: 14vw; padding: 1rem; border: none;}
         #privacy-link {text-decoration: underline; color: white;} 
 
+        @media screen and (max-width: 1190px) {
+          aside {width: 30%;} 
+          section, .section-brendovi {width: 65%; float: right;}
+          .section-kategorije {float: right; width: 65%; padding-right: 0vw;}           
+          .div-ul-ovi {width: 25%;}
+          .ul-kategorije {font-size: smaller;}
+          #logo-brend {width: 40px;}          
+          .pojedini-proizvod {width: 30%;} 
+          
+          .newsletter {height: 70vh;}
+          #news-email {margin: 0.5rem; width: 16vw;}
+        }
+        @media screen and (max-width: 1000px) {
+          aside {width: 30%;} 
+          section, .section-brendovi {width: 65%; float: right;}
+          .section-kategorije {float: right; width: 65%; padding-right: 0vw;}
+          .section-kategorije:hover {height: 110vh;} 
+          .div-ul-ovi {width: 30%;}
+          .ul-kategorije {font-size: smaller;}
+          #logo-brend {width: 40px;}          
+          .pojedini-proizvod {width: 40%;}
+
+          .newsletter {height: 70vh;}
+          #news-email {margin: 0.5rem; width: 16vw;}        
+        }
+        @media screen and (max-width: 680px) {
+          aside {width: 100%;}
+          .section-brendovi {display: none;}
+          .section-kategorije {display: none;}          
+          section {float: left; width: 100%;}
+          .pojedini-proizvod {width: 100%;}
+          
+          .newsletter {height: 70vh;}
+          #news-email {margin: 0.5rem; width: 20vw;}
+        }   
+
     </style>
     
 </head>
@@ -83,8 +119,7 @@
     <header class="podheader"><div id="podheader-div">PROIZVODI / ELEGANS</div></header>   
 
     <main>
-
-      <aside>
+      <aside class="aside-kategorije">
         <iframe src="./partials/asideProducts.html" class="auto-height-iframe" border="0" height="380vh"></iframe>
       </aside>
 
@@ -121,10 +156,9 @@
       </section>
 
       <section class="section-kategorije">
-        <div>
-          
-          <ul class="ul-kategorije">
-              <h3>ŽENE ↓</h3>
+        <div class="div-ul-ovi">
+          <h3>ŽENE ↓</h3>          
+          <ul class="ul-kategorije">              
               <li><a href="women-products.html" target="_parent">Haljine</a></li>
               <li><a href="women-products.html" target="_parent">Suknje</a></li>                    
               <li><a href="women-products.html" target="_parent ">Bluze & Košulje</a></li>
@@ -141,9 +175,9 @@
           </ul> 
            
         </div>
-        <div>
-          <ul class="ul-kategorije">
-            <h3>MUŠKARCI ↓</h3>                               
+        <div class="div-ul-ovi">
+          <h3>MUŠKARCI ↓</h3>  
+          <ul class="ul-kategorije">                                         
             <li><a href="men-products.html" target="_parent">Košulje</a></li>            
             <li><a href="men-products.html" target="_parent ">Majice kratki/dugi rukav</a></li>
             <li><a href="men-products.html" target="_parent ">Kompleti</a></li>
@@ -157,9 +191,9 @@
             <li><a href="men-products.html" target="_parent ">Rublje</a></li>                    
         </ul> 
         </div>
-        <div>
-          <ul class="ul-kategorije">            
-            <h3>MODNI DODACI ↓</h3>
+        <div class="div-ul-ovi">
+          <h3>MODNI DODACI ↓</h3>
+          <ul class="ul-kategorije">
             <li><a href="modni-dodaci.html" target="_parent">Šalovi & Marame</a></li>
             <li><a href="modni-dodaci.html" target="_parent">Šeširi & Rukavice</a></li>
             <li><a href="modni-dodaci.html" target="_parent">Remeni & Kravate</a></li>

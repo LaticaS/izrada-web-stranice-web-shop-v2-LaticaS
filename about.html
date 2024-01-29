@@ -24,11 +24,44 @@
         figcaption {color: crimson;}
         p::first-letter {font-size: 130%; color: crimson; font-weight: bold;}  
         
-        #tablica-podaci {width: 70%; padding: 1rem; position: relative; left: 10%;}
+        #tablica-podaci {width: 70%; padding: 1rem; position: relative; left: 15%;}
         #tr-tablica {line-height: 2.5;}
-        #td-tablica {border-bottom: 1px solid crimson; color: darkslategray;}
+        #td-tablica {border-bottom: 1px solid crimson; color: darkslategray; text-align: left;}
+        #td-tablica:first-of-type {width: 30%; background-color: beige;}
         
+        @media screen and (max-width: 768px) {
+            #figure-CEO {width: 100%; shape-outside: none;}
+            #fotka-CEO {transition-property: all;
+            transition-duration: 2s; transition-timing-function: ease;
+            max-width: 100%; min-width: 50%;}
+            #fotka-CEO:hover {width: 101%;}
+            #figure-timeLegans {width: 100%;}
+        #fotka-tim {max-width: 100%; min-width: 50%; transition-property: all; transition-duration: 2s; transition-timing-function: ease;} 
+        #fotka-tim:hover {width: 101%;}
         
+        .section-tablica-podaci {width: 100%; height: 100vh; background-color: white;}
+        #tablica-podaci {width: 80%; float: left; position: relative; left: 5%;
+            padding: 0px; margin: 0px; padding-right: 0.5vw;}
+        #tr-tablica {width: 100%; line-height: 2.5;}        
+            
+        }
+        @media screen and (max-width: 320px) {
+            section {position: relative; left: 0.5%; width: 100%;}
+            #figure-CEO {width: 100%; shape-outside: none;}
+            #fotka-CEO {transition-property: all;
+            transition-duration: 2s; transition-timing-function: ease;
+            max-width: 100%; min-width: 50%;}
+            #fotka-CEO:hover {width: 101%;}
+            #figure-timeLegans {width: 100%;}
+        #fotka-tim {max-width: 100%; min-width: 50%; transition-property: all; transition-duration: 2s; transition-timing-function: ease;} 
+        #fotka-tim:hover {width: 101%;}
+
+        .section-tablica-podaci {width: 100%; height: 110vh; background-color: white; font-size: smaller;}
+        #tablica-podaci {width: 100%; margin: 0px; padding: 1vh 0.5vw; position: relative; left: 0.5%;}
+        #tr-tablica {width: 100%; line-height: 2.5; display: flex; flex-wrap: wrap;}
+        #td-tablica {width: 100%;}
+        #td-tablica:first-of-type {width: 100%;}     
+        }           
         
     </style>
 
@@ -76,10 +109,9 @@
                 </ul>
             </p>
 
-            <figure>
+            <figcaption><em>Tim ELegans</em></figcaption>
+            <figure id="figure-timELegans">
                     <img src="./images/Fashion-for-Good-Batch-6-Innovators-Credit@ALINA-KRASIEVA-PHOTOGRAPHY.webp" alt="Foto: Tim ELegans" title="Cilj tima ELegans je pružiti kupcima aktualnu, kvalitetnu i dostupnu modu" width="50%" height="50%" align="left" id="fotka-tim">
-                    <br>
-                    <figcaption><em>Tim ELegans</em></figcaption>
             </figure> 
             
             <p> 
@@ -113,18 +145,20 @@
             <p>
                 Robnoj kući ELegans vjeruju brojni zadovoljni kupci kvalitetne odjeće – pridružite im se i Vi.
             </p>
+            </section>
 
+            <section class="section-tablica-podaci">
             <table id="tablica-podaci">
                 <tr id="tr-tablica">
-                    <td style="width: 30%;" id="td-tablica">
+                    <td id="td-tablica">
                         Naziv firme:                       
                     </td>
                     <td id="td-tablica">
-                        ELegans New Fashion moda d.o.o.                        
+                        ELegans NewFashion moda d.o.o.                        
                     </td>
                 </tr> 
                 <tr id="tr-tablica">
-                    <td style="width: 30%;" id="td-tablica">
+                    <td id="td-tablica">
                         Skraćeno ime:                        
                     </td>
                     <td id="td-tablica">
@@ -132,7 +166,7 @@
                     </td>
                 </tr>   
                 <tr id="tr-tablica">
-                    <td style="width: 30%;" id="td-tablica">
+                    <td id="td-tablica">
                         Sjedište:                       
                     </td>
                     <td id="td-tablica"> 
@@ -140,7 +174,7 @@
                     </td>
                 </tr>   
                 <tr id="tr-tablica">
-                    <td style="width: 30%;" id="td-tablica" >
+                    <td id="td-tablica" >
                         Telefon:                       
                     </td>
                     <td id="td-tablica">
@@ -148,7 +182,7 @@
                     </td>
                 </tr>   
                 <tr id="tr-tablica">
-                    <td style="width: 30%;" id="td-tablica">
+                    <td id="td-tablica">
                         Faks:                       
                     </td>
                     <td id="td-tablica"> 
@@ -156,7 +190,7 @@
                     </td>
                 </tr>   
                 <tr id="tr-tablica">
-                    <td style="width: 30%;" id="td-tablica">
+                    <td id="td-tablica">
                         E-pošta:                        
                     </td>
                     <td id="td-tablica" > 
@@ -164,7 +198,7 @@
                     </td>
                 </tr>   
                 <tr id="tr-tablica" >
-                    <td style="width: 30%;" id="td-tablica">
+                    <td id="td-tablica">
                         Web stranica:                         
                     </td>
                     <td id="td-tablica"> 
@@ -172,7 +206,7 @@
                     </td>
                 </tr>   
                 <tr id="tr-tablica">
-                    <td style="width: 30%;" id="td-tablica"> 
+                    <td id="td-tablica"> 
                         Djelatnost:                       
                     </td>
                     <td id="td-tablica"> 
@@ -180,7 +214,7 @@
                     </td>
                 </tr>   
                 <tr id="tr-tablica" >
-                    <td style="width: 30%;" id="td-tablica" >
+                    <td id="td-tablica" >
                         OIB:                       
                     </td>
                     <td id="td-tablica">
@@ -188,7 +222,7 @@
                     </td>
                 </tr>   
                 <tr id="tr-tablica">
-                    <td style="width: 30%;" id="td-tablica" >
+                    <td id="td-tablica" >
                         MBS:                        
                     </td>
                     <td id="td-tablica"> 
@@ -196,7 +230,7 @@
                     </td>
                 </tr>   
                 <tr id="tr-tablica">
-                    <td style="width: 30%;" id="td-tablica"> 
+                    <td id="td-tablica"> 
                         Transakcijski računi:                       
                     </td>
                     <td id="td-tablica"> 

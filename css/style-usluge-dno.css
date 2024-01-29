@@ -1,5 +1,13 @@
 .usluge-u-slici {width: 100%; display: flex; flex-wrap: wrap; justify-content: space-around; background-color: white;}
 .usluge-u-slici>div{width: 20%; border: 1px solid lightgrey; 
 text-align: center; font-family: Arial, Helvetica, sans-serif; color: dimgray; font-size: small;
-padding: 1vh; margin-bottom: 4vh; margin-top: 10vh;}
+padding: 1vh; margin-bottom: 4vh; margin-top: 2vh;}
 .usluge-u-slici>div:hover{color: darkslategrey; width: 20.5%; border: 1px solid darkslategrey;}
+@media screen and (max-width: 768px) { 
+    .usluge-u-slici>div {width: 45%;}
+    .usluge-u-slici>div:hover {width: 46%;}
+}
+@media screen and (max-width: 320px) {    
+    .usluge-u-slici>div {width: 90%;}
+    .usluge-u-slici>div:hover {width: 91%;}
+}
